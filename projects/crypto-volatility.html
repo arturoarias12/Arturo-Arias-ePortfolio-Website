@@ -1,0 +1,282 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KFK6J3MN');</script>
+<!-- End Google Tag Manager -->
+<link rel="icon" type="image/png" href="../favicon.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Real-Time Crypto Volatility Detection — Project · Arturo Arias</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+:root{--primary:rgb(0,0,190);--primary-700:rgb(0,0,150);--bg:#ffffff;--bg-alt:#f5f7fb;--card-bg:#e6f1fb;--text:#0a0a3a;--text-muted:#5f5e5a;--text-soft:#2b2b5a;--border:#e3e8f0;--accent-ok:#1f8a5b;--accent-info:#0b5fd1;--code-bg:#f5f7fb;--radius-sm:6px;--radius-md:10px;--radius-lg:16px;--maxw-wide:1080px;--maxw-prose:720px;--nav-h:68px;--transition:250ms cubic-bezier(.4,0,.2,1)}
+[data-theme="dark"]{--primary:rgb(41,98,255);--primary-700:#5c8fff;--bg:#050510;--bg-alt:#0d0d2b;--card-bg:#0d0d2b;--text:#e8e8f5;--text-muted:#b0bcdd;--text-soft:#c8cee8;--border:rgba(41,98,255,0.18);--code-bg:#0d0d2b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;font-size:17px;line-height:1.7;color:var(--text);background:var(--bg);-webkit-font-smoothing:antialiased;transition:background var(--transition),color var(--transition)}
+[data-theme="dark"] body{background:radial-gradient(ellipse at 30% 20%,#0a0a2e 0%,#050510 50%,#000008 100%)}
+a{color:var(--primary);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}a:hover{text-decoration-thickness:2px}[data-theme="dark"] a{color:#9bb8ff}
+.scroll-progress{position:fixed;top:0;left:0;height:3px;width:0%;background:var(--primary);z-index:1000;transition:width 80ms linear}
+.navbar{position:sticky;top:0;z-index:900;background:rgba(255,255,255,0.88);backdrop-filter:saturate(160%) blur(10px);-webkit-backdrop-filter:saturate(160%) blur(10px);border-bottom:1px solid var(--border);height:var(--nav-h);display:flex;align-items:center;transition:background var(--transition),border-color var(--transition)}
+[data-theme="dark"] .navbar{background:rgba(5,5,16,0.85)}
+.nav-inner{width:100%;max-width:1180px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{font-weight:700;font-size:18px;color:var(--text);letter-spacing:-0.01em;display:flex;align-items:center;gap:10px;text-decoration:none}.brand:hover{text-decoration:none}
+.brand-mark{width:32px;height:32px;border-radius:50%;overflow:hidden;flex-shrink:0}.brand-mark img{width:100%;height:100%;object-fit:cover;display:block}
+.nav-links{display:flex;gap:4px;list-style:none;margin:0;padding:0}
+.nav-links a{color:var(--text-muted);font-size:14px;font-weight:500;padding:8px 12px;border-radius:var(--radius-sm);text-decoration:none;transition:color var(--transition),background var(--transition)}
+.nav-links a:hover{color:var(--text);background:var(--bg-alt);text-decoration:none}.nav-links a.active{color:var(--primary);background:var(--card-bg)}[data-theme="dark"] .nav-links a.active{color:#5c8fff}
+.nav-actions{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.theme-toggle{background:transparent;border:1px solid var(--border);color:var(--text);width:36px;height:36px;border-radius:8px;display:grid;place-items:center;cursor:pointer;transition:background var(--transition),border-color var(--transition)}
+.theme-toggle:hover{background:var(--bg-alt)}.theme-toggle svg{width:16px;height:16px}.theme-toggle .icon-sun{display:none}[data-theme="dark"] .theme-toggle .icon-sun{display:block}[data-theme="dark"] .theme-toggle .icon-moon{display:none}
+.nav-hamburger{display:none;background:transparent;border:1px solid var(--border);color:var(--text);width:36px;height:36px;border-radius:8px;place-items:center;cursor:pointer;transition:background var(--transition)}
+.nav-hamburger:hover{background:var(--bg-alt)}.nav-hamburger svg{width:20px;height:20px;pointer-events:none;overflow:visible}
+.nav-hamburger .bar{transition:opacity 0.2s,transform 0.2s}.nav-hamburger .bar-top{transform-origin:10px 5px}.nav-hamburger .bar-mid{transform-origin:10px 10px}.nav-hamburger .bar-bot{transform-origin:10px 15px}
+.navbar.nav-open .nav-hamburger .bar-top{transform:translateY(5px) rotate(45deg)}.navbar.nav-open .nav-hamburger .bar-mid{opacity:0}.navbar.nav-open .nav-hamburger .bar-bot{transform:translateY(-5px) rotate(-45deg)}
+.wrap{max-width:var(--maxw-wide);margin:0 auto;padding:0 24px}.prose{max-width:var(--maxw-prose);margin:0 auto}
+.back-link{display:inline-flex;align-items:center;gap:6px;margin-top:24px;font-size:14px;font-weight:500;color:var(--text-muted);text-decoration:none;transition:color var(--transition)}
+.back-link:hover{color:var(--primary);text-decoration:none}.back-link svg{width:14px;height:14px;transition:transform var(--transition)}.back-link:hover svg{transform:translateX(-3px)}
+.project-header{padding:32px 0 0;margin-bottom:28px}
+.project-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px}
+.project-tag{font-size:12px;font-weight:500;padding:3px 10px;border-radius:999px;background:var(--card-bg);color:var(--primary)}[data-theme="dark"] .project-tag{color:#9bb8ff}.project-cat{background:var(--primary);color:#fff}[data-theme="dark"] .project-cat{color:#fff}
+.project-title{font-size:clamp(32px,5vw,48px);line-height:1.1;letter-spacing:-0.025em;font-weight:800;margin:0 0 16px;color:var(--text)}
+.project-deck{font-size:20px;line-height:1.5;color:var(--text-muted);margin:0 0 28px;max-width:var(--maxw-prose);font-weight:400}
+.project-meta-bar{display:flex;gap:24px;flex-wrap:wrap;padding:18px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);font-size:14px}
+.meta-cell .lbl{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-muted);margin:0 0 4px}.meta-cell .val{color:var(--text);font-weight:500;margin:0}
+.header-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:inherit;font-size:14px;font-weight:500;padding:9px 16px;border-radius:var(--radius-sm);border:1px solid var(--border);background:transparent;color:var(--text);cursor:pointer;text-decoration:none;transition:color var(--transition),border-color var(--transition),background var(--transition)}
+.btn:hover{color:var(--primary);border-color:var(--primary);background:var(--card-bg);text-decoration:none}.btn.primary{background:var(--primary);color:#fff;border-color:var(--primary)}.btn.primary:hover{background:var(--primary-700);color:#fff;border-color:var(--primary-700)}.btn svg{width:14px;height:14px}
+.hero-figure{margin:36px 0 56px}
+.hero-img{width:100%;height:clamp(260px,35vw,440px);border-radius:var(--radius-md);position:relative;overflow:hidden;display:grid;place-items:center;color:rgba(255,255,255,0.55);font-size:14px}
+.hero-img::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(45deg,rgba(255,255,255,0.06) 0 10px,transparent 10px 20px)}.hero-figure figcaption{margin-top:12px;text-align:center;color:var(--text-muted);font-size:14px}
+.impact-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin:0 0 56px}
+.impact-card{padding:22px;border:1px solid var(--border);border-radius:var(--radius-md);background:var(--bg)}[data-theme="dark"] .impact-card{background:var(--bg-alt)}
+.impact-card .num{font-size:34px;font-weight:700;color:var(--primary);letter-spacing:-0.02em;line-height:1;margin:0 0 8px;font-variant-numeric:tabular-nums}[data-theme="dark"] .impact-card .num{color:#9bb8ff}.impact-card .lbl{font-size:13px;color:var(--text-muted);margin:0;line-height:1.45}
+.prose h2{font-size:26px;font-weight:700;letter-spacing:-0.015em;line-height:1.25;margin:52px 0 14px;scroll-margin-top:calc(var(--nav-h) + 16px)}.prose h3{font-size:19px;font-weight:600;margin:32px 0 10px;letter-spacing:-0.01em}
+.prose p{margin:0 0 18px;color:var(--text-soft)}.prose strong{color:var(--text);font-weight:600}.prose em{font-style:italic}
+.prose ul,.prose ol{color:var(--text-soft);margin:0 0 22px;padding-left:24px}.prose ul li,.prose ol li{margin-bottom:6px}
+.prose code:not(pre code){font-family:'JetBrains Mono',monospace;font-size:0.88em;padding:2px 6px;border-radius:4px;background:var(--code-bg);color:var(--text);border:1px solid var(--border)}
+.callout{margin:24px 0;padding:16px 18px;border-radius:var(--radius-md);border-left:3px solid var(--accent-info);background:rgba(11,95,209,0.08)}[data-theme="dark"] .callout{background:rgba(155,184,255,0.08)}.callout .ttl{font-weight:600;margin:0 0 4px;font-size:14px;color:var(--accent-info)}[data-theme="dark"] .callout .ttl{color:#9bb8ff}.callout p{margin:0;color:var(--text);font-size:15px}
+.code-block{margin:28px 0;border:1px solid var(--border);border-radius:var(--radius-md);overflow:hidden;background:var(--code-bg)}
+.code-head{display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:var(--bg-alt);border-bottom:1px solid var(--border);font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--text-muted)}[data-theme="dark"] .code-head{background:rgba(0,0,0,0.2)}.code-lang{font-weight:600;color:var(--text);text-transform:lowercase}
+.copy-btn{background:transparent;border:1px solid var(--border);color:var(--text-muted);font-family:'Inter',sans-serif;font-size:12px;padding:3px 10px;border-radius:4px;cursor:pointer}.copy-btn:hover{color:var(--primary);border-color:var(--primary)}.copy-btn.copied{color:var(--accent-ok);border-color:var(--accent-ok)}
+.code-block pre{margin:0;padding:16px 18px;overflow-x:auto;font-family:'JetBrains Mono',monospace;font-size:13.5px;line-height:1.65}
+.table-scroll{overflow-x:auto;margin:24px 0;border-radius:var(--radius-md);border:1px solid var(--border)}.prose table{width:100%;border-collapse:collapse;font-size:14.5px;color:var(--text-soft)}.prose thead{background:var(--bg-alt)}.prose th,.prose td{text-align:left;padding:12px 16px;border-bottom:1px solid var(--border)}.prose th{font-weight:600;color:var(--text);font-size:13px;text-transform:uppercase;letter-spacing:0.04em}.prose tbody tr:last-child td{border-bottom:none}
+.stack-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;margin:24px 0 40px}.stack-group .cat{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-muted);margin:0 0 10px}.stack-group .pills{display:flex;flex-wrap:wrap;gap:6px}.stack-group .pills span{font-size:13px;padding:4px 10px;border:1px solid var(--border);border-radius:999px;color:var(--text);background:var(--bg)}[data-theme="dark"] .stack-group .pills span{background:var(--bg-alt)}
+.mini-timeline{list-style:none;padding:0;margin:24px 0 40px;position:relative}.mini-timeline::before{content:"";position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:var(--border)}.mini-timeline li{position:relative;padding:0 0 18px 28px}.mini-timeline li::before{content:"";position:absolute;left:3px;top:8px;width:10px;height:10px;border-radius:50%;background:var(--primary)}.mini-timeline .when{font-size:12px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.05em;margin:0 0 2px}.mini-timeline .what{font-size:14.5px;color:var(--text);margin:0}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:64px 0 0}.pager a{display:block;padding:18px 20px;border:1px solid var(--border);border-radius:var(--radius-md);background:var(--bg);text-decoration:none;transition:border-color var(--transition),background var(--transition)}[data-theme="dark"] .pager a{background:var(--bg-alt)}.pager a:hover{border-color:var(--primary);background:var(--card-bg)}.pager a.next{text-align:right}.pager .pager-label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-muted);margin:0 0 6px;display:flex;align-items:center;gap:6px}.pager a.next .pager-label{justify-content:flex-end}.pager .pager-title{font-size:16px;font-weight:600;color:var(--text);margin:0 0 2px}.pager .pager-sub{font-size:13px;color:var(--text-muted);margin:0}.pager svg{width:12px;height:12px}
+footer.site-footer{border-top:1px solid var(--border);padding:28px 0;text-align:center;color:var(--text-muted);font-size:13px;margin-top:56px}
+@media(max-width:820px){.nav-hamburger{display:grid}.nav-links{display:none;position:fixed;top:68px;left:0;right:0;flex-direction:column;gap:2px;padding:12px 16px 20px;background:rgba(255,255,255,0.97);backdrop-filter:saturate(160%) blur(10px);-webkit-backdrop-filter:saturate(160%) blur(10px);border-bottom:1px solid var(--border);z-index:800;box-shadow:0 8px 24px rgba(0,0,0,0.08)}[data-theme="dark"] .nav-links{background:rgba(5,5,40,0.97)}.navbar.nav-open .nav-links{display:flex}.nav-links a{padding:10px 14px}.pager{grid-template-columns:1fr}.pager a.next{text-align:left}.pager a.next .pager-label{justify-content:flex-start}}
+</style>
+<script>(function(){var t=localStorage.getItem("theme");if(t==="dark"||(!t&&window.matchMedia("(prefers-color-scheme:dark)").matches))document.documentElement.setAttribute("data-theme","dark")})()</script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KFK6J3MN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<header class="navbar" role="banner">
+  <div class="nav-inner">
+    <a href="../index.html" class="brand" aria-label="Home">
+      <span class="brand-mark"><img src="../assets/img/avatar.jpg" alt="Arturo Arias" /></span>
+      <span>Arturo Arias</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="../index.html#hero">Home</a></li>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#experience">Experience</a></li>
+        <li><a href="../projects.html" class="active">Projects</a></li>
+        <li><a href="../index.html#education">Education</a></li>
+        <li><a href="../index.html#achievements">Achievements</a></li>
+        <li><a href="../index.html#certifications">Certifications</a></li>
+        <li><a href="../index.html#blog">Insights</a></li>
+        <li><a href="../index.html#stack">Skills</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      </button>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+          <line class="bar bar-top" x1="2" y1="5" x2="18" y2="5"/>
+          <line class="bar bar-mid" x1="2" y1="10" x2="18" y2="10"/>
+          <line class="bar bar-bot" x1="2" y1="15" x2="18" y2="15"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div style="display:flex;gap:20px;flex-wrap:wrap;">
+  <a href="../projects.html" class="back-link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+    All projects
+  </a>
+  <a href="../index.html" class="back-link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+    Home
+  </a>
+</div>
+
+<div class="wrap">
+  <header class="project-header">
+    <div class="project-tags">
+      <span class="project-tag project-cat">Data Science</span>
+      <span class="project-tag">Python</span>
+      <span class="project-tag">Kafka</span>
+      <span class="project-tag">XGBoost</span>
+      <span class="project-tag">FastAPI</span>
+      <span class="project-tag">MLflow</span>
+      <span class="project-tag">Docker</span>
+      <span class="project-tag">MLOps</span>
+    </div>
+    <h1 class="project-title">Real-Time Crypto Volatility Detection</h1>
+    <p class="project-deck">An end-to-end MLOps pipeline that ingests live Coinbase market data through Kafka, engineers 60-second volatility features, trains XGBoost classifiers tracked with MLflow, and serves predictions via FastAPI with full Prometheus and Grafana observability.</p>
+
+    <div class="project-meta-bar">
+      <div class="meta-cell"><p class="lbl">Year</p><p class="val">2025</p></div>
+      <div class="meta-cell"><p class="lbl">Context/Client</p><p class="val">Carnegie Mellon University</p></div>
+      <div class="meta-cell"><p class="lbl">Topic/Field/Industry</p><p class="val">Operationalizing AI &middot; Trading &middot; Cryptocurrencies</p></div>
+    </div>
+
+    <div class="header-actions">
+      <a class="btn primary" href="https://github.com/arturoarias12/Detecting-Crypto-Volatility-in-Real-time-FoOAI-" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.58.11.79-.25.79-.55v-1.92c-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.04 11.04 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.58.23 2.75.11 3.04.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.26 5.68.41.35.78 1.05.78 2.12v3.14c0 .31.21.67.8.55C20.21 21.39 23.5 17.09 23.5 12 23.5 5.65 18.35.5 12 .5z"/></svg>
+        View on GitHub
+      </a>
+    </div>
+  </header>
+</div>
+
+<div class="wrap">
+  <figure class="hero-figure">
+    <div style="border-radius:var(--radius-md);overflow:hidden;height:clamp(260px,35vw,440px);">
+      <img src="../assets/img/projects/crypto-volatility.png" alt="Real-Time Crypto Volatility Detection" style="width:100%;height:100%;object-fit:cover;object-position:50% 0%;display:block;" />
+    </div>
+    <figcaption>AI-generated concept image of a real-time MLOps pipeline for detecting cryptocurrency volatility from live market streams.</figcaption>
+  </figure>
+</div>
+
+<div class="wrap">
+  <div class="prose">
+
+    <div class="impact-row">
+      <div class="impact-card"><p class="num">60s</p><p class="lbl">Feature window: volatility computed over rolling 60-second bars</p></div>
+      <div class="impact-card"><p class="num">5</p><p class="lbl">Services orchestrated via <strong>Docker Compose</strong>: Kafka, MLflow, FastAPI, Prometheus, Grafana</p></div>
+      <div class="impact-card"><p class="num">2</p><p class="lbl">Deployable model variants: rule-based baseline and XGBoost ML model</p></div>
+    </div>
+
+    <h2 id="context">Overview</h2>
+    <p>Cryptocurrency markets are characterized by high-frequency price fluctuations, fragmented liquidity, and rapid regime shifts, making real-time volatility detection a relevant problem for both market monitoring and risk-aware decision support. This project addresses that challenge by developing a <strong>production-oriented MLOps pipeline</strong> that continuously ingests live Coinbase market data, transforms raw tick-level events into short-window statistical features, and serves a binary volatility signal through a deployable machine learning API.</p>
+    <p>The system integrates the full operational machine learning lifecycle, including streaming data ingestion with Kafka, feature engineering over rolling 60-second windows, model training and experiment tracking with XGBoost and MLflow, REST-based inference through FastAPI, and observability through Prometheus, Grafana, and drift monitoring. By combining real-time data processing, reproducible model management, and deployment-level monitoring, the project demonstrates how financial machine learning models can be operationalized beyond offline experimentation.</p>
+
+    <h2 id="architecture">Architecture</h2>
+    <h3>Ingest layer: Kafka</h3>
+    <p>A Python producer connects to the Coinbase Advanced Trade WebSocket API and streams raw ticker events into a Kafka topic (<code>ticks.raw</code>). Raw records are persisted as <strong>NDJSON</strong> for reproducibility and replay. A downstream consumer processes those events and writes labeled feature sets to <strong>Parquet</strong> files, cleanly separating ingest from feature computation.</p>
+
+    <h3>Feature engineering</h3>
+    <p>Features are derived exclusively from current and historical data, with no lookahead. They are organized into three groups:</p>
+    <ul>
+      <li><strong>Price-derived:</strong> midprice returns, rolling return averages across four window sizes (5, 20, 60, 100 observations), realized volatility, volatility-of-volatility, and return z-scores normalized by recent volatility</li>
+      <li><strong>Liquidity:</strong> bid-ask spread in basis points, spread changes, spread-normalized pressure, rolling spread statistics, and trade intensity across three time windows (60s, 300s, 900s)</li>
+      <li><strong>Regime/state:</strong> cyclical encodings for time-of-day and day-of-week, capturing intraday and weekly market behavior patterns</li>
+    </ul>
+    <p>The binary label is a volatility spike indicator: <code>1</code> if future realized volatility over the next 60 seconds exceeds the 90th-percentile threshold for that product, <code>0</code> otherwise.</p>
+
+    <h3>Model training: XGBoost + MLflow</h3>
+    <p>Two model variants are supported and swappable via the <code>MODEL_VARIANT</code> environment variable:</p>
+    <ul>
+      <li><strong>Baseline:</strong> a conservative rule-based classifier, recommended for production stability</li>
+      <li><strong>ML:</strong> an XGBoost binary classifier with stronger precision-recall trade-offs</li>
+    </ul>
+    <p>All training runs, hyperparameter sweeps, and evaluation metrics (AUC-ROC, F1, precision/recall) are tracked in MLflow, with model artifacts registered in the MLflow Model Registry for version-controlled serving.</p>
+
+    <h3>Serving: FastAPI</h3>
+    <p>A FastAPI application loads the registered model at startup and exposes four endpoints: <code>/predict</code> (accepts a feature row and returns a volatility score and binary label), <code>/health</code>, <code>/version</code>, and <code>/metrics</code> for Prometheus scraping.</p>
+
+    <h2 id="observability">Observability</h2>
+    <p>Prometheus scrapes the <code>/metrics</code> endpoint and Grafana dashboards surface prediction latency, request throughput, and rolling accuracy. Evidently runs a separate drift detector that compares the live feature distribution against the training reference, raising alerts when distribution shift is detected.</p>
+
+    <div class="callout">
+      <p class="ttl">One-command deployment</p>
+      <p>All five services (Zookeeper, Kafka, FastAPI, Prometheus, and Grafana) are declared in a single <code>docker-compose.yml</code>. The entire pipeline stands up on any machine with: <code>docker compose up --build</code>.</p>
+    </div>
+
+    <h2 id="timeline">How it was built</h2>
+    <ul class="mini-timeline">
+      <li><p class="when">Phase 1</p><p class="what">Kafka (KRaft) and MLflow launched via Docker Compose. WebSocket producer ingesting live Coinbase ticker data into <code>ticks.raw</code>, with reconnect and heartbeat logic. Scoping brief written defining the 60-second prediction goal.</p></li>
+      <li><p class="when">Phase 2</p><p class="what">Featurizer built as a Kafka consumer: computed windowed features and wrote output to Parquet. EDA conducted in a notebook; spike threshold set using percentile plots. First Evidently report generated comparing early and late data windows.</p></li>
+      <li><p class="when">Phase 3</p><p class="what">Baseline (z-score rule) and XGBoost models trained on time-based splits. All runs logged to MLflow with PR-AUC as the primary metric. Model card and GenAI appendix written.</p></li>
+      <li><p class="when">Phase 4</p><p class="what">FastAPI serving layer built with <code>/predict</code>, <code>/health</code>, <code>/version</code>, and <code>/metrics</code> endpoints. Full Docker Compose stack assembled and tested in replay mode.</p></li>
+      <li><p class="when">Phase 5</p><p class="what">CI pipeline set up with GitHub Actions (lint + integration test). Reconnect, retry, and graceful shutdown added to Kafka services. Load test run at 100 burst requests.</p></li>
+      <li><p class="when">Phase 6</p><p class="what">Prometheus metrics instrumented (latency, request count, errors, consumer lag). Grafana dashboards built. SLOs defined, Evidently drift summary scheduled, and <code>MODEL_VARIANT</code> rollback toggle added.</p></li>
+      <li><p class="when">Phase 7</p><p class="what">Demo recorded showing startup, live prediction, failure recovery, and model rollback. Runbook and final documentation finalized. Repository tagged for release.</p></li>
+    </ul>
+
+    <h2 id="stack">Tools &amp; tech</h2>
+    <div class="stack-grid">
+      <div class="stack-group">
+        <p class="cat">Data pipeline</p>
+        <div class="pills"><span>Apache Kafka</span><span>Confluent Python</span><span>Coinbase API</span></div>
+      </div>
+      <div class="stack-group">
+        <p class="cat">ML</p>
+        <div class="pills"><span>XGBoost</span><span>scikit-learn</span><span>MLflow</span><span>Pandas</span><span>NumPy</span></div>
+      </div>
+      <div class="stack-group">
+        <p class="cat">Serving</p>
+        <div class="pills"><span>FastAPI</span><span>Uvicorn</span><span>Pydantic</span></div>
+      </div>
+      <div class="stack-group">
+        <p class="cat">Observability</p>
+        <div class="pills"><span>Prometheus</span><span>Grafana</span><span>Evidently</span></div>
+      </div>
+      <div class="stack-group">
+        <p class="cat">Infrastructure</p>
+        <div class="pills"><span>Docker</span><span>Docker Compose</span></div>
+      </div>
+    </div>
+
+    <nav class="pager" aria-label="Other projects">
+      <a class="prev" href="this-portfolio.html">
+        <p class="pager-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Previous project</p>
+        <p class="pager-title">This website</p>
+        <p class="pager-sub">Website &middot; 2026</p>
+      </a>
+      <a class="next" href="auna-web-analytics.html">
+        <p class="pager-label">Next project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></p>
+        <p class="pager-title">Auna / Oncosalud Web Analytics</p>
+        <p class="pager-sub">BI Dashboard &middot; 2025</p>
+      </a>
+    </nav>
+
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">&copy; 2026 Arturo Arias &middot; Designed and built with care.</div>
+</footer>
+
+<script>
+(function(){const bar=document.getElementById('scrollProgress');function u(){const h=document.documentElement;const t=h.scrollHeight-h.clientHeight;bar.style.width=t>0?(h.scrollTop/t)*100+'%':'0%'}document.addEventListener('scroll',u,{passive:true});u()})();
+(function(){const btn=document.getElementById('themeToggle');if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');btn.addEventListener('click',()=>{const c=document.documentElement.getAttribute('data-theme');const n=c==='dark'?'':'dark';if(n)document.documentElement.setAttribute('data-theme',n);else document.documentElement.removeAttribute('data-theme');localStorage.setItem('theme',n||'light')})})();
+document.querySelectorAll('.copy-btn').forEach(btn=>{btn.addEventListener('click',async()=>{const b=btn.closest('.code-block');const c=b.querySelector('pre').innerText;try{await navigator.clipboard.writeText(c)}catch(_){}const o=btn.textContent;btn.textContent='Copied';btn.classList.add('copied');setTimeout(()=>{btn.textContent=o;btn.classList.remove('copied')},1500)})});
+(function(){const h=document.getElementById('navHamburger');if(!h)return;h.addEventListener('click',()=>{const n=h.closest('.navbar');const o=n.classList.toggle('nav-open');h.setAttribute('aria-expanded',String(o))})})();
+</script>
+<script src="../nav-footer.js"></script>
+</body>
+</html>
+

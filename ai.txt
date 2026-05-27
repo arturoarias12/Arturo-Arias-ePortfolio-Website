@@ -1,0 +1,6 @@
+# ai.txt — AI training data opt-out
+# https://site.ai-txt.com
+# This site does not consent to use of its content for AI/ML training.
+
+User: *
+Disallow: /

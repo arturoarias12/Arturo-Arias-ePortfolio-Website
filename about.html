@@ -1,0 +1,884 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KFK6J3MN');</script>
+<!-- End Google Tag Manager -->
+<link rel="icon" type="image/png" href="favicon.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Beyond the resume - Arturo Arias</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --primary: rgb(0, 0, 190);
+    --primary-700: rgb(0, 0, 150);
+    --bg: #ffffff;
+    --bg-alt: #f5f7fb;
+    --card-bg: #e6f1fb;
+    --text: #0a0a3a;
+    --text-muted: #5f5e5a;
+    --text-soft: #2b2b5a;
+    --border: #e3e8f0;
+    --accent-ok: #1f8a5b;
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 16px;
+    --maxw: 1180px;
+    --nav-h: 68px;
+    --transition: 250ms cubic-bezier(.4,0,.2,1);
+  }
+  [data-theme="dark"] {
+    --primary: rgb(41, 98, 255);
+    --primary-700: rgb(80, 130, 255);
+    --bg: #050510;
+    --bg-alt: #0d0d2b;
+    --card-bg: #0d0d2b;
+    --text: #e8e8f5;
+    --text-muted: #b0bcdd;
+    --text-soft: #c8cee8;
+    --border: rgba(41, 98, 255, 0.18);
+  }
+  [data-theme="dark"] body {
+    background: radial-gradient(ellipse at 30% 20%, #0a0a2e 0%, #050510 50%, #000008 100%);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px; line-height: 1.65;
+    color: var(--text); background: var(--bg);
+    -webkit-font-smoothing: antialiased;
+    transition: background var(--transition), color var(--transition);
+  }
+  a { color: var(--primary); text-decoration: none; }
+  a:hover { text-decoration: underline; text-underline-offset: 3px; }
+  [data-theme="dark"] a { color: #9bb8ff; }
+
+  /* ---------- Navbar ---------- */
+  .navbar {
+    position: sticky; top: 0; z-index: 900;
+    background: rgba(255,255,255,0.88);
+    backdrop-filter: saturate(160%) blur(10px);
+    -webkit-backdrop-filter: saturate(160%) blur(10px);
+    border-bottom: 1px solid var(--border);
+    height: var(--nav-h); display: flex; align-items: center;
+    transition: background var(--transition), border-color var(--transition);
+  }
+  [data-theme="dark"] .navbar { background: rgba(5, 5, 16, 0.85); }
+  .nav-inner {
+    width: 100%; max-width: var(--maxw);
+    margin: 0 auto; padding: 0 24px;
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  }
+  .brand {
+    font-weight: 700; font-size: 18px; color: var(--text);
+    letter-spacing: -0.01em; display: flex; align-items: center; gap: 10px;
+    text-decoration: none;
+  }
+  .brand:hover { text-decoration: none; }
+  .brand-mark { width: 32px; height: 32px; border-radius: 50%; overflow: hidden; flex-shrink: 0; }
+  .brand-mark img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .nav-links { display: flex; gap: 4px; list-style: none; margin: 0; padding: 0; }
+  .nav-links a {
+    color: var(--text-muted); font-size: 14px; font-weight: 500;
+    padding: 8px 12px; border-radius: var(--radius-sm); text-decoration: none;
+    transition: color var(--transition), background var(--transition);
+  }
+  .nav-links a:hover { color: var(--text); background: var(--bg-alt); }
+  .nav-links a.active { color: var(--primary); background: var(--card-bg); }
+  [data-theme="dark"] .nav-links a.active { color: #9bb8ff; }
+  .theme-toggle {
+    background: transparent; border: 1px solid var(--border); color: var(--text);
+    width: 36px; height: 36px; border-radius: 8px;
+    display: grid; place-items: center; cursor: pointer;
+    transition: background var(--transition), border-color var(--transition);
+  }
+  .theme-toggle:hover { background: var(--bg-alt); }
+  .theme-toggle svg { width: 16px; height: 16px; }
+  .theme-toggle .icon-sun { display: none; }
+  [data-theme="dark"] .theme-toggle .icon-sun { display: block; }
+  [data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+  .nav-actions { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+  .nav-hamburger {
+    display: none;
+    background: transparent; border: 1px solid var(--border);
+    color: var(--text); width: 36px; height: 36px; border-radius: 8px;
+    place-items: center; cursor: pointer; transition: background var(--transition);
+  }
+  .nav-hamburger:hover { background: var(--bg-alt); }
+  .nav-hamburger svg { width: 20px; height: 20px; pointer-events: none; overflow: visible; }
+  .nav-hamburger .bar { transition: opacity 0.2s, transform 0.2s; }
+  .nav-hamburger .bar-top { transform-origin: 10px 5px; }
+  .nav-hamburger .bar-mid { transform-origin: 10px 10px; }
+  .nav-hamburger .bar-bot { transform-origin: 10px 15px; }
+  .navbar.nav-open .nav-hamburger .bar-top { transform: translateY(5px) rotate(45deg); }
+  .navbar.nav-open .nav-hamburger .bar-mid { opacity: 0; }
+  .navbar.nav-open .nav-hamburger .bar-bot { transform: translateY(-5px) rotate(-45deg); }
+
+  .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+
+  /* ---------- Back link ---------- */
+  .back-link {
+    display: inline-flex; align-items: center; gap: 6px;
+    margin-top: 24px; font-size: 14px; font-weight: 500; color: var(--text-muted);
+    text-decoration: none; transition: color var(--transition);
+  }
+  .back-link::before { content: "←"; }
+  .back-link:hover { color: var(--primary); text-decoration: none; }
+
+  /* ---------- Page header ---------- */
+  .page-header { padding: 32px 0 16px; }
+  .page-eyebrow {
+    color: var(--primary); font-size: 12px; font-weight: 600;
+    letter-spacing: 0.1em; text-transform: uppercase; margin: 0 0 8px;
+  }
+  [data-theme="dark"] .page-eyebrow { color: #9bb8ff; }
+  .page-title {
+    font-size: clamp(32px, 4vw, 44px); font-weight: 800;
+    letter-spacing: -0.025em; line-height: 1.1; margin: 0 0 14px;
+  }
+  .page-sub { font-size: 18px; color: var(--text-muted); max-width: 660px; margin: 0; line-height: 1.55; }
+
+  /* ---------- Section tabs ---------- */
+  .section-tabs {
+    position: sticky; top: var(--nav-h); z-index: 50;
+    background: var(--bg); border-bottom: 1px solid var(--border);
+    padding: 12px 0; margin: 28px 0 0;
+  }
+  .tabs-row { display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; }
+  .tabs-row::-webkit-scrollbar { display: none; }
+  .tab {
+    background: transparent; border: none; color: var(--text-muted);
+    font-family: inherit; font-size: 14px; font-weight: 500;
+    padding: 8px 14px; border-radius: var(--radius-sm); cursor: pointer;
+    text-decoration: none; white-space: nowrap;
+    display: inline-flex; align-items: center; gap: 6px;
+    transition: color var(--transition), background var(--transition);
+  }
+  .tab:hover { color: var(--text); background: var(--bg-alt); text-decoration: none; }
+  .tab.active { color: var(--primary); background: var(--card-bg); }
+  [data-theme="dark"] .tab.active { color: #9bb8ff; }
+  .tab .count {
+    font-size: 11px; padding: 1px 6px;
+    background: var(--bg-alt); color: var(--text-muted);
+    border-radius: 999px; font-weight: 600;
+  }
+  .tab.active .count { background: var(--primary); color: #fff; }
+
+  /* ---------- Section ---------- */
+  section.block { padding: 56px 0; scroll-margin-top: calc(var(--nav-h) + 60px); }
+  .section-head { margin-bottom: 32px; max-width: 720px; }
+  .section-eyebrow {
+    color: var(--primary); font-size: 12px; font-weight: 600;
+    letter-spacing: 0.1em; text-transform: uppercase; margin: 0 0 8px;
+  }
+  [data-theme="dark"] .section-eyebrow { color: #9bb8ff; }
+  .section-title { font-size: 28px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.25; margin: 0 0 10px; }
+  .section-sub { color: var(--text-muted); font-size: 16px; margin: 0; line-height: 1.55; }
+
+  /* ---------- Impact stats ---------- */
+  .impact-row {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px; margin: 32px 0 40px;
+  }
+  .impact-card { padding: 22px; border: 1px solid var(--border); border-radius: var(--radius-md); background: var(--bg); }
+  [data-theme="dark"] .impact-card { background: var(--bg-alt); }
+  .impact-card .num {
+    font-size: 32px; font-weight: 700; color: var(--primary);
+    letter-spacing: -0.02em; line-height: 1; margin: 0 0 8px;
+    font-variant-numeric: tabular-nums;
+  }
+  [data-theme="dark"] .impact-card .num { color: #9bb8ff; }
+  .impact-card .lbl { font-size: 13px; color: var(--text-muted); margin: 0; line-height: 1.45; }
+
+  /* ---------- Volunteer timeline ---------- */
+  .v-timeline { list-style: none; padding: 0; margin: 0; position: relative; }
+  .v-timeline::before {
+    content: ""; position: absolute;
+    left: 19px; top: 14px; bottom: 14px;
+    width: 2px; background: var(--border);
+  }
+  .v-item { position: relative; padding: 0 0 40px 60px; }
+  .v-item:last-child { padding-bottom: 0; }
+  .v-item::before {
+    content: ""; position: absolute; left: 12px; top: 14px;
+    width: 16px; height: 16px; border-radius: 50%;
+    background: var(--bg); border: 3px solid var(--primary); box-sizing: border-box;
+  }
+  [data-theme="dark"] .v-item::before { background: var(--bg-alt); }
+  .v-item.current::before { background: var(--primary); box-shadow: 0 0 0 4px rgba(0,0,190,0.15); }
+  .v-card {
+    background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-md);
+    padding: 24px 28px; transition: border-color var(--transition), transform var(--transition);
+  }
+  [data-theme="dark"] .v-card { background: var(--bg-alt); }
+  .v-card:hover { border-color: var(--primary); transform: translateY(-2px); }
+  .v-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; margin-bottom: 6px; flex-wrap: wrap; }
+  .v-title-block { min-width: 0; flex: 1; }
+  .v-role {
+    font-size: 18px; font-weight: 600; margin: 0 0 4px; color: var(--text);
+    letter-spacing: -0.01em; display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  }
+  .v-badge { font-size: 10.5px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; padding: 2px 8px; border-radius: 999px; }
+  .v-badge.current { background: var(--accent-ok); color: #fff; }
+  .v-badge.founder { background: var(--primary); color: #fff; }
+  .v-org { color: var(--text-muted); font-size: 14.5px; margin: 0; }
+  .v-org strong { color: var(--text); font-weight: 600; }
+  .v-dates { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); flex-shrink: 0; margin-top: 4px; }
+  .v-description { color: var(--text-soft); font-size: 15px; margin: 14px 0 0; line-height: 1.6; }
+  .v-highlights { margin: 14px 0 0; padding: 0; list-style: none; }
+  .v-highlights li {
+    padding: 6px 0 6px 24px; position: relative;
+    color: var(--text-soft); font-size: 14.5px; line-height: 1.5;
+  }
+  .v-highlights li::before {
+    content: ""; position: absolute; left: 4px; top: 14px;
+    width: 6px; height: 6px; background: var(--primary); border-radius: 50%; opacity: 0.6;
+  }
+  .v-tags { display: flex; gap: 6px; flex-wrap: wrap; margin: 14px 0 0; }
+  .v-tag { font-size: 11.5px; padding: 3px 9px; background: var(--card-bg); color: var(--primary); border-radius: 999px; font-weight: 500; }
+  [data-theme="dark"] .v-tag { color: #9bb8ff; background: rgba(155,184,255,0.12); }
+
+  /* ---------- Communities ---------- */
+  .comm-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; }
+  .comm-card {
+    display: flex; align-items: flex-start; gap: 14px; padding: 18px 20px;
+    border: 1px solid var(--border); border-radius: var(--radius-md); background: var(--bg);
+    transition: border-color var(--transition), transform var(--transition);
+  }
+  [data-theme="dark"] .comm-card { background: var(--bg-alt); }
+  .comm-card:hover { border-color: var(--primary); transform: translateY(-2px); }
+  .comm-icon {
+    flex: 0 0 40px; width: 40px; height: 40px; border-radius: var(--radius-sm);
+    display: grid; place-items: center; color: #fff; font-weight: 700; font-size: 12px;
+    text-align: center;
+  }
+  .c1 { background: linear-gradient(135deg, #0000be, #4a4af0); }
+  .c2 { background: linear-gradient(135deg, #002a8a, #0066cc); }
+  .c3 { background: linear-gradient(135deg, #1a1a78, #5050d8); }
+  .c4 { background: linear-gradient(135deg, #2d2db4, #6868e8); }
+  .c5 { background: linear-gradient(135deg, #00188c, #3535b8); }
+  .comm-body { min-width: 0; flex: 1; }
+  .comm-name { font-size: 15px; font-weight: 600; color: var(--text); margin: 0 0 2px; letter-spacing: -0.005em; }
+  .comm-role { font-size: 13px; color: var(--text-muted); margin: 0 0 4px; }
+  .comm-meta { font-size: 12px; color: var(--text-muted); margin: 0; }
+  .comm-meta strong { color: var(--text); font-weight: 500; }
+
+  /* ---------- Interests ---------- */
+  .interest-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+  .interest-card {
+    border: 1px solid var(--border); border-radius: var(--radius-md); background: var(--bg);
+    overflow: hidden; transition: transform var(--transition), border-color var(--transition);
+  }
+  [data-theme="dark"] .interest-card { background: var(--bg-alt); }
+  .interest-card:hover { transform: translateY(-3px); border-color: var(--primary); }
+  .interest-img {
+    height: 120px; position: relative; overflow: hidden;
+    display: grid; place-items: center; color: rgba(255,255,255,0.8); font-size: 32px;
+  }
+  .interest-img::after {
+    content: ""; position: absolute; inset: 0;
+    background: repeating-linear-gradient(45deg, rgba(255,255,255,0.06) 0 10px, transparent 10px 20px);
+  }
+  .i-1 { background: linear-gradient(135deg, #0000be, #4a4af0); }
+  .i-2 { background: linear-gradient(135deg, #002a8a, #0066cc); }
+  .i-3 { background: linear-gradient(135deg, #1a1a78, #5050d8); }
+  .i-4 { background: linear-gradient(135deg, #00188c, #3535b8); }
+  .i-5 { background: linear-gradient(135deg, #0a0a3a, #2828a8); }
+  .i-6 { background: linear-gradient(135deg, #2d2db4, #6868e8); }
+  .i-7 { background: linear-gradient(135deg, #0a1a6e, #1a3aaa); }
+  .i-8 { background: linear-gradient(135deg, #1a0a6e, #5028b8); }
+  .interest-body { padding: 16px 18px 18px; }
+  .interest-name { font-size: 16px; font-weight: 600; color: var(--text); margin: 0 0 6px; letter-spacing: -0.005em; }
+  .interest-desc { font-size: 13.5px; color: var(--text-muted); margin: 0; line-height: 1.5; }
+
+  /* ---------- Causes ---------- */
+  .causes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+  .cause-card { padding: 22px 24px; border: 1px solid var(--border); border-radius: var(--radius-md); background: var(--bg); }
+  [data-theme="dark"] .cause-card { background: var(--bg-alt); }
+  .cause-card h4 {
+    font-size: 15px; font-weight: 600; margin: 0 0 6px; color: var(--text);
+    display: flex; align-items: center; gap: 8px;
+  }
+  .cause-card h4::before { content: ""; width: 4px; height: 14px; background: var(--primary); border-radius: 2px; }
+  .cause-card p { font-size: 13.5px; color: var(--text-muted); margin: 0; line-height: 1.55; }
+
+  /* ---------- Now box ---------- */
+  .now-box {
+    padding: 24px 28px; border-left: 3px solid var(--primary);
+    background: var(--bg-alt); border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    margin-bottom: 32px;
+  }
+  .now-label {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 11.5px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--primary); margin: 0 0 8px;
+  }
+  [data-theme="dark"] .now-label { color: #9bb8ff; }
+  .now-dot { width: 8px; height: 8px; background: var(--accent-ok); border-radius: 50%; box-shadow: 0 0 0 4px rgba(31,138,91,0.18); }
+  .now-box p { margin: 0; color: var(--text); font-size: 15px; line-height: 1.6; }
+  .now-box p + p { margin-top: 10px; }
+  .now-date { font-size: 12px; color: var(--text-muted); margin-top: 10px; }
+
+  /* ---------- Quote ---------- */
+  .values-quote {
+    margin: 48px 0; padding: 32px;
+    background: var(--card-bg); border-radius: var(--radius-lg); text-align: center;
+  }
+  [data-theme="dark"] .values-quote { background: rgba(155,184,255,0.08); }
+  .values-quote blockquote {
+    font-family: 'Lora', Georgia, serif; font-size: 22px; font-style: italic;
+    color: var(--text); margin: 0 auto; max-width: 640px; line-height: 1.45;
+  }
+  .values-quote .attrib { font-family: 'Inter', sans-serif; font-style: normal; font-size: 13px; color: var(--text-muted); margin-top: 16px; }
+
+  /* ---------- Footer ---------- */
+  footer.site-footer { border-top: 1px solid var(--border); padding: 28px 0; text-align: center; color: var(--text-muted); font-size: 13px; }
+
+  /* ---------- Reveal ---------- */
+  .reveal { opacity: 0; transform: translateY(20px); transition: opacity 700ms cubic-bezier(.4,0,.2,1), transform 700ms cubic-bezier(.4,0,.2,1); }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 820px) {
+    .nav-hamburger { display: grid; }
+    .nav-links {
+      display: none; position: fixed; top: 68px; left: 0; right: 0;
+      flex-direction: column; gap: 2px; padding: 12px 16px 20px;
+      background: rgba(255,255,255,0.97);
+      backdrop-filter: saturate(160%) blur(10px);
+      -webkit-backdrop-filter: saturate(160%) blur(10px);
+      border-bottom: 1px solid var(--border); z-index: 800;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    }
+    [data-theme="dark"] .nav-links { background: rgba(5,5,40,0.97); }
+    .navbar.nav-open .nav-links { display: flex; }
+    .nav-links a { padding: 10px 14px; }
+    .v-head { flex-direction: column; }
+    .v-dates { margin-top: 0; }
+    section.block { padding: 40px 0; }
+  }
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KFK6J3MN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="brand" aria-label="Home">
+      <span class="brand-mark"><img src="assets/img/avatar.jpg" alt="Arturo Arias" /></span>
+      <span>Arturo Arias</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="index.html#hero">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#education">Education</a></li>
+        <li><a href="index.html#achievements">Achievements</a></li>
+        <li><a href="index.html#certifications">Certifications</a></li>
+        <li><a href="index.html#blog">Insights</a></li>
+        <li><a href="index.html#stack">Skills</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      </button>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+          <line class="bar bar-top" x1="2" y1="5" x2="18" y2="5"/>
+          <line class="bar bar-mid" x1="2" y1="10" x2="18" y2="10"/>
+          <line class="bar bar-bot" x1="2" y1="15" x2="18" y2="15"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <a href="index.html#about" class="back-link">Back to home</a>
+</div>
+
+<div class="wrap">
+  <div class="page-header">
+    <p class="page-eyebrow">Beyond the resume</p>
+    <h1 class="page-title">A broader perspective</h1>
+    <p class="page-sub">The volunteer roles I have taken on, the communities I have been part of, the things I build and study outside of work, and what I am up to right now.</p>
+  </div>
+</div>
+
+<nav class="section-tabs" aria-label="Page sections">
+  <div class="wrap">
+    <div class="tabs-row" id="tabsRow">
+      <a class="tab" href="#now">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        Now
+      </a>
+      <a class="tab" href="#volunteering">Volunteering <span class="count">8</span></a>
+      <a class="tab" href="#communities">Communities <span class="count">4</span></a>
+      <a class="tab" href="#interests">Interests <span class="count">8</span></a>
+      <a class="tab" href="#causes">Causes</a>
+    </div>
+  </div>
+</nav>
+
+<!-- NOW -->
+<div class="wrap">
+  <section class="block reveal" id="now">
+    <div class="section-head">
+      <p class="section-eyebrow">What I am up to</p>
+      <h2 class="section-title">Currently</h2>
+      <p class="section-sub">A short snapshot of where things stand. Updated periodically.</p>
+    </div>
+    <div class="now-box">
+      <p class="now-label"><span class="now-dot" aria-hidden="true"></span> Right now</p>
+      <p>Successfully completed the first year of the Master of Information Systems Management - Business Intelligence and Data Analytics (MISM-BIDA) program at Carnegie Mellon University's Heinz College. Recently became Vice President of Latinburgh, the Latin American student organization at Heinz, and continuing to serve as an Admissions Ambassador for the MISM-BIDA program.</p>
+      <p>Outside of class, I am building this portfolio, developing personal projects at the intersection of AI, data engineering, and analytics, and running small independent research experiments on topics I find genuinely interesting.</p>
+      <p>I am actively seeking a <strong>summer internship</strong> in Data Science, Data Analytics, AI/ML, Business Intelligence, Software, or related fields. Open to remote and in-person roles, and willing to relocate if the opportunity calls for it.</p>
+      <p class="now-date">Last updated · May 2026</p>
+    </div>
+  </section>
+</div>
+
+<!-- VOLUNTEERING -->
+<div class="wrap">
+  <section class="block reveal" id="volunteering">
+    <div class="section-head">
+      <p class="section-eyebrow">Volunteering and community</p>
+      <h2 class="section-title">Service, leadership and mentorship</h2>
+      <p class="section-sub">From founding a student chapter at 19 to mentoring peers, leading volunteer teams, and staying involved in the communities that shaped me. The common thread has always been community building and helping people earlier on the path by opening doors to new opportunities.</p>
+    </div>
+
+    <div class="impact-row">
+      <div class="impact-card">
+        <p class="num">8+</p>
+        <p class="lbl">Years of continuous community involvement</p>
+      </div>
+      <div class="impact-card">
+        <p class="num">1</p>
+        <p class="lbl">Student chapter founded and led as first president</p>
+      </div>
+      <div class="impact-card">
+        <p class="num">40+</p>
+        <p class="lbl">Volunteers coordinated at Ponle Corazón 2021</p>
+      </div>
+      <div class="impact-card">
+        <p class="num">5+</p>
+        <p class="lbl">Years as career and academic mentor at UTEC</p>
+      </div>
+    </div>
+
+    <ul class="v-timeline">
+
+      <li class="v-item current">
+        <div class="v-card">
+          <div class="v-head">
+            <div class="v-title-block">
+              <h3 class="v-role">Vice President <span class="v-badge current">Current</span></h3>
+              <p class="v-org"><strong>Latinburgh</strong> · Carnegie Mellon University, Heinz College of Information Systems and Public Policy</p>
+            </div>
+            <p class="v-dates">May 2026 — Present</p>
+          </div>
+          <p class="v-description">Latinburgh is a student organization at Heinz College dedicated to fostering a strong and inclusive Latin American community at Carnegie Mellon. As Vice President, supporting initiatives to celebrate Latin American cultures, languages, and traditions; helping newly admitted students transition to CMU; and collaborating with student organizations across campus to promote cultural engagement and community building.</p>
+          <div class="v-tags">
+            <span class="v-tag">Student leadership</span>
+            <span class="v-tag">Community building</span>
+            <span class="v-tag">Latin American community</span>
+            <span class="v-tag">CMU Heinz</span>
+          </div>
+        </div>
+      </li>
+
+      <li class="v-item current">
+        <div class="v-card">
+          <div class="v-head">
+            <div class="v-title-block">
+              <h3 class="v-role">Admissions Ambassador <span class="v-badge current">Current</span></h3>
+              <p class="v-org"><strong>Carnegie Mellon University</strong> · Heinz College of Information Systems and Public Policy, MISM-BIDA Program</p>
+            </div>
+            <p class="v-dates">Nov 2025 — Present</p>
+          </div>
+          <p class="v-description">Representing the MISM-BIDA program as a volunteer ambassador for the Heinz College Admissions Ambassador group. Supporting prospective and admitted students through the graduate school process via virtual and in-person interactions, sharing firsthand experience of the program and life at CMU.</p>
+          <div class="v-tags">
+            <span class="v-tag">Admissions</span>
+            <span class="v-tag">Student outreach</span>
+            <span class="v-tag">CMU MISM-BIDA</span>
+          </div>
+        </div>
+      </li>
+
+      <li class="v-item current">
+        <div class="v-card">
+          <div class="v-head">
+            <div class="v-title-block">
+              <h3 class="v-role">Career Mentor <span class="v-badge current">Current</span></h3>
+              <p class="v-org"><strong>UTEC</strong> · Universidad de Ingeniería y Tecnología, Career Mentoring Program</p>
+            </div>
+            <p class="v-dates">Apr 2021 — Present</p>
+          </div>
+          <p class="v-description">Over five years of active participation in UTEC's Career Mentoring Program, whose goal is to accelerate the personal and professional development of mentees by sharing practical knowledge from real experience. Providing guidance to help students establish realistic goals, make better academic and career decisions, and navigate the early stages of professional life with more clarity and confidence.</p>
+          <div class="v-tags">
+            <span class="v-tag">Career mentoring</span>
+            <span class="v-tag">Education</span>
+            <span class="v-tag">UTEC</span>
+          </div>
+        </div>
+      </li>
+
+      <li class="v-item">
+        <div class="v-card">
+          <div class="v-head">
+            <div class="v-title-block">
+              <h3 class="v-role">Communications and Marketing Coordinator</h3>
+              <p class="v-org"><strong>AIChE Sección Perú</strong> · American Institute of Chemical Engineers, Peru Local Section</p>
+            </div>
+            <p class="v-dates">Aug 2022 — Aug 2024</p>
+          </div>
+          <p class="v-description">A two-year progression through the communications leadership of AIChE Peru: Deputy Communications and Marketing Coordinator from August 2022 to December 2023, then promoted to Coordinator from January 2024 to August 2024. AIChE is the world's leading professional organization for chemical engineers, connecting more than 60,000 members across 110+ countries through technical resources, industry networking, research collaboration, and professional development opportunities. Led the digital communications strategy, managed content production, and expanded the section's visibility across Peru's professional engineering community.</p>
+          <ul class="v-highlights">
+            <li>Managed social media presence and coordinated communications for the Peru Local Section across a two-year tenure spanning both the deputy and coordinator roles.</li>
+            <li>Promoted technical resources and professional development content to the chemical engineering community in Peru.</li>
+          </ul>
+          <div class="v-tags">
+            <span class="v-tag">AIChE</span>
+            <span class="v-tag">Communications</span>
+            <span class="v-tag">Marketing</span>
+            <span class="v-tag">Chemical Engineering</span>
+          </div>
+        </div>
+      </li>
+
+      <li class="v-item">
+        <div class="v-card">
+          <div class="v-head">
+            <div class="v-title-block">
+              <h3 class="v-role">Founder and First President <span class="v-badge founder">Founder</span></h3>
+              <p class="v-org"><strong>AIChE UTEC Student Chapter</strong> · American Institute of Chemical Engineers, UTEC</p>
+            </div>
+            <p class="v-dates">2017 — 2019</p>
+          </div>
+          <p class="v-description">Founded and served as the first president of the AIChE student chapter at UTEC during undergraduate studies. Built the chapter from the ground up: drafting its founding structure, recruiting the initial membership, organizing technical and professional development events, and establishing the connection between UTEC's Chemical Engineering students and the broader AIChE professional community in Peru and internationally. The chapter continued operating under subsequent student boards after the founding term concluded.</p>
+          <ul class="v-highlights">
+            <li>Established UTEC's first AIChE-affiliated student chapter, creating a formal link between students and a global professional network of 60,000+ chemical engineers.</li>
+            <li>Organized technical workshops and networking events bridging the university's Chemical Engineering program with industry.</li>
+            <li>Built governance and handoff processes that allowed the chapter to continue independently after the founding board graduated.</li>
+          </ul>
+          <div class="v-tags">
+            <span class="v-tag">Founder</span>
+            <span class="v-tag">AIChE</span>
+            <span class="v-tag">UTEC</span>
+            <span class="v-tag">Student chapter</span>
+            <span class="v-tag">Chemical Engineering</span>
+          </div>
+        </div>
+      </li>
+
+      <li class="v-item">
+        <div class="v-card">
+          <div class="v-head">
+            <div class="v-title-block">
+              <h3 class="v-role">Volunteer Co-Captain</h3>
+              <p class="v-org"><strong>Fundación Peruana de Cáncer</strong> · Ponle Corazón 2021</p>
+            </div>
+            <p class="v-dates">Aug 2021</p>
+          </div>
+          <p class="v-description">Served as Team Co-Captain for Ponle Corazón 2021, a fundraising campaign by the Fundación Peruana de Cáncer focused on supporting cancer patients from regions outside Lima who required financial assistance to continue their treatment. Coordinated and led a group of 40 volunteers, supporting the organization and guidance of the team throughout the campaign.</p>
+          <div class="v-tags">
+            <span class="v-tag">Volunteer leadership</span>
+            <span class="v-tag">Fundraising</span>
+            <span class="v-tag">Health</span>
+          </div>
+        </div>
+      </li>
+
+      <li class="v-item">
+        <div class="v-card">
+          <div class="v-head">
+            <div class="v-title-block">
+              <h3 class="v-role">Peer Mentor — Lead First-Year Student Mentor</h3>
+              <p class="v-org"><strong>UTEC</strong> · Universidad de Ingeniería y Tecnología</p>
+            </div>
+            <p class="v-dates">Mar 2019 — Nov 2019</p>
+          </div>
+          <p class="v-description">Participated in UTEC's first-year mentoring program, which aims to help incoming students adapt more effectively to university life through the guidance of high-performing upperclassmen. Designated as Lead Mentor within the Chemical Engineering mentoring group, with responsibility for coordinating the broader mentoring effort for that program cohort in addition to individual mentoring sessions.</p>
+          <div class="v-tags">
+            <span class="v-tag">Peer mentoring</span>
+            <span class="v-tag">Education</span>
+            <span class="v-tag">UTEC</span>
+          </div>
+        </div>
+      </li>
+
+      <li class="v-item">
+        <div class="v-card">
+          <div class="v-head">
+            <div class="v-title-block">
+              <h3 class="v-role">Enrollment Advisor and University Week Team Leader</h3>
+              <p class="v-org"><strong>UTEC</strong> · Universidad de Ingeniería y Tecnología</p>
+            </div>
+            <p class="v-dates">2017 — 2019</p>
+          </div>
+          <p class="v-description">Two concurrent long-running volunteer roles at UTEC during undergraduate studies. As Enrollment Advisor (2017-2019), guided fellow students in selecting course schedules that optimized time management throughout the semester, with particular focus on students at academic risk who needed help building balanced and manageable plans. As University Week Team Leader (2017-2019), supported the organization and coordination of student participation in UTEC's University Week, a campus-wide social event designed to help students decompress after midterm examinations through competitions in sports, virtual games, arts, and other disciplines.</p>
+          <div class="v-tags">
+            <span class="v-tag">Academic advising</span>
+            <span class="v-tag">Event coordination</span>
+            <span class="v-tag">UTEC</span>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+  </section>
+</div>
+
+<!-- COMMUNITIES -->
+<div class="wrap">
+  <section class="block reveal" id="communities">
+    <div class="section-head">
+      <p class="section-eyebrow">Where I belong</p>
+      <h2 class="section-title">Communities and affiliations</h2>
+      <p class="section-sub">The organizations and networks I have been part of, from founding a student chapter at UTEC to joining the CMU Heinz community as a graduate student.</p>
+    </div>
+    <div class="comm-grid">
+      <div class="comm-card">
+        <div class="comm-icon c1" aria-hidden="true">AI<br>ChE</div>
+        <div class="comm-body">
+          <p class="comm-name">AIChE — American Institute of Chemical Engineers</p>
+          <p class="comm-role">Founder of UTEC Student Chapter; Comms Coordinator, Sección Perú</p>
+          <p class="comm-meta">Member since <strong>2017</strong></p>
+        </div>
+      </div>
+      <div class="comm-card">
+        <div class="comm-icon c2" aria-hidden="true">LB</div>
+        <div class="comm-body">
+          <p class="comm-name">Latinburgh</p>
+          <p class="comm-role">Vice President</p>
+          <p class="comm-meta">Member since <strong>2025</strong> · Carnegie Mellon University</p>
+        </div>
+      </div>
+      <div class="comm-card">
+        <div class="comm-icon c3" aria-hidden="true">CMU</div>
+        <div class="comm-body">
+          <p class="comm-name">CMU Heinz College</p>
+          <p class="comm-role">MISM-BIDA student; Admissions Ambassador</p>
+          <p class="comm-meta">Member since <strong>2025</strong></p>
+        </div>
+      </div>
+      <div class="comm-card">
+        <div class="comm-icon c4" aria-hidden="true">UTEC</div>
+        <div class="comm-body">
+          <p class="comm-name">UTEC Alumni Network</p>
+          <p class="comm-role">Chemical Engineering, Class of 2019</p>
+          <p class="comm-meta">Active in mentoring and OpenDay since <strong>2017</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- QUOTE -->
+<div class="wrap">
+  <div class="values-quote reveal">
+    <blockquote>
+      "Academic achievements are important and valuable, and I have earned my share of them. But extracurricular activities, volunteering, and similar pursuits have allowed me to build strong connections with more people, and to plant trees whose fruits are still growing today, opening doors to new opportunities for others. I value that deeply. Continuous learning and new projects also grow from hobbies, from the things one pursues with genuine passion in their free time, which have often grown into meaningful, consequential work."
+    </blockquote>
+    <p class="attrib">— A personal reflection</p>
+  </div>
+</div>
+
+<!-- INTERESTS -->
+<div class="wrap">
+  <section class="block reveal" id="interests">
+    <div class="section-head">
+      <p class="section-eyebrow">Outside of work</p>
+      <h2 class="section-title">Personal interests</h2>
+      <p class="section-sub">The things I pursue out of curiosity, not obligation. Some of them overlap with the work; most of them do not, and that is the point.</p>
+    </div>
+    <div class="interest-grid">
+
+      <article class="interest-card">
+        <div class="interest-img i-1" aria-hidden="true">📈</div>
+        <div class="interest-body">
+          <h4 class="interest-name">Financial investing</h4>
+          <p class="interest-desc">Actively investing in public equities with both short-term and long-term strategies, alongside analyzing financial statements, studying market dynamics, and building a disciplined approach to portfolio management and capital allocation.</p>
+        </div>
+      </article>
+
+      <article class="interest-card">
+        <div class="interest-img i-2" aria-hidden="true">📚</div>
+        <div class="interest-body">
+          <h4 class="interest-name">Lifelong learning</h4>
+          <p class="interest-desc">Driven by genuine curiosity across disciplines and a commitment to lifelong learning. Learning happens through books, research papers, courses, documentaries, videos, conversations, and increasingly through using AI as a copilot for deeper understanding.</p>
+        </div>
+      </article>
+
+      <article class="interest-card">
+        <div class="interest-img i-3" aria-hidden="true">⚙️</div>
+        <div class="interest-body">
+          <h4 class="interest-name">Personal projects</h4>
+          <p class="interest-desc">Building tools, automations, and small applications that solve real problems, for myself or for people I know. The best ones start as a personal solution and end as something someone else finds useful.</p>
+        </div>
+      </article>
+
+      <article class="interest-card">
+        <div class="interest-img i-4" aria-hidden="true">🔬</div>
+        <div class="interest-body">
+          <h4 class="interest-name">Independent research</h4>
+          <p class="interest-desc">Exploring topics at the intersection of AI, data systems and other fields, outside of formal academic settings. Reading papers, running small experiments, and writing up findings for my own understanding before anything else.</p>
+        </div>
+      </article>
+
+      <article class="interest-card">
+        <div class="interest-img i-5" aria-hidden="true">🎓</div>
+        <div class="interest-body">
+          <h4 class="interest-name">Teaching</h4>
+          <p class="interest-desc">Finding genuine satisfaction in making complex ideas accessible. Whether in a classroom, a workshop, or a one-on-one conversation, the process of breaking something difficult down into clear explanations is one of the most rewarding things I do.</p>
+        </div>
+      </article>
+
+      <article class="interest-card">
+        <div class="interest-img i-6" aria-hidden="true">🤝</div>
+        <div class="interest-body">
+          <h4 class="interest-name">Mentoring and coaching</h4>
+          <p class="interest-desc">Helping students and early professionals navigate academic growth, career decisions, technical development, and the transition into industry. Passionate about supporting people in achieving their academic, professional, and personal goals.</p>
+        </div>
+      </article>
+
+      <article class="interest-card">
+        <div class="interest-img i-7" aria-hidden="true">♟</div>
+        <div class="interest-body">
+          <h4 class="interest-name">Chess</h4>
+          <p class="interest-desc">Active on Lichess, mostly Blitz. Studying tactics daily and tracking rating patterns over time. It also became a time series forecasting project.</p>
+        </div>
+      </article>
+
+      <article class="interest-card">
+        <div class="interest-img i-8" aria-hidden="true">🎨</div>
+        <div class="interest-body">
+          <h4 class="interest-name">Graphic design</h4>
+          <p class="interest-desc">Working with CorelDRAW, Canva, and occasionally Blender for personal and professional creative work. Designing visual assets, layouts, and compositions. Creative design is also one of the main ways I express creativity and translate ideas into visual form.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+</div>
+
+<!-- CAUSES -->
+<div class="wrap">
+  <section class="block reveal" id="causes">
+    <div class="section-head">
+      <p class="section-eyebrow">Things I care about</p>
+      <h2 class="section-title">Causes</h2>
+      <p class="section-sub">Efforts that can compound across communities and generations.</p>
+    </div>
+    <div class="causes-grid">
+      <div class="cause-card">
+        <h4>Education</h4>
+        <p>Knowledge is one of the few things that multiplies when shared. Teaching, mentoring, student chapters, and open knowledge initiatives create opportunities that extend far beyond a single person, strengthening communities through learning and collaboration.</p>
+      </div>
+      <div class="cause-card">
+        <h4>Financial literacy</h4>
+        <p>Understanding money, markets, and long-term financial planning is a skill most people are never formally taught. Closing that gap matters, especially for first-generation professionals navigating these decisions without a roadmap.</p>
+      </div>
+      <div class="cause-card">
+        <h4>AI for everyone</h4>
+        <p>AI has the potential to amplify human capability across education, science, business, and everyday life. Inclusive tools, accessible learning resources, and clear conversations about the strengths and limits of these systems can help broaden participation and create more meaningful impact across communities.</p>
+      </div>
+      <div class="cause-card">
+        <h4>Cancer support</h4>
+        <p>Healthcare can have a profound impact on people and families during vulnerable moments. Supporting access to care, treatment, and community resources is one way to help reduce uncertainty and improve quality of life for those who need it most.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">© <span id="footer-year"></span> Arturo Arias · <a href="index.html" style="color:inherit;">Back to home</a></div>
+</footer>
+
+<script>
+(function () {
+  const btn = document.getElementById('themeToggle');
+  const html = document.documentElement;
+  function applyTheme(dark) {
+    if (dark) html.setAttribute('data-theme', 'dark');
+    else html.removeAttribute('data-theme');
+  }
+  const saved = localStorage.getItem('theme');
+  applyTheme(saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches);
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+    if (!localStorage.getItem('theme')) applyTheme(e.matches);
+  });
+  btn.addEventListener('click', () => {
+    const isDark = html.getAttribute('data-theme') === 'dark';
+    applyTheme(!isDark);
+    localStorage.setItem('theme', isDark ? 'light' : 'dark');
+  });
+})();
+
+(function () {
+  const hamburger = document.getElementById('navHamburger');
+  if (!hamburger) return;
+  hamburger.addEventListener('click', () => {
+    const navbar = hamburger.closest('.navbar');
+    const isOpen = navbar.classList.toggle('nav-open');
+    hamburger.setAttribute('aria-expanded', String(isOpen));
+  });
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.addEventListener('click', () => {
+      hamburger.closest('.navbar').classList.remove('nav-open');
+      hamburger.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+
+(function () {
+  const els = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.08 });
+  els.forEach(el => io.observe(el));
+})();
+
+(function () {
+  const tabs = document.querySelectorAll('#tabsRow .tab');
+  const tabMap = new Map();
+  tabs.forEach(a => {
+    const href = a.getAttribute('href');
+    if (!href || !href.startsWith('#')) return;
+    const sec = document.querySelector(href);
+    if (sec) tabMap.set(sec, a);
+  });
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        tabs.forEach(t => t.classList.remove('active'));
+        const t = tabMap.get(e.target);
+        if (t) t.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+  tabMap.forEach((_, sec) => io.observe(sec));
+})();
+
+document.getElementById('footer-year').textContent = new Date().getFullYear();
+</script>
+<script src="nav-footer.js"></script>
+</body>
+</html>

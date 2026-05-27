@@ -1,0 +1,993 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KFK6J3MN');</script>
+<!-- End Google Tag Manager -->
+<link rel="icon" type="image/png" href="favicon.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>All Skills — Arturo Arias</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+/* ---------- Tokens ---------- */
+:root {
+  --primary: rgb(0, 0, 190);
+  --primary-700: rgb(0, 0, 150);
+  --bg: #ffffff;
+  --bg-alt: #f5f7fb;
+  --card-bg: #e6f1fb;
+  --text: #0a0a3a;
+  --text-muted: #5f5e5a;
+  --text-soft: #2b2b5a;
+  --border: #e3e8f0;
+  --accent-expert: rgb(0, 0, 190);
+  --accent-advanced: #2856d6;
+  --accent-intermediate: #5b7fd9;
+  --accent-basic: #a8b8d8;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --maxw: 1180px;
+  --nav-h: 68px;
+  --transition: 250ms cubic-bezier(.4,0,.2,1);
+}
+[data-theme="dark"] {
+  --primary: rgb(41, 98, 255);
+  --bg: #050510;
+  --bg-alt: #0d0d2b;
+  --card-bg: #0d0d2b;
+  --text: #e8e8f5;
+  --text-muted: #b0bcdd;
+  --text-soft: #c8cee8;
+  --border: rgba(41,98,255,0.18);
+  --accent-expert: #9bb8ff;
+  --accent-advanced: #7d9af0;
+  --accent-intermediate: #6680c8;
+  --accent-basic: #4a5680;
+}
+[data-theme="dark"] body {
+  background: radial-gradient(ellipse at 30% 20%, #0a0a2e 0%, #050510 50%, #000008 100%);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  transition: background var(--transition), color var(--transition);
+}
+a { color: var(--primary); text-decoration: none; }
+a:hover { text-decoration: underline; text-underline-offset: 3px; }
+[data-theme="dark"] a { color: #9bb8ff; }
+
+/* ---------- Scroll progress ---------- */
+.scroll-progress {
+  position: fixed; top: 0; left: 0;
+  height: 3px; width: 0%;
+  background: var(--primary); z-index: 1000;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  position: sticky; top: 0; z-index: 900;
+  background: rgba(255,255,255,0.88);
+  backdrop-filter: saturate(160%) blur(10px);
+  -webkit-backdrop-filter: saturate(160%) blur(10px);
+  border-bottom: 1px solid var(--border);
+  height: var(--nav-h);
+  display: flex; align-items: center;
+}
+[data-theme="dark"] .navbar { background: rgba(5,5,16,0.85); }
+.nav-inner {
+  width: 100%; max-width: var(--maxw);
+  margin: 0 auto; padding: 0 24px;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+}
+.brand {
+  font-weight: 700; font-size: 18px;
+  color: var(--text); letter-spacing: -0.01em;
+  display: flex; align-items: center; gap: 10px; text-decoration: none;
+}
+.brand:hover { text-decoration: none; }
+.brand-mark {
+  width: 32px; height: 32px; border-radius: 50%;
+  overflow: hidden; flex-shrink: 0;
+}
+.brand-mark img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.nav-links {
+  display: flex; gap: 4px;
+  list-style: none; margin: 0; padding: 0;
+}
+.nav-links a {
+  color: var(--text-muted); font-size: 14px; font-weight: 500;
+  padding: 8px 12px; border-radius: var(--radius-sm); text-decoration: none;
+  transition: color var(--transition), background var(--transition);
+}
+.nav-links a:hover { color: var(--text); background: var(--bg-alt); }
+.nav-links a.active { color: var(--primary); background: var(--card-bg); }
+[data-theme="dark"] .nav-links a.active { color: #9bb8ff; }
+.theme-toggle {
+  background: transparent; border: 1px solid var(--border); color: var(--text);
+  width: 36px; height: 36px; border-radius: 8px;
+  display: grid; place-items: center; cursor: pointer;
+  transition: background var(--transition), border-color var(--transition);
+}
+.theme-toggle:hover { background: var(--bg-alt); }
+.theme-toggle svg { width: 16px; height: 16px; }
+.theme-toggle .icon-sun { display: none; }
+[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
+[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+
+.nav-actions { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+.nav-hamburger {
+  display: none;
+  background: transparent; border: 1px solid var(--border);
+  color: var(--text); width: 36px; height: 36px; border-radius: 8px;
+  place-items: center; cursor: pointer;
+  transition: background var(--transition);
+}
+.nav-hamburger:hover { background: var(--bg-alt); }
+.nav-hamburger svg { width: 20px; height: 20px; pointer-events: none; overflow: visible; }
+.nav-hamburger .bar { transition: opacity 0.2s, transform 0.2s; }
+.nav-hamburger .bar-top { transform-origin: 10px 5px; }
+.nav-hamburger .bar-mid { transform-origin: 10px 10px; }
+.nav-hamburger .bar-bot { transform-origin: 10px 15px; }
+.navbar.nav-open .nav-hamburger .bar-top { transform: translateY(5px) rotate(45deg); }
+.navbar.nav-open .nav-hamburger .bar-mid { opacity: 0; }
+.navbar.nav-open .nav-hamburger .bar-bot { transform: translateY(-5px) rotate(-45deg); }
+
+/* ---------- Layout ---------- */
+.wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+
+/* ---------- Back link ---------- */
+.back-link {
+  display: inline-flex; align-items: center; gap: 6px;
+  margin-top: 24px;
+  font-size: 14px; font-weight: 500; color: var(--text-muted);
+}
+.back-link:hover { color: var(--primary); text-decoration: none; }
+.back-link svg { width: 14px; height: 14px; transition: transform var(--transition); }
+.back-link:hover svg { transform: translateX(-3px); }
+
+/* ---------- Page header ---------- */
+.page-header { padding: 32px 0 24px; }
+.page-eyebrow {
+  color: var(--primary); font-size: 12px; font-weight: 600;
+  letter-spacing: 0.1em; text-transform: uppercase; margin: 0 0 8px;
+}
+[data-theme="dark"] .page-eyebrow { color: #9bb8ff; }
+.page-title {
+  font-size: clamp(32px, 4vw, 44px); font-weight: 800;
+  letter-spacing: -0.025em; line-height: 1.1; margin: 0 0 12px;
+}
+.page-sub { font-size: 17px; color: var(--text-muted); max-width: 640px; margin: 0; }
+
+/* ---------- Summary cards ---------- */
+.summary-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px; margin: 28px 0 36px;
+}
+.summary-card {
+  padding: 18px 20px; border: 1px solid var(--border);
+  border-radius: var(--radius-md); background: var(--bg);
+}
+[data-theme="dark"] .summary-card { background: var(--bg-alt); }
+.summary-card .num {
+  font-size: 28px; font-weight: 700; color: var(--primary);
+  letter-spacing: -0.02em; line-height: 1; margin: 0 0 6px;
+  font-variant-numeric: tabular-nums;
+}
+[data-theme="dark"] .summary-card .num { color: #9bb8ff; }
+.summary-card .lbl { font-size: 12.5px; color: var(--text-muted); margin: 0; font-weight: 500; }
+.summary-card.lvl-expert       .num { color: var(--accent-expert); }
+.summary-card.lvl-advanced     .num { color: var(--accent-advanced); }
+.summary-card.lvl-intermediate .num { color: var(--accent-intermediate); }
+.summary-card.lvl-basic     .num { color: var(--accent-basic); }
+
+/* ---------- Controls bar (sticky) ---------- */
+.controls {
+  position: sticky; top: var(--nav-h); z-index: 50;
+  background: var(--bg); border-bottom: 1px solid var(--border);
+  padding: 16px 0; margin-bottom: 24px;
+}
+.search-wrap { position: relative; margin-bottom: 14px; }
+.search-wrap svg.icon-search {
+  position: absolute; left: 16px; top: 50%;
+  transform: translateY(-50%); width: 18px; height: 18px;
+  color: var(--text-muted); pointer-events: none;
+}
+.search-wrap input {
+  width: 100%; padding: 14px 48px 14px 48px;
+  font-family: inherit; font-size: 16px;
+  border: 1px solid var(--border); border-radius: var(--radius-md);
+  background: var(--bg-alt); color: var(--text);
+  transition: border-color var(--transition), box-shadow var(--transition), background var(--transition);
+}
+.search-wrap input:focus {
+  outline: none; border-color: var(--primary);
+  background: var(--bg); box-shadow: 0 0 0 3px rgba(0,0,190,0.12);
+}
+.search-wrap input::placeholder { color: var(--text-muted); }
+.search-clear {
+  position: absolute; right: 14px; top: 50%;
+  transform: translateY(-50%); width: 24px; height: 24px;
+  border-radius: 50%; border: none; background: var(--border);
+  color: var(--text); cursor: pointer; display: none;
+  align-items: center; justify-content: center;
+  font-size: 16px; line-height: 1; padding: 0;
+}
+.search-clear.visible { display: flex; }
+.search-clear:hover { background: var(--primary); color: #fff; }
+.kbd-hint {
+  position: absolute; right: 14px; top: 50%;
+  transform: translateY(-50%);
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 11px; padding: 3px 8px;
+  border: 1px solid var(--border); border-radius: 4px;
+  color: var(--text-muted); background: var(--bg); pointer-events: none;
+}
+.search-wrap.has-text .kbd-hint { display: none; }
+
+.controls-row {
+  display: flex; gap: 12px; flex-wrap: wrap;
+  align-items: center; justify-content: space-between;
+}
+.filter-group { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+.filter-label {
+  font-size: 12px; font-weight: 600; text-transform: uppercase;
+  letter-spacing: 0.06em; color: var(--text-muted); margin-right: 4px;
+}
+.chip {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 5px 12px; border: 1px solid var(--border);
+  background: var(--bg); color: var(--text);
+  border-radius: 999px; font-size: 13px; font-weight: 500;
+  cursor: pointer; font-family: inherit;
+  transition: color var(--transition), border-color var(--transition), background var(--transition);
+}
+[data-theme="dark"] .chip { background: var(--bg-alt); }
+.chip:hover { border-color: var(--primary); color: var(--primary); }
+.chip.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+.chip .count {
+  font-size: 11px; font-weight: 600; padding: 1px 6px;
+  border-radius: 999px; background: var(--bg-alt); color: var(--text-muted);
+}
+.chip.active .count { background: rgba(255,255,255,0.22); color: #fff; }
+.chip.lvl-expert.active       { background: var(--accent-expert);       border-color: var(--accent-expert); }
+.chip.lvl-advanced.active     { background: var(--accent-advanced);     border-color: var(--accent-advanced); }
+.chip.lvl-intermediate.active { background: var(--accent-intermediate); border-color: var(--accent-intermediate); }
+.chip.lvl-basic.active     { background: var(--accent-basic);     border-color: var(--accent-basic); }
+
+select.chip {
+  -webkit-appearance: none; -moz-appearance: none; appearance: none;
+  padding-right: 28px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%235f5e5a' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><path d='M6 9l6 6 6-6'/></svg>");
+  background-repeat: no-repeat; background-position: right 10px center; background-size: 12px 12px;
+}
+[data-theme="dark"] select.chip {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23b9b9d6' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><path d='M6 9l6 6 6-6'/></svg>");
+  background-repeat: no-repeat; background-position: right 10px center; background-size: 12px 12px;
+}
+
+.view-toggle {
+  display: flex; border: 1px solid var(--border);
+  border-radius: var(--radius-sm); overflow: hidden;
+}
+.view-toggle button {
+  background: var(--bg); border: none; padding: 7px 10px;
+  cursor: pointer; color: var(--text-muted); font-family: inherit;
+  display: grid; place-items: center;
+  transition: color var(--transition), background var(--transition);
+}
+[data-theme="dark"] .view-toggle button { background: var(--bg-alt); }
+.view-toggle button:hover { color: var(--primary); }
+.view-toggle button.active { background: var(--primary); color: #fff; }
+.view-toggle button + button { border-left: 1px solid var(--border); }
+.view-toggle svg { width: 14px; height: 14px; }
+
+.results-meta {
+  display: flex; justify-content: space-between; align-items: center;
+  margin: 0 0 18px; font-size: 13.5px; color: var(--text-muted);
+  flex-wrap: wrap; gap: 10px;
+}
+.results-meta strong { color: var(--text); font-weight: 600; }
+.clear-all {
+  background: transparent; border: none; color: var(--primary);
+  font-family: inherit; font-size: 13px; font-weight: 500;
+  cursor: pointer; padding: 4px 8px; border-radius: 4px;
+}
+.clear-all:hover { background: var(--card-bg); text-decoration: underline; }
+.clear-all:disabled { opacity: 0.4; cursor: not-allowed; }
+.clear-all:disabled:hover { background: transparent; text-decoration: none; }
+[data-theme="dark"] .clear-all { color: #9bb8ff; }
+
+/* ---------- Skill cards ---------- */
+.skills-container { padding-bottom: 80px; }
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 12px;
+}
+.skill-card {
+  padding: 16px 18px; border: 1px solid var(--border);
+  border-radius: var(--radius-md); background: var(--bg);
+  transition: border-color var(--transition), transform var(--transition);
+  display: flex; flex-direction: column; gap: 10px;
+}
+[data-theme="dark"] .skill-card { background: var(--bg-alt); }
+.skill-card:hover { border-color: var(--primary); transform: translateY(-2px); }
+.skill-head {
+  display: flex; align-items: flex-start;
+  justify-content: space-between; gap: 10px;
+}
+.skill-name {
+  font-size: 15px; font-weight: 600; color: var(--text);
+  margin: 0; letter-spacing: -0.005em;
+}
+.skill-name mark {
+  background: rgba(0,0,190,0.18); color: inherit;
+  padding: 1px 2px; border-radius: 2px;
+}
+[data-theme="dark"] .skill-name mark { background: rgba(155,184,255,0.28); }
+.skill-cat { font-size: 11.5px; color: var(--text-muted); margin: 2px 0 0; }
+.lvl-badge {
+  font-size: 10.5px; font-weight: 600; padding: 3px 8px;
+  border-radius: 999px; text-transform: uppercase;
+  letter-spacing: 0.04em; flex-shrink: 0;
+}
+.lvl-badge.lvl-expert       { background: rgba(0,0,190,0.12);   color: var(--accent-expert); }
+.lvl-badge.lvl-advanced     { background: rgba(40,86,214,0.12); color: var(--accent-advanced); }
+.lvl-badge.lvl-intermediate { background: rgba(91,127,217,0.14); color: var(--accent-intermediate); }
+.lvl-badge.lvl-basic     { background: rgba(168,184,216,0.20); color: #6a7a99; }
+[data-theme="dark"] .lvl-badge.lvl-expert       { background: rgba(155,184,255,0.18); color: #9bb8ff; }
+[data-theme="dark"] .lvl-badge.lvl-advanced     { background: rgba(125,154,240,0.18); color: #b9cbff; }
+[data-theme="dark"] .lvl-badge.lvl-intermediate { background: rgba(102,128,200,0.20); color: #c8d2ff; }
+[data-theme="dark"] .lvl-badge.lvl-basic     { background: rgba(74,86,128,0.30);   color: #b9b9d6; }
+
+/* ---------- 3-rectangle level indicator ---------- */
+.skill-card .lvl { display: flex; gap: 5px; width: 100%; }
+.skill-card .lvl i { flex: 1; height: 7px; border-radius: 4px; background: rgba(0,0,190,0.10); font-style: normal; display: block; }
+.skill-card .lvl-basic    i:nth-child(1) { background: var(--primary); }
+.skill-card .lvl-intermediate i:nth-child(1),
+.skill-card .lvl-intermediate i:nth-child(2) { background: var(--primary); }
+.skill-card .lvl-advanced i { background: var(--primary); }
+.skill-card .lvl-expert   i { background: linear-gradient(105deg, #1a4fff 0%, #6fa8ff 50%, #1a4fff 100%); box-shadow: 0 1px 6px rgba(41,98,255,0.45); }
+[data-theme="dark"] .skill-card .lvl i { background: rgba(92,143,255,0.15); }
+[data-theme="dark"] .skill-card .lvl-basic    i:nth-child(1) { background: #5c8fff; }
+[data-theme="dark"] .skill-card .lvl-intermediate i:nth-child(1),
+[data-theme="dark"] .skill-card .lvl-intermediate i:nth-child(2) { background: #5c8fff; }
+[data-theme="dark"] .skill-card .lvl-advanced i { background: #5c8fff; }
+[data-theme="dark"] .skill-card .lvl-expert   i { background: linear-gradient(105deg, #3d73ff 0%, #90c0ff 50%, #3d73ff 100%); box-shadow: 0 1px 8px rgba(80,140,255,0.55); }
+.skill-level-txt { font-size: 12px; color: var(--text-muted); flex-shrink: 0; }
+.skill-level-txt.lvl-expert { font-weight: 700; color: var(--primary); }
+[data-theme="dark"] .skill-level-txt.lvl-expert { color: #9bb8ff; }
+
+/* ---------- List view ---------- */
+.skills-grid.list-view {
+  display: flex; flex-direction: column; gap: 1px;
+  background: var(--border); border: 1px solid var(--border);
+  border-radius: var(--radius-md); overflow: hidden;
+}
+.skills-grid.list-view .skill-card {
+  border: none; border-radius: 0; flex-direction: row;
+  align-items: center; padding: 12px 18px;
+  background: var(--bg); gap: 16px;
+}
+[data-theme="dark"] .skills-grid.list-view .skill-card { background: var(--bg-alt); }
+.skills-grid.list-view .skill-card:hover { transform: none; background: var(--card-bg); }
+[data-theme="dark"] .skills-grid.list-view .skill-card:hover { background: var(--bg); }
+.skills-grid.list-view .skill-head { flex: 1; min-width: 0; }
+.skills-grid.list-view .skill-name { font-size: 14px; }
+.skills-grid.list-view .skill-cat {
+  display: inline; margin-left: 8px; font-size: 12px;
+}
+.skills-grid.list-view .skill-cat::before { content: "· "; opacity: 0.5; }
+.skills-grid.list-view .lvl { flex: 0 0 90px; }
+.skills-grid.list-view .skill-level-txt { display: none; }
+
+/* ---------- Empty state ---------- */
+.empty-state { text-align: center; padding: 64px 24px; color: var(--text-muted); }
+.empty-state svg {
+  width: 48px; height: 48px; color: var(--text-muted);
+  opacity: 0.4; margin-bottom: 16px;
+}
+.empty-state h3 { font-size: 18px; color: var(--text); margin: 0 0 6px; font-weight: 600; }
+.empty-state p { font-size: 14px; margin: 0; }
+
+/* ---------- Tip strip ---------- */
+.tip-strip {
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 14px; margin: 0 0 20px;
+  background: var(--card-bg); border-radius: var(--radius-sm);
+  font-size: 13px; color: var(--text);
+}
+[data-theme="dark"] .tip-strip { background: rgba(155,184,255,0.10); }
+.tip-strip kbd {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 11px; padding: 2px 6px; background: var(--bg);
+  border: 1px solid var(--border); border-bottom-width: 2px;
+  border-radius: 4px; color: var(--text);
+}
+
+/* ---------- Footer ---------- */
+footer.site-footer {
+  border-top: 1px solid var(--border); padding: 28px 0;
+  text-align: center; color: var(--text-muted); font-size: 13px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 720px) {
+  .nav-hamburger { display: grid; }
+  .nav-links {
+    display: none;
+    position: fixed; top: 68px; left: 0; right: 0;
+    flex-direction: column; gap: 2px;
+    padding: 12px 16px 20px;
+    background: rgba(255,255,255,0.97);
+    backdrop-filter: saturate(160%) blur(10px);
+    -webkit-backdrop-filter: saturate(160%) blur(10px);
+    border-bottom: 1px solid var(--border);
+    z-index: 800;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  }
+  [data-theme="dark"] .nav-links { background: rgba(5,5,40,0.97); }
+  .navbar.nav-open .nav-links { display: flex; }
+  .nav-links a { padding: 10px 14px; }
+  .controls-row { flex-direction: column; align-items: stretch; }
+  .filter-group { width: 100%; overflow-x: auto; flex-wrap: nowrap; padding-bottom: 4px; }
+  .filter-group::-webkit-scrollbar { height: 4px; }
+  .kbd-hint { display: none; }
+  .search-wrap input { padding: 12px 44px 12px 44px; font-size: 15px; }
+}
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KFK6J3MN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<!-- Navbar -->
+<header class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="brand" aria-label="Home">
+      <span class="brand-mark"><img src="assets/img/avatar.jpg" alt="Arturo Arias" /></span>
+      <span>Arturo Arias</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="index.html#hero">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#education">Education</a></li>
+        <li><a href="index.html#achievements">Achievements</a></li>
+        <li><a href="index.html#certifications">Certifications</a></li>
+        <li><a href="index.html#blog">Insights</a></li>
+        <li><a href="index.html#stack" class="active">Skills</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      </button>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+          <line class="bar bar-top" x1="2" y1="5" x2="18" y2="5"/>
+          <line class="bar bar-mid" x1="2" y1="10" x2="18" y2="10"/>
+          <line class="bar bar-bot" x1="2" y1="15" x2="18" y2="15"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Back -->
+<div class="wrap">
+  <a href="index.html#stack" class="back-link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+    Back to home
+  </a>
+</div>
+
+<!-- Page header -->
+<div class="wrap">
+  <div class="page-header">
+    <p class="page-eyebrow">Full breakdown</p>
+    <h1 class="page-title">All skills</h1>
+    <p class="page-sub">Every tool, language, method, and concept I've worked with across data, BI, AI, and engineering. Filter by category, proficiency, or search — everything is one click away.</p>
+  </div>
+
+  <!-- Summary tiles -->
+  <div class="summary-row" id="summary"></div>
+</div>
+
+<!-- Sticky controls -->
+<div class="controls">
+  <div class="wrap">
+    <div class="search-wrap" id="searchWrap">
+      <svg class="icon-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="11" cy="11" r="7"></circle>
+        <path d="m20 20-3.5-3.5"></path>
+      </svg>
+      <input type="search" id="searchInput" placeholder="Search skills, tools, tags…" autocomplete="off" spellcheck="false" aria-label="Search skills" />
+      <span class="kbd-hint" aria-hidden="true">press &nbsp;/</span>
+      <button class="search-clear" id="searchClear" aria-label="Clear search">×</button>
+    </div>
+
+    <div class="controls-row">
+      <div class="filter-group" id="categoryChips" role="group" aria-label="Filter by category"></div>
+    </div>
+
+    <div class="controls-row" style="margin-top: 10px;">
+      <div class="filter-group">
+        <span class="filter-label">Level</span>
+        <div id="levelChips" style="display: flex; gap: 6px; flex-wrap: wrap;"></div>
+      </div>
+
+      <div class="filter-group" style="margin-left: auto;">
+        <span class="filter-label">Sort</span>
+        <select class="chip" id="sortSelect" aria-label="Sort skills">
+          <option value="default">By level (default)</option>
+          <option value="name-asc">Name A → Z</option>
+          <option value="name-desc">Name Z → A</option>
+        </select>
+
+        <div class="view-toggle" id="viewToggle" role="group" aria-label="View mode">
+          <button type="button" data-view="grid" aria-label="Grid view" title="Grid view">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+          </button>
+          <button type="button" data-view="list" aria-label="List view" title="List view">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6h13M8 12h13M8 18h13"/><circle cx="3.5" cy="6" r="1"/><circle cx="3.5" cy="12" r="1"/><circle cx="3.5" cy="18" r="1"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Skills grid -->
+<main class="wrap skills-container">
+  <p class="tip-strip">
+    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+    Tip — press <kbd>/</kbd> anywhere to jump to search, <kbd>Esc</kbd> to clear it. Combine level chips to filter by multiple levels.
+  </p>
+
+  <div class="results-meta">
+    <p id="resultsMeta" style="margin: 0;"></p>
+    <button class="clear-all" id="clearAll" disabled>Clear all filters</button>
+  </div>
+
+  <div class="skills-grid" id="skillsGrid"></div>
+
+  <div class="empty-state" id="emptyState" style="display: none;">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <circle cx="11" cy="11" r="7"></circle>
+      <path d="m20 20-3.5-3.5"></path>
+    </svg>
+    <h3>No skills match those filters</h3>
+    <p>Try clearing a filter or broadening your search.</p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">© <span id="footer-year"></span> Arturo Arias · <a href="index.html" style="color:inherit;">Back to home</a></div>
+</footer>
+
+<script>
+/* ---------- Dataset ---------- */
+const SKILLS = [
+  /* Business Intelligence */
+  { name: "Power BI",               cat: "Business Intelligence", level: "Expert",       tags: ["dashboard","microsoft","bi","dax","pbix","reports"] },
+  { name: "Microsoft Fabric",       cat: "Business Intelligence", level: "Advanced",     tags: ["microsoft","lakehouse","semantic-model","bi","onelake"] },
+  { name: "Tableau",                cat: "Business Intelligence", level: "Advanced",     tags: ["dashboard","bi","salesforce","visualization"] },
+  { name: "Looker Studio",          cat: "Business Intelligence", level: "Advanced",     tags: ["dashboard","bi","google","reports"] },
+  { name: "Microsoft Excel",        cat: "Business Intelligence", level: "Expert",       tags: ["spreadsheet","pivot","charts","formulas"] },
+  { name: "DAX",                    cat: "Business Intelligence", level: "Expert",       tags: ["powerbi","measures","calculated-columns","kpi"] },
+  { name: "Power Query (M)",        cat: "Business Intelligence", level: "Advanced",     tags: ["etl","powerbi","data-transformation"] },
+  { name: "Data Visualization",     cat: "Business Intelligence", level: "Expert",       tags: ["charts","dashboards","storytelling","design"] },
+
+  /* Data Analytics */
+  { name: "SQL",                    cat: "Data Analytics",        level: "Expert",       tags: ["queries","joins","aggregations","database"] },
+  { name: "Pandas",                 cat: "Data Analytics",        level: "Expert",       tags: ["dataframe","python","wrangling","cleaning"] },
+  { name: "Google Analytics",       cat: "Data Analytics",        level: "Expert",       tags: ["ga4","web","tracking","sessions","events"] },
+  { name: "A/B Testing",            cat: "Data Analytics",        level: "Advanced",     tags: ["experiments","conversion","statistics","significance"] },
+  { name: "Time Series",            cat: "Data Analytics",        level: "Advanced",     tags: ["arima","forecasting","seasonality","trends"] },
+  { name: "NumPy",                  cat: "Data Analytics",        level: "Advanced",     tags: ["array","numerical","python","math"] },
+  { name: "Matplotlib",             cat: "Data Analytics",        level: "Expert",       tags: ["python","charts","visualization","plots"] },
+  { name: "Seaborn",                cat: "Data Analytics",        level: "Expert",       tags: ["python","statistical-plots","visualization"] },
+  { name: "Causal Inference",       cat: "Data Analytics",        level: "Advanced",     tags: ["did","propensity","counterfactual","policy"] },
+  { name: "Web Scraping",           cat: "Data Analytics",        level: "Advanced",     tags: ["scrapy","selenium","data-collection","python"] },
+  { name: "Geopandas",              cat: "Data Analytics",        level: "Basic",        tags: ["geospatial","maps","spatial","python"] },
+
+  /* Data Science */
+  { name: "Python",                 cat: "Data Science",          level: "Expert",       tags: ["scripting","analysis","automation","programming"] },
+  { name: "Machine Learning",       cat: "Data Science",          level: "Advanced",     tags: ["supervised","unsupervised","models","prediction"] },
+  { name: "Scikit-learn",           cat: "Data Science",          level: "Advanced",     tags: ["python","ml","algorithms","pipelines"] },
+  { name: "CRISP-DM",               cat: "Data Science",          level: "Advanced",     tags: ["methodology","process","data-science","framework"] },
+  { name: "SciPy",                  cat: "Data Science",          level: "Advanced",     tags: ["python","scientific","optimization","stats"] },
+  { name: "Data Modeling",          cat: "Data Science",          level: "Expert",       tags: ["schema","normalization","architecture","design"] },
+  { name: "Feature Engineering",    cat: "Data Science",          level: "Advanced",     tags: ["preprocessing","features","transformation","selection"] },
+  { name: "Model Evaluation",       cat: "Data Science",          level: "Advanced",     tags: ["metrics","crossval","roc","precision","recall"] },
+
+  /* Artificial Intelligence */
+  { name: "Large Language Models",  cat: "Artificial Intelligence", level: "Expert",     tags: ["llm","gpt","claude","foundation-models"] },
+  { name: "OpenAI API",             cat: "Artificial Intelligence", level: "Advanced",   tags: ["gpt","api","generative","completions"] },
+  { name: "Prompt Engineering",     cat: "Artificial Intelligence", level: "Expert",     tags: ["llm","few-shot","chain-of-thought","instructions"] },
+  { name: "RAG",                    cat: "Artificial Intelligence", level: "Advanced",   tags: ["retrieval","embeddings","llm","vector-search"] },
+  { name: "AI Automation",          cat: "Artificial Intelligence", level: "Advanced",   tags: ["agents","workflows","automation","llm"] },
+  { name: "Natural Language Processing", cat: "Artificial Intelligence", level: "Advanced", tags: ["nlp","text","language","tokenization"] },
+  { name: "Sentiment Analysis",     cat: "Artificial Intelligence", level: "Advanced",   tags: ["nlp","opinion","text-classification","social"] },
+  { name: "Computer Vision",        cat: "Artificial Intelligence", level: "Advanced",   tags: ["images","cnns","recognition","ocr"] },
+  { name: "Transformers",           cat: "Artificial Intelligence", level: "Advanced",   tags: ["attention","bert","gpt","architecture","llm"] },
+  { name: "Fine-tuning",            cat: "Artificial Intelligence", level: "Advanced",   tags: ["llm","pre-trained","adaptation","lora","peft"] },
+  { name: "Small Language Models",  cat: "Artificial Intelligence", level: "Advanced",   tags: ["slm","edge","efficient","phi","gemma"] },
+
+  /* Machine Learning */
+  { name: "Gradient Boosting",      cat: "Machine Learning",      level: "Advanced",     tags: ["xgboost","lightgbm","boosting","trees"] },
+  { name: "Random Forest",          cat: "Machine Learning",      level: "Advanced",     tags: ["trees","ensemble","bagging","feature-importance"] },
+  { name: "Classification",         cat: "Machine Learning",      level: "Advanced",     tags: ["supervised","binary","multiclass","labels"] },
+  { name: "Regression",             cat: "Machine Learning",      level: "Advanced",     tags: ["linear","logistic","prediction","continuous"] },
+  { name: "Clustering",             cat: "Machine Learning",      level: "Advanced",     tags: ["kmeans","segmentation","unsupervised","groups"] },
+  { name: "Dimensionality Reduction", cat: "Machine Learning",    level: "Advanced",     tags: ["pca","tsne","features","compression"] },
+  { name: "Deep Learning",          cat: "Machine Learning",      level: "Advanced",     tags: ["neural-networks","layers","backpropagation"] },
+  { name: "Convolutional Neural Networks", cat: "Machine Learning", level: "Advanced",   tags: ["cnn","image-recognition","computer-vision","filters"] },
+  { name: "Recurrent Neural Networks", cat: "Machine Learning",   level: "Advanced",     tags: ["rnn","sequences","time-series","text"] },
+  { name: "LSTM",                   cat: "Machine Learning",      level: "Advanced",     tags: ["long-short-term-memory","time-series","sequences","rnn"] },
+  { name: "Reinforcement Learning", cat: "Machine Learning",      level: "Advanced",     tags: ["rl","agents","rewards","policy","q-learning"] },
+  { name: "Transfer Learning",      cat: "Machine Learning",      level: "Advanced",     tags: ["pre-trained","fine-tuning","feature-extraction","domain"] },
+  { name: "Autoencoders",           cat: "Machine Learning",      level: "Advanced",     tags: ["unsupervised","latent-space","reconstruction","generative"] },
+  { name: "PyTorch",                cat: "Machine Learning",      level: "Advanced",     tags: ["python","deep-learning","tensors","autograd"] },
+  { name: "TensorFlow",             cat: "Machine Learning",      level: "Advanced",     tags: ["python","deep-learning","keras","graphs"] },
+  { name: "Anomaly Detection",      cat: "Machine Learning",      level: "Advanced",     tags: ["outliers","fraud","pyod","isolation-forest"] },
+  { name: "Survival Models",        cat: "Machine Learning",      level: "Advanced",     tags: ["churn","time-to-event","cox","kaplan-meier"] },
+
+  /* Cloud Platforms */
+  { name: "Google Cloud",           cat: "Cloud Platforms",       level: "Advanced",     tags: ["gcp","cloud","google","bigquery","vertex"] },
+  { name: "BigQuery",               cat: "Cloud Platforms",       level: "Advanced",     tags: ["gcp","warehouse","sql","analytics"] },
+  { name: "Amazon Athena",          cat: "Cloud Platforms",       level: "Advanced",     tags: ["aws","serverless","sql","s3","query"] },
+  { name: "Microsoft Azure",        cat: "Cloud Platforms",       level: "Intermediate", tags: ["microsoft","cloud","app-service","storage"] },
+  { name: "AWS",                    cat: "Cloud Platforms",       level: "Advanced",     tags: ["amazon","cloud","s3","ec2","lambda"] },
+  { name: "Google Colab",           cat: "Cloud Platforms",       level: "Expert",       tags: ["notebooks","python","cloud","gpu","collaboration"] },
+  { name: "GitHub",                 cat: "Cloud Platforms",       level: "Expert",       tags: ["git","scm","collaboration","actions","hosting"] },
+
+  /* Programming */
+  { name: "Object-Oriented Programming", cat: "Programming",      level: "Expert",       tags: ["oop","classes","design-patterns","abstraction"] },
+  { name: "API Development",        cat: "Programming",           level: "Expert",       tags: ["rest","requests","flask","fastapi","integration"] },
+  { name: "Java",                   cat: "Programming",           level: "Advanced",     tags: ["jvm","backend","oop","spring","enterprise"] },
+  { name: "Django",                 cat: "Programming",           level: "Advanced",     tags: ["python","web-framework","backend","azure"] },
+  { name: "JavaScript",             cat: "Programming",           level: "Intermediate", tags: ["web","frontend","scripting","es6"] },
+  { name: "Swift",                  cat: "Programming",           level: "Intermediate", tags: ["ios","apple","mobile","xcode"] },
+  { name: "HTML",                   cat: "Programming",           level: "Intermediate", tags: ["markup","web","frontend","semantics"] },
+  { name: "CSS",                    cat: "Programming",           level: "Advanced",     tags: ["styling","web","design","responsive"] },
+  { name: "Regular Expressions",    cat: "Programming",           level: "Advanced",     tags: ["regex","pattern-matching","text-processing"] },
+  { name: "C++",                    cat: "Programming",           level: "Intermediate", tags: ["systems","compiled","performance"] },
+  { name: "Jupyter Notebook",       cat: "Programming",           level: "Expert",       tags: ["notebook","python","data-science","interactive","ipynb"] },
+
+  /* Database */
+  { name: "Relational Databases",   cat: "Database",              level: "Expert",       tags: ["sql","tables","joins","normalization","acid"] },
+  { name: "NoSQL Databases",        cat: "Database",              level: "Advanced",     tags: ["mongodb","document","schema-less","key-value"] },
+  { name: "Entity-Relationship Modeling", cat: "Database",        level: "Advanced",     tags: ["er-diagram","schema","design","cardinality"] },
+  { name: "SQL*Plus / SQL Server",  cat: "Database",              level: "Advanced",     tags: ["oracle","tsql","stored-procedures","dba"] },
+
+  /* Statistics */
+  { name: "Hypothesis Testing",     cat: "Statistics",            level: "Expert",       tags: ["t-test","p-values","significance","chi-square"] },
+  { name: "Descriptive Statistics", cat: "Statistics",            level: "Expert",       tags: ["mean","median","distribution","variance"] },
+  { name: "Inferential Statistics", cat: "Statistics",            level: "Expert",       tags: ["confidence-intervals","inference","sampling"] },
+  { name: "Probability",            cat: "Statistics",            level: "Expert",       tags: ["distributions","random-variables","bayes"] },
+  { name: "Monte Carlo Simulations", cat: "Statistics",           level: "Expert",       tags: ["simulation","risk","sampling","stochastic","quantitative"] },
+  { name: "Linear Regression",      cat: "Statistics",            level: "Advanced",     tags: ["ols","prediction","coefficients","r-squared"] },
+  { name: "Bayesian Statistics",    cat: "Statistics",            level: "Advanced",     tags: ["bayes","prior","posterior","mcmc"] },
+
+  /* Data Engineering */
+  { name: "ETL and ELT",            cat: "Data Engineering",      level: "Expert",       tags: ["pipelines","extract","transform","load","integration"] },
+  { name: "Data Processing",        cat: "Data Engineering",      level: "Expert",       tags: ["cleaning","wrangling","transformation","quality"] },
+  { name: "Data Engineering",       cat: "Data Engineering",      level: "Expert",       tags: ["pipelines","orchestration","infrastructure","lakehouse"] },
+  { name: "CI/CD Pipelines",        cat: "Data Engineering",      level: "Advanced",     tags: ["automation","deployment","github-actions","devops"] },
+  { name: "MLOps",                  cat: "Data Engineering",      level: "Advanced",     tags: ["ml-pipelines","model-serving","monitoring","mlflow"] },
+
+  /* Chemical Engineering */
+  { name: "Chemical Engineering",   cat: "Chemical Engineering",  level: "Expert",       tags: ["process","reactions","unit-ops","degree"] },
+  { name: "Thermodynamics",         cat: "Chemical Engineering",  level: "Expert",       tags: ["energy","heat","equilibrium","entropy"] },
+  { name: "Mass & Heat Transfer",   cat: "Chemical Engineering",  level: "Advanced",     tags: ["diffusion","convection","separation","columns"] },
+  { name: "Chemical Process Simulation", cat: "Chemical Engineering", level: "Advanced", tags: ["hysys","aspen","promax","simulation"] },
+  { name: "Chemical Process Design", cat: "Chemical Engineering", level: "Advanced",     tags: ["flowsheets","equipment","pfd","pid"] },
+  { name: "Process Control",        cat: "Chemical Engineering",  level: "Advanced",     tags: ["pid","control-loops","instruments","feedback"] },
+  { name: "Modeling and Simulation", cat: "Chemical Engineering", level: "Advanced",     tags: ["mathematical-models","numerical","ansys","cfd"] },
+
+  /* Core Skills */
+  { name: "Cross-functional Collaboration", cat: "Core Skills",   level: "Expert",       tags: ["teamwork","communication","stakeholders","alignment"] },
+  { name: "Analytical Problem-Solving",     cat: "Core Skills",   level: "Expert",       tags: ["structured-thinking","root-cause","frameworks","logic"] },
+  { name: "Stakeholder Management",         cat: "Core Skills",   level: "Advanced",     tags: ["communication","presentations","alignment","exec"] },
+  { name: "Data Storytelling",              cat: "Core Skills",   level: "Advanced",     tags: ["narrative","insights","presentations","business"] },
+  { name: "Technical Writing",              cat: "Core Skills",   level: "Advanced",     tags: ["documentation","reports","specs","clarity"] },
+  { name: "Design Thinking",               cat: "Core Skills",   level: "Advanced",     tags: ["user-centered","ideation","prototype","empathy"] },
+  { name: "Adaptability",                   cat: "Core Skills",   level: "Expert",       tags: ["change","flexibility","learning","growth"] },
+
+  /* Web Analytics */
+  { name: "Google Tag Manager",     cat: "Web Analytics",         level: "Advanced",     tags: ["gtm","tracking","tags","events","triggers"] },
+  { name: "Microsoft Clarity",      cat: "Web Analytics",         level: "Advanced",     tags: ["heatmaps","session-recordings","ux","behavior"] },
+  { name: "Hotjar",                 cat: "Web Analytics",         level: "Advanced",     tags: ["heatmaps","user-behavior","feedback","funnels"] },
+
+  /* Spoken Languages */
+  { name: "Spanish",                cat: "Spoken Languages",      level: "Expert",       tags: ["native","latin-america","peru","fluent"] },
+  { name: "English",                cat: "Spoken Languages",      level: "Expert",       tags: ["bilingual","c1","business","fluent"] },
+  { name: "Italian",                cat: "Spoken Languages",      level: "Intermediate", tags: ["european","conversational","b1"] },
+  { name: "German",                 cat: "Spoken Languages",      level: "Basic",        tags: ["european","learning","a2"] },
+];
+
+window.SKILLS = SKILLS;
+
+/* ---------- State ---------- */
+const state = {
+  q: "",
+  cat: "All",
+  levels: new Set(),
+  sort: "default",
+  view: localStorage.getItem("skillsView") || "grid",
+};
+
+const LEVELS = ["Expert", "Advanced", "Intermediate", "Basic"];
+const LEVEL_RANK  = { Expert: 4, Advanced: 3, Intermediate: 2, Basic: 1 };
+const CAT_RANK = {
+  "Data Science": 1, "Artificial Intelligence": 2, "Business Intelligence": 3,
+  "Data Analytics": 4, "Machine Learning": 5, "Data Engineering": 6,
+  "Statistics": 7, "Database": 8, "Cloud Platforms": 9, "Programming": 10,
+  "Web Analytics": 11, "Core Skills": 12, "Spoken Languages": 13, "Chemical Engineering": 14,
+};
+
+/* ---------- Helpers ---------- */
+function levelClass(l) { return "lvl-" + l.toLowerCase(); }
+function escapeHTML(s) {
+  return String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+}
+function highlight(text, q) {
+  if (!q) return escapeHTML(text);
+  const safe = escapeHTML(text);
+  const safeQ = q.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return safe.replace(new RegExp(safeQ, "ig"), m => `<mark>${m}</mark>`);
+}
+
+/* ---------- Filter & sort ---------- */
+function filterSkills() {
+  const q = state.q.trim().toLowerCase();
+  return SKILLS.filter(s => {
+    if (state.cat !== "All" && s.cat !== state.cat) return false;
+    if (state.levels.size > 0 && !state.levels.has(s.level)) return false;
+    if (q) {
+      const hay = (s.name + " " + s.cat + " " + (s.tags || []).join(" ")).toLowerCase();
+      if (!hay.includes(q)) return false;
+    }
+    return true;
+  });
+}
+function sortSkills(list) {
+  const copy = list.slice();
+  switch (state.sort) {
+    case "name-asc":   copy.sort((a, b) => a.name.localeCompare(b.name)); break;
+    case "name-desc":  copy.sort((a, b) => b.name.localeCompare(a.name)); break;
+    default:           copy.sort((a, b) =>
+      LEVEL_RANK[b.level] - LEVEL_RANK[a.level] ||
+      (CAT_RANK[a.cat] || 99) - (CAT_RANK[b.cat] || 99) ||
+      a.name.localeCompare(b.name)
+    );
+  }
+  return copy;
+}
+
+/* ---------- Render: summary ---------- */
+function renderSummary() {
+  const el = document.getElementById("summary");
+  const total = SKILLS.length;
+  const counts = LEVELS.reduce((acc, l) => (acc[l] = SKILLS.filter(s => s.level === l).length, acc), {});
+  const cats = new Set(SKILLS.map(s => s.cat));
+  el.innerHTML = `
+    <div class="summary-card"><p class="num">${total}</p><p class="lbl">Total skills</p></div>
+    <div class="summary-card"><p class="num">${cats.size}</p><p class="lbl">Categories</p></div>
+    <div class="summary-card lvl-expert"><p class="num">${counts.Expert}</p><p class="lbl">Expert</p></div>
+    <div class="summary-card lvl-advanced"><p class="num">${counts.Advanced}</p><p class="lbl">Advanced</p></div>
+    <div class="summary-card lvl-intermediate"><p class="num">${counts.Intermediate}</p><p class="lbl">Intermediate</p></div>
+    <div class="summary-card lvl-basic"><p class="num">${counts.Basic}</p><p class="lbl">Basic</p></div>
+  `;
+}
+
+/* ---------- Render: category chips ---------- */
+function renderCategoryChips() {
+  const el = document.getElementById("categoryChips");
+  const cats = ["All", ...Array.from(new Set(SKILLS.map(s => s.cat)))];
+  el.innerHTML = cats.map(c => {
+    const count = c === "All" ? SKILLS.length : SKILLS.filter(s => s.cat === c).length;
+    return `<button class="chip ${state.cat === c ? "active" : ""}" data-cat="${escapeHTML(c)}">
+      ${escapeHTML(c)} <span class="count">${count}</span>
+    </button>`;
+  }).join("");
+}
+
+/* ---------- Render: level chips ---------- */
+function renderLevelChips() {
+  const el = document.getElementById("levelChips");
+  el.innerHTML = LEVELS.map(l => {
+    const count = SKILLS.filter(s => s.level === l).length;
+    return `<button class="chip ${levelClass(l)} ${state.levels.has(l) ? "active" : ""}" data-level="${l}">
+      ${l} <span class="count">${count}</span>
+    </button>`;
+  }).join("");
+}
+
+/* ---------- Render: view toggle ---------- */
+function renderViewToggle() {
+  document.querySelectorAll("#viewToggle button").forEach(b => {
+    b.classList.toggle("active", b.dataset.view === state.view);
+  });
+}
+
+/* ---------- Render: skill cards ---------- */
+function renderSkills() {
+  const grid = document.getElementById("skillsGrid");
+  const empty = document.getElementById("emptyState");
+  const meta = document.getElementById("resultsMeta");
+  const filtered = sortSkills(filterSkills());
+  grid.className = "skills-grid" + (state.view === "list" ? " list-view" : "");
+
+  if (filtered.length === 0) {
+    grid.innerHTML = "";
+    empty.style.display = "block";
+  } else {
+    empty.style.display = "none";
+    const q = state.q.trim();
+    grid.innerHTML = filtered.map(s => {
+      const lc = levelClass(s.level);
+      return `
+        <article class="skill-card">
+          <div class="skill-head">
+            <div style="min-width:0;">
+              <p class="skill-name">${highlight(s.name, q)}</p>
+              <p class="skill-cat">${escapeHTML(s.cat)}</p>
+            </div>
+            <span class="skill-level-txt ${lc}">${s.level}</span>
+          </div>
+          <div class="lvl ${lc}"><i></i><i></i><i></i></div>
+        </article>`;
+    }).join("");
+  }
+
+  const total = SKILLS.length;
+  const isFiltered = state.q || state.cat !== "All" || state.levels.size > 0;
+  meta.innerHTML = isFiltered
+    ? `Showing <strong>${filtered.length}</strong> of <strong>${total}</strong> skills`
+    : `<strong>${total}</strong> skills total`;
+  document.getElementById("clearAll").disabled = !isFiltered;
+}
+
+/* ---------- Bind controls ---------- */
+function bindControls() {
+  const searchInput = document.getElementById("searchInput");
+  const searchWrap = searchInput.closest(".search-wrap");
+  const clearBtn = document.getElementById("searchClear");
+
+  searchInput.addEventListener("input", e => {
+    state.q = e.target.value;
+    searchWrap.classList.toggle("has-text", !!state.q);
+    clearBtn.classList.toggle("visible", !!state.q);
+    renderSkills();
+  });
+  clearBtn.addEventListener("click", () => {
+    searchInput.value = ""; state.q = "";
+    searchWrap.classList.remove("has-text"); clearBtn.classList.remove("visible");
+    searchInput.focus(); renderSkills();
+  });
+  document.addEventListener("keydown", e => {
+    if (e.key === "/" && document.activeElement !== searchInput && !e.metaKey && !e.ctrlKey) {
+      e.preventDefault(); searchInput.focus(); searchInput.select();
+    }
+    if (e.key === "Escape" && document.activeElement === searchInput && state.q) {
+      searchInput.value = ""; state.q = "";
+      searchWrap.classList.remove("has-text"); clearBtn.classList.remove("visible");
+      renderSkills();
+    }
+  });
+
+  document.getElementById("categoryChips").addEventListener("click", e => {
+    const btn = e.target.closest("[data-cat]");
+    if (!btn) return;
+    state.cat = btn.dataset.cat;
+    renderCategoryChips(); renderSkills();
+  });
+  document.getElementById("levelChips").addEventListener("click", e => {
+    const btn = e.target.closest("[data-level]");
+    if (!btn) return;
+    const l = btn.dataset.level;
+    if (state.levels.has(l)) state.levels.delete(l); else state.levels.add(l);
+    renderLevelChips(); renderSkills();
+  });
+  document.getElementById("sortSelect").addEventListener("change", e => {
+    state.sort = e.target.value; renderSkills();
+  });
+  document.getElementById("viewToggle").addEventListener("click", e => {
+    const btn = e.target.closest("[data-view]");
+    if (!btn) return;
+    state.view = btn.dataset.view;
+    localStorage.setItem("skillsView", state.view);
+    renderViewToggle(); renderSkills();
+  });
+  document.getElementById("clearAll").addEventListener("click", () => {
+    state.q = ""; state.cat = "All"; state.levels.clear();
+    searchInput.value = "";
+    searchWrap.classList.remove("has-text"); clearBtn.classList.remove("visible");
+    renderCategoryChips(); renderLevelChips(); renderSkills();
+  });
+
+  /* Hamburger */
+  const hamburger = document.getElementById('navHamburger');
+  if (hamburger) {
+    hamburger.addEventListener('click', () => {
+      const navbar = hamburger.closest('.navbar');
+      const isOpen = navbar.classList.toggle('nav-open');
+      hamburger.setAttribute('aria-expanded', String(isOpen));
+    });
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      a.addEventListener('click', () => {
+        hamburger.closest('.navbar').classList.remove('nav-open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+
+  /* Theme */
+  const themeBtn = document.getElementById("themeToggle");
+  const html = document.documentElement;
+  function applyTheme(dark) {
+    if (dark) html.setAttribute("data-theme", "dark");
+    else html.removeAttribute("data-theme");
+  }
+  const saved = localStorage.getItem("theme");
+  applyTheme(saved ? saved === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches);
+  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", e => {
+    if (!localStorage.getItem("theme")) applyTheme(e.matches);
+  });
+  themeBtn.addEventListener("click", () => {
+    const isDark = html.getAttribute("data-theme") === "dark";
+    applyTheme(!isDark);
+    localStorage.setItem("theme", isDark ? "light" : "dark");
+  });
+
+  /* Scroll progress */
+  const bar = document.getElementById("scrollProgress");
+  function updateBar() {
+    const h = document.documentElement;
+    const total = h.scrollHeight - h.clientHeight;
+    bar.style.width = total > 0 ? (h.scrollTop / total) * 100 + "%" : "0%";
+  }
+  document.addEventListener("scroll", updateBar, { passive: true });
+  updateBar();
+}
+
+/* ---------- Init ---------- */
+document.addEventListener("DOMContentLoaded", () => {
+  renderSummary();
+  renderCategoryChips();
+  renderLevelChips();
+  renderViewToggle();
+  renderSkills();
+  bindControls();
+  document.getElementById("footer-year").textContent = new Date().getFullYear();
+});
+</script>
+<script src="nav-footer.js"></script>
+</body>
+</html>

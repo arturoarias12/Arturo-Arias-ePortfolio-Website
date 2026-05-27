@@ -1,0 +1,441 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KFK6J3MN');</script>
+<!-- End Google Tag Manager -->
+<link rel="icon" type="image/png" href="../favicon.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Incarail -Arturo Arias</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --primary: rgb(0, 0, 190);
+    --primary-700: rgb(0, 0, 150);
+    --bg: #ffffff;
+    --bg-alt: #f5f7fb;
+    --card-bg: #e6f1fb;
+    --text: #0a0a3a;
+    --text-muted: #5f5e5a;
+    --border: #e3e8f0;
+    --white: #ffffff;
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --maxw: 760px;
+    --transition: 250ms cubic-bezier(.4,0,.2,1);
+  }
+  [data-theme="dark"] {
+    --primary: rgb(41, 98, 255);
+    --primary-700: #5c8fff;
+    --bg: #050510;
+    --bg-alt: #0d0d2b;
+    --card-bg: #0d0d2b;
+    --text: #e8e8f5;
+    --text-muted: #b0bcdd;
+    --border: rgba(41, 98, 255, 0.18);
+    --white: #050510;
+  }
+  [data-theme="dark"] body {
+    background: radial-gradient(ellipse at 30% 20%, #0a0a2e 0%, #050510 50%, #000008 100%);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--text);
+    background: var(--bg);
+    -webkit-font-smoothing: antialiased;
+    transition: background var(--transition), color var(--transition);
+  }
+  a { color: var(--primary); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  /* ---------- Scroll progress ---------- */
+  .scroll-progress {
+    position: fixed; top: 0; left: 0;
+    height: 3px; width: 0%;
+    background: var(--primary); z-index: 1000;
+  }
+
+  /* ---------- Navbar ---------- */
+  .navbar {
+    position: sticky; top: 0; z-index: 900;
+    background: rgba(255,255,255,0.88);
+    backdrop-filter: saturate(160%) blur(10px);
+    -webkit-backdrop-filter: saturate(160%) blur(10px);
+    border-bottom: 1px solid var(--border);
+    height: 68px;
+    display: flex; align-items: center;
+  }
+  [data-theme="dark"] .navbar { background: rgba(5,5,16,0.85); }
+  .nav-inner {
+    width: 100%; max-width: 1180px;
+    margin: 0 auto; padding: 0 24px;
+    display: flex; align-items: center;
+    justify-content: space-between; gap: 16px;
+  }
+  .brand {
+    font-weight: 700; font-size: 18px; color: var(--text);
+    letter-spacing: -0.01em; display: flex; align-items: center;
+    gap: 10px; text-decoration: none;
+  }
+  .brand-mark {
+    width: 32px; height: 32px; border-radius: 50%;
+    overflow: hidden; flex-shrink: 0;
+  }
+  .brand-mark img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .nav-links { display: flex; gap: 4px; list-style: none; margin: 0; padding: 0; }
+  .nav-links a {
+    color: var(--text-muted); font-size: 14px; font-weight: 500;
+    padding: 8px 12px; border-radius: 6px; text-decoration: none;
+    transition: color var(--transition), background var(--transition);
+  }
+  .nav-links a:hover { color: var(--text); background: var(--bg-alt); }
+  .nav-links a.active { color: var(--primary); background: var(--card-bg); }
+  [data-theme="dark"] .nav-links a.active { color: #9bb8ff; }
+  .theme-toggle {
+    background: transparent; border: 1px solid var(--border);
+    color: var(--text); width: 36px; height: 36px; border-radius: 8px;
+    display: grid; place-items: center; cursor: pointer;
+    transition: background var(--transition), border-color var(--transition);
+  }
+  .theme-toggle:hover { background: var(--bg-alt); }
+  .theme-toggle svg { width: 16px; height: 16px; }
+  .theme-toggle .icon-sun { display: none; }
+  [data-theme="dark"] .theme-toggle .icon-sun { display: block; }
+  [data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+
+  .nav-actions { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+  .nav-hamburger {
+    display: none;
+    background: transparent; border: 1px solid var(--border);
+    color: var(--text); width: 36px; height: 36px; border-radius: 8px;
+    place-items: center; cursor: pointer;
+    transition: background var(--transition);
+  }
+  .nav-hamburger:hover { background: var(--bg-alt); }
+  .nav-hamburger svg { width: 20px; height: 20px; pointer-events: none; overflow: visible; }
+  .nav-hamburger .bar { transition: opacity 0.2s, transform 0.2s; }
+  .nav-hamburger .bar-top { transform-origin: 10px 5px; }
+  .nav-hamburger .bar-mid { transform-origin: 10px 10px; }
+  .nav-hamburger .bar-bot { transform-origin: 10px 15px; }
+  .navbar.nav-open .nav-hamburger .bar-top { transform: translateY(5px) rotate(45deg); }
+  .navbar.nav-open .nav-hamburger .bar-mid { opacity: 0; }
+  .navbar.nav-open .nav-hamburger .bar-bot { transform: translateY(-5px) rotate(-45deg); }
+
+  .page-wrap {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-muted);
+    text-decoration: none;
+    margin-bottom: 36px;
+    transition: color var(--transition);
+  }
+  .back-link::before { content: "←"; }
+  .back-link:hover { color: var(--primary); }
+
+  .exp-eyebrow {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--primary);
+    margin: 0 0 10px;
+  }
+  [data-theme="dark"] .exp-eyebrow { color: #5c8fff; }
+  .exp-title {
+    font-size: clamp(26px, 5vw, 38px);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    margin: 0 0 6px;
+    color: var(--text);
+    line-height: 1.1;
+  }
+  .exp-company-line {
+    font-size: 16px;
+    color: var(--primary);
+    font-weight: 600;
+    margin: 0 0 4px;
+  }
+  [data-theme="dark"] .exp-company-line { color: #5c8fff; }
+  .exp-period-line {
+    font-size: 14px;
+    color: var(--text-muted);
+    margin: 0 0 36px;
+  }
+
+  .stat-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+  .stat-box {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 16px 20px;
+    flex: 1;
+    min-width: 140px;
+  }
+  [data-theme="dark"] .stat-box { background: var(--bg-alt); }
+  .stat-num {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--primary);
+    line-height: 1;
+    margin-bottom: 4px;
+    letter-spacing: -0.02em;
+  }
+  [data-theme="dark"] .stat-num { color: #5c8fff; }
+  .stat-label { font-size: 12.5px; color: var(--text-muted); }
+
+  .section-label {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+    margin: 32px 0 14px;
+    border-top: 1px solid var(--border);
+    padding-top: 20px;
+  }
+  p { margin: 0 0 16px; color: var(--text-muted); }
+  ul {
+    margin: 0 0 16px;
+    padding-left: 20px;
+    color: var(--text-muted);
+  }
+  li { margin-bottom: 8px; }
+  strong { color: var(--text); }
+  .b-label { font-weight: 600; color: var(--primary); }
+  [data-theme="dark"] .b-label { color: #5c8fff; }
+
+  .tag-row { display: flex; flex-wrap: wrap; gap: 8px; }
+  .tag {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 4px;
+    background: var(--bg-alt);
+    color: var(--text-muted);
+    border: 1px solid var(--border);
+  }
+  [data-theme="dark"] .tag { background: var(--bg-alt); }
+
+  footer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+
+  @media (max-width: 720px) {
+    .nav-hamburger { display: grid; }
+    .nav-links {
+      display: none;
+      position: fixed; top: 68px; left: 0; right: 0;
+      flex-direction: column; gap: 2px;
+      padding: 12px 16px 20px;
+      background: rgba(255,255,255,0.97);
+      backdrop-filter: saturate(160%) blur(10px);
+      -webkit-backdrop-filter: saturate(160%) blur(10px);
+      border-bottom: 1px solid var(--border);
+      z-index: 800;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    }
+    [data-theme="dark"] .nav-links { background: rgba(5,5,40,0.97); }
+    .navbar.nav-open .nav-links { display: flex; }
+    .nav-links a { padding: 10px 14px; }
+    .page-wrap { padding: 32px 20px 60px; }
+  }
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KFK6J3MN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<header class="navbar">
+  <div class="nav-inner">
+    <a href="../index.html" class="brand" aria-label="Home">
+      <span class="brand-mark"><img src="../assets/img/avatar.jpg" alt="Arturo Arias" /></span>
+      <span>Arturo Arias</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="../index.html#hero">Home</a></li>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#experience" aria-current="page">Experience</a></li>
+        <li><a href="../index.html#projects">Projects</a></li>
+        <li><a href="../index.html#education">Education</a></li>
+        <li><a href="../index.html#achievements">Achievements</a></li>
+        <li><a href="../index.html#certifications">Certifications</a></li>
+        <li><a href="../index.html#blog">Insights</a></li>
+        <li><a href="../index.html#stack">Skills</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+        </svg>
+      </button>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+          <line class="bar bar-top" x1="2" y1="5" x2="18" y2="5"/>
+          <line class="bar bar-mid" x1="2" y1="10" x2="18" y2="10"/>
+          <line class="bar bar-bot" x1="2" y1="15" x2="18" y2="15"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="page-wrap">
+
+  <a href="../index.html#experience" class="back-link">Back to home</a>
+
+  <p class="exp-eyebrow">Professional Experience</p>
+  <h1 class="exp-title">Business Intelligence Specialist</h1>
+  <p class="exp-company-line">Independent / Incarail</p>
+  <p class="exp-period-line">May 2025 – August 2025 · Lima, Peru (Remote)</p>
+
+  <div class="stat-row">
+    <div class="stat-box">
+      <div class="stat-num">92%</div>
+      <div class="stat-label">Dashboard file size reduction</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num">90%</div>
+      <div class="stat-label">Faster refresh times</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num">80%+</div>
+      <div class="stat-label">BigQuery query time reduction</div>
+    </div>
+  </div>
+
+  <p class="section-label">Overview</p>
+  <p>Incarail is Peru's premier luxury passenger rail company, operating iconic routes through the Andes, including the journey to Machu Picchu.</p>
+  <p>As a Business Intelligence Specialist Consultant engaged to support Incarail's strategic digital initiatives, I was responsible for designing, developing, and maintaining BI dashboards, generating key performance indicators, and automating executive reports; providing technical advisory and training to internal teams, proposing data-driven solutions to enhance decision-making within a Scrum-based environment.</p>
+
+  <p class="section-label">Key contributions</p>
+  <ul>
+    <li><span class="b-label">Data visualization | Business intelligence:</span> Engineered Power BI dashboards on Microsoft Fabric, delivering <strong>e-commerce sales and web performance</strong> insights, applying industry best practices to ensure performance, usability, and stakeholder value.</li>
+    <li><span class="b-label">Performance optimization:</span> Streamlined Microsoft Fabric dashboards, reducing file size by <strong>92%</strong> and refresh processing time by <strong>90%</strong>, improving user experience and lowering Microsoft Fabric capacity costs.</li>
+    <li><span class="b-label">ETL/ELT | Data pipelines:</span> Devised and refined Fabric data pipelines that centralized sources, streamlined transformations, and ensured <strong>reliable data availability</strong> for reporting and monitoring.</li>
+    <li><span class="b-label">Python | PySpark | Data processing:</span> Automated <strong>OCR workflows</strong> for PDFs in Fabric using PySpark, <strong>eliminating manual effort</strong> and accelerating reporting cycles.</li>
+    <li><span class="b-label">SQL | Query optimization:</span> Optimized BigQuery queries and partitions on Google Cloud Platform, reducing execution time by <strong>80%+</strong> and lowering compute spend.</li>
+    <li><span class="b-label">Technical advisory:</span> Provided BI support to the e-commerce, revenue, and UX teams at Incarail, delivering <strong>high-quality dashboards</strong> aligned with ongoing digital and commercial strategies within a Scrum-based team.</li>
+  </ul>
+
+  <p class="section-label">Skills</p>
+  <div class="tag-row">
+    <span class="tag">Power BI</span>
+    <span class="tag">Microsoft Fabric</span>
+    <span class="tag">DAX</span>
+    <span class="tag">Data Modeling</span>
+    <span class="tag">Data Architecture</span>
+    <span class="tag">Python</span>
+    <span class="tag">PySpark</span>
+    <span class="tag">SQL</span>
+    <span class="tag">BigQuery</span>
+    <span class="tag">Google Cloud</span>
+    <span class="tag">ETL/ELT</span>
+    <span class="tag">OCR</span>
+    <span class="tag">Web Analytics</span>
+    <span class="tag">E-commerce Analytics</span>
+    <span class="tag">Revenue Analytics</span>
+    <span class="tag">KPI Development</span>
+    <span class="tag">Executive Reporting</span>
+    <span class="tag">Scrum</span>
+    <span class="tag">Consulting</span>
+    <span class="tag">Tourism Industry</span>
+  </div>
+</div>
+
+<div style="max-width:860px;margin:48px auto 0;padding:0 24px 40px;text-align:center;">
+  <p style="font-size:12.5px;color:var(--text-muted);line-height:1.6;margin:0;">
+    <svg style="width:13px;height:13px;vertical-align:-2px;margin-right:5px;opacity:0.7;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Some professional details have been summarized to respect confidentiality and avoid disclosing proprietary information.
+  </p>
+</div>
+<footer>
+  <div>© <span id="footer-year"></span> Arturo Arias · <a href="../index.html">Back to home</a></div>
+</footer>
+
+<script>
+(function () {
+  const prog = document.getElementById('scrollProgress');
+  if (prog) {
+    window.addEventListener('scroll', () => {
+      const scrolled = document.documentElement.scrollTop;
+      const total = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      prog.style.width = (total > 0 ? (scrolled / total) * 100 : 0) + '%';
+    }, { passive: true });
+  }
+
+  const hamburger = document.getElementById('navHamburger');
+  if (hamburger) {
+    hamburger.addEventListener('click', () => {
+      const navbar = hamburger.closest('.navbar');
+      const isOpen = navbar.classList.toggle('nav-open');
+      hamburger.setAttribute('aria-expanded', String(isOpen));
+    });
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      a.addEventListener('click', () => {
+        hamburger.closest('.navbar').classList.remove('nav-open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+
+  const btn = document.getElementById('themeToggle');
+  const html = document.documentElement;
+  function applyTheme(dark) {
+    if (dark) html.setAttribute('data-theme', 'dark');
+    else html.removeAttribute('data-theme');
+  }
+  const saved = localStorage.getItem('theme');
+  applyTheme(saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches);
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+    if (!localStorage.getItem('theme')) applyTheme(e.matches);
+  });
+  btn.addEventListener('click', () => {
+    const isDark = html.getAttribute('data-theme') === 'dark';
+    applyTheme(!isDark);
+    localStorage.setItem('theme', isDark ? 'light' : 'dark');
+  });
+})();
+document.getElementById('footer-year').textContent = new Date().getFullYear();
+</script>
+<script src="../nav-footer.js"></script>
+</body>
+</html>

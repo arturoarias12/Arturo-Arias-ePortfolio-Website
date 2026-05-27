@@ -1,0 +1,33 @@
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+*.swp
+*.swo
+.claude/
+
+other_files/
+_hidden/
+system-prompt.txt
+rag/
+CHATBOT_SETUP.md
+_plans/
+URL_MAP.json
+GTM_ANALYTICS_REFERENCE.md
+
+# Playwright
+node_modules/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+test-results/
+tests/
+package-lock.json
+package.json
+playwright.config.ts
+playwright.config.js
+screenshots/

@@ -1,0 +1,295 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KFK6J3MN');</script>
+<!-- End Google Tag Manager -->
+<link rel="icon" type="image/png" href="favicon.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Page not found · Arturo Arias</title>
+<meta name="robots" content="noindex" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --primary: rgb(0, 0, 190);
+    --primary-700: rgb(0, 0, 150);
+    --bg: #ffffff;
+    --bg-alt: #f5f7fb;
+    --card-bg: #e6f1fb;
+    --text: #0a0a3a;
+    --text-muted: #5f5e5a;
+    --text-soft: #2b2b5a;
+    --border: #e3e8f0;
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 16px;
+    --maxw: 1180px;
+    --nav-h: 68px;
+    --transition: 250ms cubic-bezier(.4,0,.2,1);
+  }
+  [data-theme="dark"] {
+    --primary: rgb(41, 98, 255);
+    --primary-700: rgb(80, 130, 255);
+    --bg: #050510;
+    --bg-alt: #0d0d2b;
+    --card-bg: #0d0d2b;
+    --text: #e8e8f5;
+    --text-muted: #b0bcdd;
+    --text-soft: #c8cee8;
+    --border: rgba(41, 98, 255, 0.18);
+  }
+  [data-theme="dark"] body {
+    background: radial-gradient(ellipse at 30% 20%, #0a0a2e 0%, #050510 50%, #000008 100%);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px; line-height: 1.65;
+    color: var(--text); background: var(--bg);
+    -webkit-font-smoothing: antialiased;
+    transition: background var(--transition), color var(--transition);
+    min-height: 100vh; display: flex; flex-direction: column;
+  }
+  a { color: var(--primary); text-decoration: none; }
+  a:hover { text-decoration: underline; text-underline-offset: 3px; }
+  [data-theme="dark"] a { color: #9bb8ff; }
+
+  /* Navbar */
+  .navbar {
+    position: sticky; top: 0; z-index: 900;
+    background: rgba(255,255,255,0.88);
+    backdrop-filter: saturate(160%) blur(10px);
+    -webkit-backdrop-filter: saturate(160%) blur(10px);
+    border-bottom: 1px solid var(--border);
+    height: var(--nav-h); display: flex; align-items: center;
+    transition: background var(--transition), border-color var(--transition);
+  }
+  [data-theme="dark"] .navbar { background: rgba(5, 5, 16, 0.85); }
+  .nav-inner {
+    width: 100%; max-width: var(--maxw);
+    margin: 0 auto; padding: 0 24px;
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  }
+  .brand {
+    display: flex; align-items: center; gap: 10px;
+    font-weight: 700; font-size: 15px; color: var(--text); text-decoration: none;
+  }
+  .brand:hover { text-decoration: none; }
+  [data-theme="dark"] .brand { color: var(--text); }
+  .brand-mark {
+    width: 34px; height: 34px; border-radius: 50%;
+    background: var(--primary); overflow: hidden; flex-shrink: 0;
+  }
+  .brand-mark img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .nav-links { display: flex; gap: 4px; list-style: none; margin: 0; padding: 0; }
+  .nav-links a {
+    color: var(--text-muted); font-size: 14px; font-weight: 500;
+    padding: 6px 10px; border-radius: var(--radius-sm);
+    transition: color var(--transition), background var(--transition);
+    text-decoration: none;
+  }
+  .nav-links a:hover { color: var(--text); background: var(--bg-alt); text-decoration: none; }
+  .nav-links a.active { color: var(--primary); background: var(--card-bg); }
+  [data-theme="dark"] .nav-links a.active { color: #9bb8ff; }
+  .nav-actions { display: flex; align-items: center; gap: 8px; }
+  .theme-toggle {
+    width: 36px; height: 36px; border-radius: var(--radius-sm);
+    border: none; background: transparent; cursor: pointer;
+    display: grid; place-items: center; color: var(--text-muted);
+    transition: color var(--transition), background var(--transition);
+  }
+  .theme-toggle:hover { background: var(--bg-alt); color: var(--text); }
+  .theme-toggle svg { width: 18px; height: 18px; }
+  .icon-sun { display: none; }
+  [data-theme="dark"] .icon-moon { display: none; }
+  [data-theme="dark"] .icon-sun { display: block; }
+  .nav-hamburger {
+    display: none; width: 36px; height: 36px; border-radius: var(--radius-sm);
+    border: none; background: transparent; cursor: pointer; color: var(--text-muted);
+    place-items: center; transition: color var(--transition), background var(--transition);
+  }
+  .nav-hamburger:hover { background: var(--bg-alt); }
+  .nav-hamburger svg { width: 20px; height: 20px; pointer-events: none; overflow: visible; }
+  .nav-hamburger .bar { transition: opacity 0.2s, transform 0.2s; }
+  .nav-hamburger .bar-top { transform-origin: 10px 5px; }
+  .nav-hamburger .bar-mid { transform-origin: 10px 10px; }
+  .nav-hamburger .bar-bot { transform-origin: 10px 15px; }
+  .navbar.nav-open .nav-hamburger .bar-top { transform: translateY(5px) rotate(45deg); }
+  .navbar.nav-open .nav-hamburger .bar-mid { opacity: 0; }
+  .navbar.nav-open .nav-hamburger .bar-bot { transform: translateY(-5px) rotate(-45deg); }
+
+  /* Main */
+  main {
+    flex: 1; display: flex; align-items: center; justify-content: center;
+    padding: 80px 24px;
+  }
+  .err-wrap {
+    max-width: 560px; text-align: center;
+  }
+  .err-code {
+    font-size: clamp(96px, 20vw, 160px);
+    font-weight: 800; line-height: 1;
+    letter-spacing: -0.04em;
+    color: var(--primary);
+    opacity: 0.12;
+    margin: 0 0 -24px;
+    user-select: none;
+  }
+  [data-theme="dark"] .err-code { opacity: 0.18; }
+  .err-title {
+    font-size: clamp(22px, 4vw, 32px);
+    font-weight: 700; margin: 0 0 16px;
+    letter-spacing: -0.02em;
+  }
+  .err-sub {
+    font-size: 16px; color: var(--text-muted);
+    margin: 0 0 40px; line-height: 1.6;
+  }
+  .err-actions {
+    display: flex; flex-wrap: wrap; gap: 12px; justify-content: center;
+  }
+  .btn {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 11px 22px; border-radius: var(--radius-md);
+    font-family: inherit; font-size: 14px; font-weight: 600;
+    cursor: pointer; border: 1px solid transparent;
+    text-decoration: none; transition: background var(--transition), color var(--transition), border-color var(--transition), transform var(--transition);
+  }
+  .btn:hover { text-decoration: none; transform: translateY(-1px); }
+  .btn-primary {
+    background: var(--primary); color: #fff; border-color: var(--primary);
+  }
+  .btn-primary:hover { background: var(--primary-700); border-color: var(--primary-700); }
+  .btn-outline {
+    background: transparent; color: var(--text); border-color: var(--border);
+  }
+  .btn-outline:hover { border-color: var(--primary); color: var(--primary); background: var(--card-bg); }
+  [data-theme="dark"] .btn-outline { color: var(--text); }
+
+  /* Footer */
+  footer.site-footer {
+    padding: 20px 24px; text-align: center;
+    font-size: 13px; color: var(--text-muted);
+    border-top: 1px solid var(--border);
+  }
+  footer.site-footer a { color: inherit; }
+  footer.site-footer a:hover { color: var(--primary); }
+
+  /* Mobile */
+  @media (max-width: 820px) {
+    .nav-hamburger { display: grid; }
+    .nav-links {
+      display: none; position: fixed; top: 68px; left: 0; right: 0;
+      flex-direction: column; background: rgba(255,255,255,0.97);
+      backdrop-filter: blur(10px); padding: 12px; gap: 2px;
+      border-bottom: 1px solid var(--border); z-index: 899;
+    }
+    [data-theme="dark"] .nav-links { background: rgba(5,5,40,0.97); }
+    .navbar.nav-open .nav-links { display: flex; }
+    .nav-links a { padding: 10px 14px; }
+  }
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KFK6J3MN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header class="navbar">
+  <div class="nav-inner">
+    <a data-root-href="" class="brand" aria-label="Home">
+      <span class="brand-mark"><img src="assets/img/avatar.jpg" alt="Arturo Arias" /></span>
+      <span>Arturo Arias</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a data-root-href="#hero">Home</a></li>
+        <li><a data-root-href="#about">About</a></li>
+        <li><a data-root-href="#experience">Experience</a></li>
+        <li><a data-root-href="#projects">Projects</a></li>
+        <li><a data-root-href="#education">Education</a></li>
+        <li><a data-root-href="#achievements">Achievements</a></li>
+        <li><a data-root-href="#certifications">Certifications</a></li>
+        <li><a data-root-href="#blog">Insights</a></li>
+        <li><a data-root-href="#stack">Skills</a></li>
+        <li><a data-root-href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      </button>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+          <line class="bar bar-top" x1="2" y1="5" x2="18" y2="5"/>
+          <line class="bar bar-mid" x1="2" y1="10" x2="18" y2="10"/>
+          <line class="bar bar-bot" x1="2" y1="15" x2="18" y2="15"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="err-wrap">
+    <p class="err-code" aria-hidden="true">404</p>
+    <h1 class="err-title">Page not found</h1>
+    <p class="err-sub">The page you are looking for does not exist or may have been moved. Head back home or browse the projects.</p>
+    <div class="err-actions">
+      <a data-root-href="" class="btn btn-primary">Back to home</a>
+      <a data-root-href="projects.html" class="btn btn-outline">Browse projects</a>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div>© <span id="footer-year"></span> Arturo Arias · <a data-root-href="">Back to home</a></div>
+</footer>
+
+<script>
+(function () {
+  var btn = document.getElementById('themeToggle');
+  var html = document.documentElement;
+  var saved = localStorage.getItem('theme');
+  if (saved) html.setAttribute('data-theme', saved);
+  btn.addEventListener('click', function () {
+    var next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    html.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+  });
+  document.getElementById('footer-year').textContent = new Date().getFullYear();
+  var ham = document.getElementById('navHamburger');
+  var navbar = document.querySelector('.navbar');
+  ham.addEventListener('click', function () {
+    var open = navbar.classList.toggle('nav-open');
+    ham.setAttribute('aria-expanded', open);
+  });
+  document.querySelectorAll('.nav-links a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      navbar.classList.remove('nav-open');
+      ham.setAttribute('aria-expanded', 'false');
+    });
+  });
+  /* Resolve all root-relative links using the actual origin — safe regardless of 404 URL depth */
+  var origin = window.location.origin;
+  document.querySelectorAll('[data-root-href]').forEach(function (el) {
+    var path = el.getAttribute('data-root-href');
+    el.href = path.charAt(0) === '#' ? origin + '/' + path : origin + '/' + path;
+  });
+})();
+</script>
+<script src="chatbot-widget.js"></script>
+<script defer src="js/analytics.js"></script>
+</body>
+</html>

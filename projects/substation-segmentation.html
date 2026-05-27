@@ -1,0 +1,225 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KFK6J3MN');</script>
+<!-- End Google Tag Manager -->
+<link rel="icon" type="image/png" href="../favicon.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Power Substation Segmentation · Project · Arturo Arias</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+:root{--primary:rgb(0,0,190);--primary-700:rgb(0,0,150);--bg:#ffffff;--bg-alt:#f5f7fb;--card-bg:#e6f1fb;--text:#0a0a3a;--text-muted:#5f5e5a;--text-soft:#2b2b5a;--border:#e3e8f0;--accent-ok:#1f8a5b;--accent-info:#0b5fd1;--code-bg:#f5f7fb;--radius-sm:6px;--radius-md:10px;--radius-lg:16px;--maxw-wide:1080px;--maxw-prose:720px;--nav-h:68px;--transition:250ms cubic-bezier(.4,0,.2,1)}
+[data-theme="dark"]{--primary:rgb(41,98,255);--primary-700:#5c8fff;--bg:#050510;--bg-alt:#0d0d2b;--card-bg:#0d0d2b;--text:#e8e8f5;--text-muted:#b0bcdd;--text-soft:#c8cee8;--border:rgba(41,98,255,0.18);--code-bg:#0d0d2b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;font-size:17px;line-height:1.7;color:var(--text);background:var(--bg);-webkit-font-smoothing:antialiased;transition:background var(--transition),color var(--transition)}[data-theme="dark"] body{background:radial-gradient(ellipse at 30% 20%,#0a0a2e 0%,#050510 50%,#000008 100%)}
+a{color:var(--primary);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}a:hover{text-decoration-thickness:2px}[data-theme="dark"] a{color:#9bb8ff}
+.scroll-progress{position:fixed;top:0;left:0;height:3px;width:0%;background:var(--primary);z-index:1000;transition:width 80ms linear}
+.navbar{position:sticky;top:0;z-index:900;background:rgba(255,255,255,0.88);backdrop-filter:saturate(160%) blur(10px);-webkit-backdrop-filter:saturate(160%) blur(10px);border-bottom:1px solid var(--border);height:var(--nav-h);display:flex;align-items:center;transition:background var(--transition),border-color var(--transition)}[data-theme="dark"] .navbar{background:rgba(5,5,16,0.85)}
+.nav-inner{width:100%;max-width:1180px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{font-weight:700;font-size:18px;color:var(--text);letter-spacing:-0.01em;display:flex;align-items:center;gap:10px;text-decoration:none}.brand:hover{text-decoration:none}.brand-mark{width:32px;height:32px;border-radius:50%;overflow:hidden;flex-shrink:0}.brand-mark img{width:100%;height:100%;object-fit:cover;display:block}
+.nav-links{display:flex;gap:4px;list-style:none;margin:0;padding:0}.nav-links a{color:var(--text-muted);font-size:14px;font-weight:500;padding:8px 12px;border-radius:var(--radius-sm);text-decoration:none;transition:color var(--transition),background var(--transition)}.nav-links a:hover{color:var(--text);background:var(--bg-alt);text-decoration:none}.nav-links a.active{color:var(--primary);background:var(--card-bg)}[data-theme="dark"] .nav-links a.active{color:#5c8fff}
+.nav-actions{display:flex;align-items:center;gap:8px;flex-shrink:0}.theme-toggle{background:transparent;border:1px solid var(--border);color:var(--text);width:36px;height:36px;border-radius:8px;display:grid;place-items:center;cursor:pointer;transition:background var(--transition),border-color var(--transition)}.theme-toggle:hover{background:var(--bg-alt)}.theme-toggle svg{width:16px;height:16px}.theme-toggle .icon-sun{display:none}[data-theme="dark"] .theme-toggle .icon-sun{display:block}[data-theme="dark"] .theme-toggle .icon-moon{display:none}
+.nav-hamburger{display:none;background:transparent;border:1px solid var(--border);color:var(--text);width:36px;height:36px;border-radius:8px;place-items:center;cursor:pointer;transition:background var(--transition)}.nav-hamburger:hover{background:var(--bg-alt)}.nav-hamburger svg{width:20px;height:20px;pointer-events:none;overflow:visible}.nav-hamburger .bar{transition:opacity 0.2s,transform 0.2s}.nav-hamburger .bar-top{transform-origin:10px 5px}.nav-hamburger .bar-mid{transform-origin:10px 10px}.nav-hamburger .bar-bot{transform-origin:10px 15px}.navbar.nav-open .nav-hamburger .bar-top{transform:translateY(5px) rotate(45deg)}.navbar.nav-open .nav-hamburger .bar-mid{opacity:0}.navbar.nav-open .nav-hamburger .bar-bot{transform:translateY(-5px) rotate(-45deg)}
+.wrap{max-width:var(--maxw-wide);margin:0 auto;padding:0 24px}.prose{max-width:var(--maxw-prose);margin:0 auto}
+.back-link{display:inline-flex;align-items:center;gap:6px;margin-top:24px;font-size:14px;font-weight:500;color:var(--text-muted);text-decoration:none;transition:color var(--transition)}.back-link:hover{color:var(--primary);text-decoration:none}.back-link svg{width:14px;height:14px;transition:transform var(--transition)}.back-link:hover svg{transform:translateX(-3px)}
+.project-header{padding:32px 0 0;margin-bottom:28px}.project-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px}.project-tag{font-size:12px;font-weight:500;padding:3px 10px;border-radius:999px;background:var(--card-bg);color:var(--primary)}[data-theme="dark"] .project-tag{color:#9bb8ff}.project-cat{background:var(--primary);color:#fff}[data-theme="dark"] .project-cat{color:#fff}
+.project-title{font-size:clamp(32px,5vw,48px);line-height:1.1;letter-spacing:-0.025em;font-weight:800;margin:0 0 16px;color:var(--text)}.project-deck{font-size:20px;line-height:1.5;color:var(--text-muted);margin:0 0 28px;max-width:var(--maxw-prose);font-weight:400}
+.project-meta-bar{display:flex;gap:24px;flex-wrap:wrap;padding:18px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);font-size:14px}.meta-cell .lbl{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-muted);margin:0 0 4px}.meta-cell .val{color:var(--text);font-weight:500;margin:0}
+.hero-figure{margin:36px 0 56px}.hero-figure figcaption{margin-top:12px;text-align:center;color:var(--text-muted);font-size:14px}
+.project-links{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px}
+.btn-link{display:inline-flex;align-items:center;gap:7px;padding:9px 18px;border-radius:var(--radius-sm);font-size:14px;font-weight:600;text-decoration:none;border:1.5px solid var(--border);color:var(--text);background:var(--bg);transition:border-color var(--transition),background var(--transition),color var(--transition)}.btn-link:hover{border-color:var(--primary);background:var(--card-bg);color:var(--primary);text-decoration:none}.btn-link svg{width:16px;height:16px;flex-shrink:0}[data-theme="dark"] .btn-link{background:var(--bg-alt)}
+.impact-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin:0 0 56px}.impact-card{padding:22px;border:1px solid var(--border);border-radius:var(--radius-md);background:var(--bg)}[data-theme="dark"] .impact-card{background:var(--bg-alt)}.impact-card .num{font-size:34px;font-weight:700;color:var(--primary);letter-spacing:-0.02em;line-height:1;margin:0 0 8px;font-variant-numeric:tabular-nums}[data-theme="dark"] .impact-card .num{color:#9bb8ff}.impact-card .lbl{font-size:13px;color:var(--text-muted);margin:0;line-height:1.45}
+.prose h2{font-size:26px;font-weight:700;letter-spacing:-0.015em;line-height:1.25;margin:52px 0 14px;scroll-margin-top:calc(var(--nav-h) + 16px)}.prose h3{font-size:19px;font-weight:600;margin:32px 0 10px;letter-spacing:-0.01em}.prose p{margin:0 0 18px;color:var(--text-soft)}.prose strong{color:var(--text);font-weight:600}.prose em{font-style:italic}.prose ul,.prose ol{color:var(--text-soft);margin:0 0 22px;padding-left:24px}.prose ul li,.prose ol li{margin-bottom:6px}
+.callout{margin:24px 0;padding:16px 18px;border-radius:var(--radius-md);border-left:3px solid var(--accent-info);background:rgba(11,95,209,0.08)}[data-theme="dark"] .callout{background:rgba(155,184,255,0.08)}.callout .ttl{font-weight:600;margin:0 0 4px;font-size:14px;color:var(--accent-info)}[data-theme="dark"] .callout .ttl{color:#9bb8ff}.callout p{margin:0;color:var(--text);font-size:15px}
+.stack-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;margin:24px 0 40px}.stack-group .cat{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-muted);margin:0 0 10px}.stack-group .pills{display:flex;flex-wrap:wrap;gap:6px}.stack-group .pills span{font-size:13px;padding:4px 10px;border:1px solid var(--border);border-radius:999px;color:var(--text);background:var(--bg)}[data-theme="dark"] .stack-group .pills span{background:var(--bg-alt)}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:64px 0 0}.pager a{display:block;padding:18px 20px;border:1px solid var(--border);border-radius:var(--radius-md);background:var(--bg);text-decoration:none;transition:border-color var(--transition),background var(--transition)}[data-theme="dark"] .pager a{background:var(--bg-alt)}.pager a:hover{border-color:var(--primary);background:var(--card-bg)}.pager a.next{text-align:right}.pager .pager-label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-muted);margin:0 0 6px;display:flex;align-items:center;gap:6px}.pager a.next .pager-label{justify-content:flex-end}.pager .pager-title{font-size:16px;font-weight:600;color:var(--text);margin:0 0 2px}.pager .pager-sub{font-size:13px;color:var(--text-muted);margin:0}.pager svg{width:12px;height:12px}
+footer.site-footer{border-top:1px solid var(--border);padding:28px 0;text-align:center;color:var(--text-muted);font-size:13px;margin-top:56px}
+@media(max-width:820px){.nav-hamburger{display:grid}.nav-links{display:none;position:fixed;top:68px;left:0;right:0;flex-direction:column;gap:2px;padding:12px 16px 20px;background:rgba(255,255,255,0.97);backdrop-filter:saturate(160%) blur(10px);-webkit-backdrop-filter:saturate(160%) blur(10px);border-bottom:1px solid var(--border);z-index:800;box-shadow:0 8px 24px rgba(0,0,0,0.08)}[data-theme="dark"] .nav-links{background:rgba(5,5,40,0.97)}.navbar.nav-open .nav-links{display:flex}.nav-links a{padding:10px 14px}.pager{grid-template-columns:1fr}.pager a.next{text-align:left}.pager a.next .pager-label{justify-content:flex-start}}
+</style>
+<script>(function(){var t=localStorage.getItem("theme");if(t==="dark"||(!t&&window.matchMedia("(prefers-color-scheme:dark)").matches))document.documentElement.setAttribute("data-theme","dark")})()</script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KFK6J3MN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<header class="navbar" role="banner">
+  <div class="nav-inner">
+    <a href="../index.html" class="brand" aria-label="Home">
+      <span class="brand-mark"><img src="../assets/img/avatar.jpg" alt="Arturo Arias" /></span>
+      <span>Arturo Arias</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="../index.html#hero">Home</a></li>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#experience">Experience</a></li>
+        <li><a href="../projects.html" class="active">Projects</a></li>
+        <li><a href="../index.html#education">Education</a></li>
+        <li><a href="../index.html#achievements">Achievements</a></li>
+        <li><a href="../index.html#certifications">Certifications</a></li>
+        <li><a href="../index.html#blog">Insights</a></li>
+        <li><a href="../index.html#stack">Skills</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      </button>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+          <line class="bar bar-top" x1="2" y1="5" x2="18" y2="5"/>
+          <line class="bar bar-mid" x1="2" y1="10" x2="18" y2="10"/>
+          <line class="bar bar-bot" x1="2" y1="15" x2="18" y2="15"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div style="display:flex;gap:20px;flex-wrap:wrap;">
+  <a href="../projects.html" class="back-link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+    All projects
+  </a>
+  <a href="../index.html" class="back-link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+    Home
+  </a>
+</div>
+
+<div class="wrap">
+  <header class="project-header">
+    <div class="project-tags">
+      <span class="project-tag project-cat">Data Science</span>
+      <span class="project-tag">Python</span>
+      <span class="project-tag">PyTorch</span>
+      <span class="project-tag">U-Net</span>
+      <span class="project-tag">Computer Vision</span>
+      <span class="project-tag">MILP</span>
+      <span class="project-tag">Optimization</span>
+      <span class="project-tag">Geospatial</span>
+      <span class="project-tag">OpenStreetMap</span>
+      <span class="project-tag">NAIP</span>
+    </div>
+    <h1 class="project-title">Power Substation Segmentation and New Substation Build Recommendations</h1>
+    <p class="project-deck">A two-phase AI pipeline, developed by a team of four members for CMU's Introduction to Artificial Intelligence course, to identify underserved areas of the US power grid: a U-Net segmentation model trained on 0.6&thinsp;m-resolution aerial imagery to locate existing substations, then a Mixed-Integer Linear Programming optimizer to recommend 50 new build sites where coverage gaps or demand density justify new infrastructure.</p>
+
+    <div class="project-meta-bar">
+      <div class="meta-cell"><p class="lbl">Year</p><p class="val">2026</p></div>
+      <div class="meta-cell"><p class="lbl">Context</p><p class="val">Carnegie Mellon University</p></div>
+      <div class="meta-cell"><p class="lbl">Topic/Field/Industry</p><p class="val">Computer Vision &middot; Geospatial Analysis &middot; Infrastructure Planning</p></div>
+    </div>
+  </header>
+</div>
+
+<div class="wrap">
+  <figure class="hero-figure">
+    <div style="border-radius:var(--radius-md);overflow:hidden;height:clamp(260px,35vw,440px);">
+      <img src="../assets/img/projects/substation-segmentation.png" alt="Power Substation Segmentation and New Substation Build Recommendations" style="width:100%;height:100%;object-fit:cover;display:block;" />
+    </div>
+    <figcaption>Example U-Net segmentation result on a held-out test patch: RGB aerial image, ground-truth OSM-derived mask overlay, predicted mask overlay, and error map highlighting discrepancies between prediction and label.</figcaption>
+  </figure>
+</div>
+
+<div class="wrap">
+  <div class="prose">
+
+    <div class="impact-row">
+      <div class="impact-card"><p class="num">0.945</p><p class="lbl">ROC-AUC on the held-out test set, confirming reliable substation detection ranking on unseen geography</p></div>
+      <div class="impact-card"><p class="num">4,000</p><p class="lbl">NAIP aerial image patches across 10 US counties used to train the segmentation model</p></div>
+      <div class="impact-card"><p class="num">80%</p><p class="lbl">Reduction in mean service distance in the Central Phoenix pilot (1,306&thinsp;m to 266&thinsp;m)</p></div>
+    </div>
+
+    <h2 id="context">Problem and context</h2>
+    <p>The US power grid is aging, and underserved areas face higher outage risk and longer restoration times. Identifying where new substations would provide the greatest coverage benefit requires two things: an accurate inventory of where substations currently exist, and a principled method for evaluating where new ones would have the most impact. Manual inventory from satellite imagery is time-consuming and inconsistent at scale.</p>
+    <p>This project automated both steps. Phase 1 applied computer vision to detect existing substations from aerial imagery. Phase 2 used those detections as the baseline for an optimization model that recommended 50 new build sites across Maricopa County, Arizona, ranked by coverage gap and demand density. The result is a replicable, data-driven framework for infrastructure planning that generalizes beyond the pilot geography.</p>
+
+    <h2 id="detection">Phase 1: Substation detection</h2>
+    <p>The detection model uses a <strong>U-Net architecture with a ResNet-34 encoder</strong>, applied to four-band NAIP (National Agriculture Imagery Program) aerial imagery at 0.6&thinsp;m/pixel resolution in 512&times;512-pixel patches. Ground-truth substation locations were sourced from OpenStreetMap and rasterized into binary segmentation masks used as training labels.</p>
+    <p>The dataset covers 10 US counties, yielding approximately 4,000 labeled patches. Training used <strong>5-fold cross-validation</strong> to reduce variance across geographically heterogeneous patches; the five fold-specific checkpoints were ensembled at inference time by averaging their predicted probability maps. A custom scoring function ranked candidate locations using the top 1% of pixel probability mass per patch, filtering low-confidence detections and surfacing only high-confidence substation candidates.</p>
+    <p>Data augmentation (random flips, rotations, color jitter on the RGB channels) addressed overfitting on the geographically limited training set and improved generalization to the held-out test counties.</p>
+    <p>Each patch score is compared against an operating threshold to decide whether the patch contains a substation. Threshold selection was treated as a calibrated operating-point decision rather than a fixed architectural property: the automatically selected validation threshold proved too conservative on the held-out geography, so a manual sensitivity sweep identified <strong>0.03</strong> as the operating point that best balanced recall and precision. This threshold is not a universal constant; in a real planning workflow, the right value depends on the relative cost of false negatives (missed substations) versus false positives (spurious detections).</p>
+
+    <div class="callout">
+      <p class="ttl">Why U-Net for substation detection?</p>
+      <p>Substations are small, irregular objects that occupy only a fraction of a typical aerial patch. U-Net's encoder-decoder structure with skip connections preserves fine spatial detail at multiple scales, making it well suited for segmenting compact infrastructure features that would be lost in a classification-only approach. The ResNet-34 encoder provides a strong, pretrained feature backbone without the memory cost of deeper architectures on 512-pixel patches.</p>
+    </div>
+
+    <h2 id="optimization">Phase 2: Site recommendations</h2>
+    <p>As an academic proof of concept, Phase 2 took the ensemble's predicted substation map as the supply baseline and framed new-site selection as a <strong>p-median facility location problem</strong>, solved with a Mixed-Integer Linear Programming model using the PuLP library and the HiGHS solver. The outputs are intended as a planning support tool to illustrate the approach, not as real infrastructure decisions.</p>
+    <p>Demand was estimated by overlaying US Census TIGER block-group data with <strong>Microsoft Building Footprints</strong> to produce a fine-grained residential demand grid across Maricopa County. Candidate sites were filtered for suitability using OpenStreetMap land-use tags (excluding protected areas, water bodies, and dense urban cores) and validated against existing OSM transmission line proximity. Reverse geocoding via Nominatim and spatial queries via the Overpass API enriched each candidate with address and zoning context.</p>
+    <p>The optimizer solved for 50 new sites subject to a constraint that no recommended site overlaps an existing substation within a 500&thinsp;m exclusion radius. Two objective modes were implemented: minimize total weighted distance from demand cells to their nearest substation, and maximize coverage for demand cells currently more than 10&thinsp;km from any substation. The final set of 50 sites blends both objectives, with 19 sites selected primarily for distance reduction and 31 for servicing high-demand cells with inadequate nearby coverage.</p>
+
+    <h2 id="results">Results</h2>
+    <p>At operating threshold 0.03, the 5-fold ensemble achieved a <strong>precision of 0.975 and ROC-AUC of 0.945</strong> on the held-out test set. The high precision confirms that positive detections are reliable; the ROC-AUC confirms strong ranking ability on unseen geography, validating that the model generalizes beyond its training counties. Detection recall was the primary gap, driven by small or partially occluded substations in dense patches.</p>
+    <p>In the Central Phoenix optimization pilot, incorporating the 50 recommended sites reduced <strong>mean service distance from 1,306&thinsp;m to 266&thinsp;m</strong>, an 80% reduction, and cut the share of demand cells more than 10&thinsp;km from any substation from 11.6% to 4.1%. These figures demonstrate that even a relatively small number of well-placed new substations can substantially improve coverage at a regional scale.</p>
+
+    <h2 id="future-work">Future work</h2>
+    <p>Improving detection recall on small and partially occluded substations is the most direct extension, and could be addressed through multi-scale feature aggregation or targeted augmentation for low-visibility patches. Replacing building-count density with actual energy consumption records would produce a more accurate demand grid, particularly in industrial and commercial areas where residential proxies underestimate load. Adding transmission line capacity constraints and construction cost modeling to the MILP formulation would bring the optimization step meaningfully closer to real planning practice. Finally, developing a more generalizable labeling workflow (for instance, through semi-supervised or weakly supervised approaches) would reduce the cost of extending the framework to new geographies without requiring full OSM re-annotation.</p>
+
+    <h2 id="stack">Tools &amp; tech</h2>
+    <div class="stack-grid">
+      <div class="stack-group">
+        <p class="cat">Computer vision</p>
+        <div class="pills"><span>PyTorch</span><span>U-Net</span><span>ResNet-34</span><span>segmentation-models-pytorch</span></div>
+      </div>
+      <div class="stack-group">
+        <p class="cat">Geospatial</p>
+        <div class="pills"><span>GeoPandas</span><span>Rasterio</span><span>Shapely</span><span>OpenStreetMap</span><span>Overpass API</span><span>Nominatim</span><span>NAIP</span></div>
+      </div>
+      <div class="stack-group">
+        <p class="cat">Optimization</p>
+        <div class="pills"><span>PuLP</span><span>HiGHS</span><span>MILP</span></div>
+      </div>
+      <div class="stack-group">
+        <p class="cat">Data &amp; analysis</p>
+        <div class="pills"><span>Python</span><span>Pandas</span><span>NumPy</span><span>US Census TIGER</span><span>Microsoft Building Footprints</span></div>
+      </div>
+      <div class="stack-group">
+        <p class="cat">Tooling</p>
+        <div class="pills"><span>Jupyter Notebook</span><span>Git</span><span>Matplotlib</span></div>
+      </div>
+    </div>
+
+    <nav class="pager" aria-label="Other projects">
+      <a class="prev" href="auna-web-analytics.html">
+        <p class="pager-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Previous project</p>
+        <p class="pager-title">Auna / Oncosalud Web Analytics</p>
+        <p class="pager-sub">BI Dashboard &middot; 2025</p>
+      </a>
+      <a class="next" href="power-outage-forecasting.html">
+        <p class="pager-label">Next project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></p>
+        <p class="pager-title">Power Outage Forecasting and Emergency Generator Allocation</p>
+        <p class="pager-sub">Data Science &middot; 2026</p>
+      </a>
+    </nav>
+
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">&copy; 2026 Arturo Arias &middot; Designed and built with care.</div>
+</footer>
+
+<script>
+(function(){const bar=document.getElementById('scrollProgress');function u(){const h=document.documentElement;const t=h.scrollHeight-h.clientHeight;bar.style.width=t>0?(h.scrollTop/t)*100+'%':'0%'}document.addEventListener('scroll',u,{passive:true});u()})();
+(function(){const btn=document.getElementById('themeToggle');if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');btn.addEventListener('click',()=>{const c=document.documentElement.getAttribute('data-theme');const n=c==='dark'?'':'dark';if(n)document.documentElement.setAttribute('data-theme',n);else document.documentElement.removeAttribute('data-theme');localStorage.setItem('theme',n||'light')})})();
+(function(){const h=document.getElementById('navHamburger');if(!h)return;h.addEventListener('click',()=>{const n=h.closest('.navbar');const o=n.classList.toggle('nav-open');h.setAttribute('aria-expanded',String(o))})})();
+</script>
+<script src="../nav-footer.js"></script>
+</body>
+</html>
