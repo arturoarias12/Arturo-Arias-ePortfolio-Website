@@ -1,7 +1,7 @@
 /**
- * analytics.js — GTM dataLayer event tracking for all public pages.
- * Loaded on every page: via <script> in index.html, via nav-footer.js elsewhere.
- * Exposes window.pushEvent() so chatbot-widget.js can push widget events.
+ * analytics.js — dormant dataLayer event instrumentation.
+ * GTM and this file are not loaded by any public page while analytics consent
+ * is unavailable. Restore only through a consent-gated loader.
  */
 (function () {
   'use strict';

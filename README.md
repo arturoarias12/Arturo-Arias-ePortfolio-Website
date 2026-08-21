@@ -10,7 +10,7 @@ Personal portfolio website built from scratch with vanilla HTML, CSS, and JavaSc
 - Dark mode with preference persisted in localStorage
 - Responsive layout with sticky frosted-glass navbar
 - Contact form via Google Apps Script
-- GTM/GA4 analytics with full dataLayer event tracking
+- Analytics disabled pending an explicit visitor-consent flow
 
 ## AI Chat Assistant
 
@@ -18,7 +18,7 @@ Every page includes a floating assistant powered by a Cloudflare Workers API, a 
 
 ## Stack
 
-HTML5, CSS3, Vanilla JavaScript, Cloudflare Workers, Cloudflare Workers AI, Llama 3.1 8B, RAG, Cloudflare KV, Cloudflare WAF, Google Tag Manager, GA4, GitHub Pages, Google Apps Script
+HTML5, CSS3, Vanilla JavaScript, Cloudflare Workers, Cloudflare Workers AI, Llama 3.1 8B, RAG, Cloudflare KV, Cloudflare WAF, GitHub Pages, Google Apps Script
 
 ## Deployment
 

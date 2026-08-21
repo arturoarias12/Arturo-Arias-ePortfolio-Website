@@ -87,10 +87,4 @@
   cw.src = prefix + 'chatbot-widget.js';
   document.body.appendChild(cw);
 
-  /* Load analytics */
-  var an = document.createElement('script');
-  an.src = prefix + 'js/analytics.js';
-  an.defer = true;
-  document.body.appendChild(an);
-
 })();
