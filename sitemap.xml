@@ -111,6 +111,11 @@
 
   <!-- Blog posts -->
   <url>
+    <loc>https://arturoarias.me/blog/ai-ecosystems.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://arturoarias.me/blog/welcome.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>

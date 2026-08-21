@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KFK6J3MN');</script>
+<!-- End Google Tag Manager -->
+<link rel="icon" type="image/png" href="../favicon.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Four months using ChatGPT, Claude, and Gemini side by side changed how I choose AI tools: by the working style each task needs, not only output quality." />
+<meta property="og:image" content="https://arturoarias.me/assets/img/blog/ai-ecosystems.png" />
+<meta property="og:image:width" content="1672" />
+<meta property="og:image:height" content="941" />
+<meta name="twitter:card" content="summary_large_image" />
+<title>Perspectives on Three AI Ecosystems: From "Best Model" to "Best Match" - Arturo Arias</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../projects-styles.css" />
+<style>
+  body {
+    font-size: 17px;
+    line-height: 1.75;
+  }
+
+  .scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: var(--primary);
+    z-index: 1000;
+  }
+
+  .article-wrap {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .prose {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .article-hero {
+    margin: 0 auto 52px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    background: var(--bg-alt);
+    box-shadow: 0 18px 48px rgba(10, 10, 58, 0.1);
+  }
+
+  .article-hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .article-header {
+    padding: 72px 0 48px;
+    margin-bottom: 52px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .crumbs {
+    margin: 0 0 20px;
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+
+  .crumbs a {
+    color: var(--text-muted);
+    text-decoration: none;
+  }
+
+  .crumbs a:hover { color: var(--primary); }
+  .crumbs .sep { margin: 0 6px; opacity: 0.5; }
+
+  .article-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 18px;
+  }
+
+  .article-tag {
+    padding: 3px 10px;
+    border-radius: 999px;
+    background: var(--card-bg);
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  [data-theme="dark"] .article-tag { color: #9bb8ff; }
+
+  .article-title {
+    margin: 0 0 20px;
+    color: var(--text);
+    font-size: clamp(36px, 5vw, 52px);
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    line-height: 1.1;
+  }
+
+  .article-deck {
+    max-width: 700px;
+    margin: 0 0 30px;
+    color: var(--text-muted);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  .article-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 14px;
+    color: var(--text-muted);
+    font-size: 14px;
+  }
+
+  .meta-author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text);
+    font-weight: 500;
+  }
+
+  .meta-avatar {
+    display: grid;
+    width: 32px;
+    height: 32px;
+    place-items: center;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary), var(--primary-700));
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .meta-dot {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: var(--text-muted);
+    opacity: 0.5;
+  }
+
+  .prose h2 {
+    margin: 60px 0 16px;
+    color: var(--text);
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    line-height: 1.25;
+    scroll-margin-top: calc(var(--nav-h) + 16px);
+  }
+
+  .prose p {
+    margin: 0 0 20px;
+    color: var(--text-soft);
+  }
+
+  .prose strong {
+    color: var(--text);
+    font-weight: 600;
+  }
+
+  .prose blockquote {
+    margin: 30px 0;
+    padding: 8px 0 8px 24px;
+    border-left: 3px solid var(--primary);
+    color: var(--text);
+    font-family: 'Lora', Georgia, serif;
+    font-size: 21px;
+    font-style: italic;
+    line-height: 1.55;
+  }
+
+  .prose blockquote p {
+    margin: 0;
+    color: var(--text);
+  }
+
+  .prose blockquote.question-shift {
+    margin: 22px 0 30px;
+    padding: 18px 20px;
+    border: 1px solid var(--border);
+    border-left-width: 4px;
+    border-radius: var(--radius-md);
+    background: var(--bg-alt);
+    font-style: normal;
+  }
+
+  .question-direction {
+    display: block;
+    margin-bottom: 7px;
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  .prose blockquote.question-less {
+    border-left-color: var(--text-muted);
+  }
+
+  .question-less .question-direction,
+  .prose blockquote.question-less p {
+    color: var(--text-muted);
+  }
+
+  .prose blockquote.question-more {
+    border-left-color: var(--primary);
+    background: rgba(20, 82, 255, 0.06);
+    box-shadow: 0 10px 28px rgba(20, 82, 255, 0.08);
+  }
+
+  .question-more .question-direction {
+    color: var(--primary);
+  }
+
+  .prose hr {
+    width: 60%;
+    height: 1px;
+    margin: 54px auto;
+    border: 0;
+    background: var(--border);
+  }
+
+  .working-style {
+    margin: 30px 0;
+    padding: 20px 22px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    background: var(--bg-alt);
+  }
+
+  .working-style p { margin-bottom: 10px; }
+  .working-style p:last-child { margin-bottom: 0; }
+
+  .editorial-note {
+    margin: 48px 0 0;
+    padding: 16px 18px;
+    border-left: 3px solid var(--primary);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    background: var(--bg-alt);
+    color: var(--text-muted);
+    font-size: 13.5px;
+    line-height: 1.6;
+  }
+
+  .editorial-note p {
+    margin: 0;
+    color: var(--text-muted);
+  }
+
+  .footnote-ref {
+    margin-left: 2px;
+    font-size: 0.7em;
+    vertical-align: super;
+  }
+
+  .article-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 40px;
+    padding: 28px 0 44px;
+    border-top: 1px solid var(--border);
+  }
+
+  .article-footer p {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 14px;
+  }
+
+  .share-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .share-row .label {
+    margin-right: 4px;
+    color: var(--text-muted);
+    font-size: 13px;
+  }
+
+  .share-btn {
+    display: grid;
+    width: 34px;
+    height: 34px;
+    place-items: center;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: transparent;
+    color: var(--text-muted);
+    cursor: pointer;
+  }
+
+  .share-btn:hover {
+    border-color: var(--primary);
+    background: var(--card-bg);
+    color: var(--primary);
+  }
+
+  .share-btn svg { width: 15px; height: 15px; }
+
+  .article-contact {
+    padding: 56px 0 68px;
+    border-top: 1px solid var(--border);
+    background: var(--bg-alt);
+    text-align: center;
+  }
+
+  .article-contact h2 {
+    margin: 0 0 10px;
+    color: var(--text);
+    font-size: 28px;
+  }
+
+  .article-contact p {
+    max-width: 620px;
+    margin: 0 auto 24px;
+    color: var(--text-muted);
+  }
+
+  .email-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 11px 18px;
+    border: 1.5px solid var(--primary);
+    border-radius: var(--radius-md);
+    color: var(--primary);
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .email-cta:hover {
+    background: var(--primary);
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .email-cta svg { width: 18px; height: 18px; }
+
+  @media (max-width: 720px) {
+    .article-header { padding: 52px 0 38px; margin-bottom: 40px; }
+    .article-title { font-size: clamp(34px, 10vw, 44px); }
+    .article-deck { font-size: 18px; }
+    .meta-dot { display: none; }
+    .article-meta { gap: 9px 14px; }
+    .prose h2 { margin-top: 48px; font-size: 27px; }
+    .prose blockquote { padding-left: 18px; font-size: 19px; }
+  }
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KFK6J3MN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<header class="navbar" role="banner">
+  <div class="nav-inner">
+    <a href="../index.html" class="brand" aria-label="Home">
+      <span class="brand-mark"><img src="../assets/img/avatar.jpg" alt="Arturo Arias" /></span>
+      <span>Arturo Arias</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="../index.html#hero">Home</a></li>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#experience">Experience</a></li>
+        <li><a href="../index.html#projects">Projects</a></li>
+        <li><a href="../index.html#education">Education</a></li>
+        <li><a href="../index.html#achievements">Achievements</a></li>
+        <li><a href="../index.html#certifications">Certifications</a></li>
+        <li><a href="../blog.html" class="active" aria-current="page">Insights</a></li>
+        <li><a href="../index.html#stack">Skills</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      </button>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+          <line class="bar bar-top" x1="2" y1="5" x2="18" y2="5"/>
+          <line class="bar bar-mid" x1="2" y1="10" x2="18" y2="10"/>
+          <line class="bar bar-bot" x1="2" y1="15" x2="18" y2="15"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<article>
+  <div class="article-wrap">
+    <div class="prose">
+      <a href="../blog.html" class="back-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        All posts
+      </a>
+
+      <header class="article-header">
+        <p class="crumbs">
+          <a href="../index.html">Home</a>
+          <span class="sep">/</span>
+          <a href="../blog.html">Insights</a>
+          <span class="sep">/</span>
+          <span>Perspectives on Three AI Ecosystems</span>
+        </p>
+        <div class="article-tags">
+          <span class="article-tag">Artificial Intelligence</span>
+          <span class="article-tag">LLM</span>
+          <span class="article-tag">Agentic AI</span>
+          <span class="article-tag">Productivity</span>
+          <span class="article-tag">Personal</span>
+        </div>
+        <h1 class="article-title">Perspectives on Three AI Ecosystems: From "Best Model" to "Best Match"</h1>
+        <p class="article-deck">Using three ecosystems (OpenAI, Anthropic, Google) side by side changed the question for me from "Which model is the best?" to "Which kind of collaboration does this task need?"</p>
+        <div class="article-meta">
+          <span class="meta-author"><span class="meta-avatar">AA</span>Arturo Arias</span>
+          <span class="meta-dot"></span>
+          <time datetime="2026-08-21">August 21, 2026</time>
+          <span class="meta-dot"></span>
+          <span>5 min read</span>
+        </div>
+      </header>
+    </div>
+  </div>
+
+  <div class="article-wrap">
+    <figure class="article-hero">
+      <img src="../assets/img/blog/ai-ecosystems.png" width="1672" height="941" alt="Three computer monitors illuminated in orange, green, and blue, representing three AI ecosystems." />
+    </figure>
+  </div>
+
+  <!-- ARTICLE CONTENT: edit the prose inside this block for future revisions. -->
+  <div class="article-wrap">
+    <div class="prose">
+      <p>During the past four months, I have been deliberately using ChatGPT and Codex, Claude and Claude Code, and Gemini side by side.</p>
+
+      <p>In summary, the main insight is: <strong>the most useful AI is not always the one that gives the "best" answer. Sometimes, it is the one whose behavior best matches how you want to work.</strong></p>
+
+      <p>Before this experiment, I mostly used ChatGPT for almost everything; but after repeatedly hearing from colleagues and classmates that I was missing out on Claude (and seeing what Google was building around Gemini and its broader ecosystem), I decided to subscribe to all three so I could experience each one firsthand. The decision was also reinforced by my growing recognition that, given the pace at which these models are evolving, maintaining practical familiarityrequires continuous hands-on exposure to their capabilities.</p>
+
+      <p>I used them across ordinary work: drafting and refining emails, summarizing information, supporting my job search, generating images, researching, automating repetitive tasks, writing code, and working directly inside larger codebases through coding agents.</p>
+
+      <p>What follows in this blog post is purely my experience of how these tools fit into my workflows. It is not a technical benchmark, an academic evaluation, or an attempt to decide which company has the "best" model. These products evolve too quickly for a temporary performance gap to be the most interesting comparison. Their <em>working styles</em> have been much more useful to examine.</p>
+
+      <h2 id="openai">OpenAI: an amplifier of my thinking</h2>
+
+      <p>In my experience, ChatGPT and Codex feel the closest to an <strong>amplifier of my own thinking</strong>.</p>
+
+      <p>When I have a clear idea of what I want, I can give precise instructions and generally expect the result to remain closely aligned with them. That is particularly valuable in areas where I already have expertise.</p>
+
+      <p>Python is a good example. If I already understand the architecture, implementation, and trade-offs I want, my main reason for using AI is <strong>efficiency</strong>: execute the plan, reduce repetitive work, generate or modify files, and help me move faster without giving up control of the direction.</p>
+
+      <p>Nevertheless, that efficiency comes with a trade-off: if I omit something important in my instructions, that omission can carry into the result. The system can accelerate execution and testing, but the underlying thinking, judgment, and details still need to come from me.</p>
+
+      <p>That interaction style works extremely well for me when <strong>precision, alignment, and control are the priority</strong>.</p>
+
+      <h2 id="anthropic">Anthropic: a more exploratory collaborator</h2>
+
+      <p>By comparison, my experience with Claude has felt different.</p>
+
+      <p>Initially, I hesitated to subscribe because of my uncertainty about whether another subscription would be worthwhile. Nonetheless, I eventually tried it after receiving recommendations that it could often reach strong results with fewer iterations (which meant less back-and-forth and less token usage). My experience ended up being more nuanced than that.</p>
+
+      <p>I did not consistently find that Claude required substantially fewer prompts than Codex. What I noticed was more interesting: <strong>the two often approach the same task differently.</strong></p>
+
+      <p>Claude frequently feels more willing to expand beyond the literal request—proposing alternatives, surfacing considerations I did not mention, or introducing ideas that might improve the overall solution.</p>
+
+      <p>When I already know exactly what I want, that extra initiative is not always what I need. In contrast, when I am entering a less familiar area, it becomes very valuable.</p>
+
+      <p>In those situations, I am not only automating manual work: I am also accelerating part of the learning and information-processing process. Claude can expose me to possibilities I might not have considered, giving me more material to evaluate while I develop my own understanding (without me having to explicitly ask for it).</p>
+
+      <p>Through experimentation, I found that a particularly effective workflow is to let the tools <strong>collaborate conceptually</strong>. For instance, Codex can take ownership of an implementation and make changes across a project, while Claude serves as a reviewer or QA partner, challenging decisions, identifying potential issues, and suggesting improvements. The results have been consistently strong enough that this has become a workflow I now use quite often.</p>
+
+      <h2 id="google">Google: the productivity advantage of integration</h2>
+
+      <p>Gemini has occupied another interesting position in my toolkit.</p>
+
+      <p>For some of the more complex tasks in the particular workflows I have attempted, I have tended to reach first for ChatGPT (and Codex) or Claude, but focusing only on that comparison would miss what I see as one of Gemini's biggest strengths: <strong>where it lives.</strong></p>
+
+      <p>Its integration with the broader Google ecosystem can make relatively simple day-to-day workflows remarkably convenient. When a task involves Chrome, Drive, or Google Colab, connecting AI to the environment where the work is already happening creates useful opportunities for office automation and productivity.</p>
+
+      <p>The wider set of tools adds another dimension to the experience. Image and video generation, along with models such as Lyria for music generation, expand what can be created within Google's ecosystem.</p>
+
+      <p>For many everyday tasks, convenience and integration can matter just as much as maximum capability on a difficult, isolated prompt.</p>
+
+      <h2 id="assigning-roles">Assigning roles instead of choosing a winner</h2>
+
+      <p>After using all three, I have become less interested in asking:</p>
+
+      <blockquote class="question-shift question-less">
+        <span class="question-direction">Asking less</span>
+        <p>Which AI model is the best?</p>
+      </blockquote>
+
+      <p>And much more interested in asking:</p>
+
+      <blockquote class="question-shift question-more">
+        <span class="question-direction">Asking more</span>
+        <p>Which AI behavior is best for this particular task?</p>
+      </blockquote>
+
+      <div class="working-style">
+        <p><strong>Sometimes I want precise execution of what I asked for.</strong> I know the direction and want the system to help me move faster.</p>
+        <p><strong>Sometimes I want productive challenge.</strong> I need alternatives, questions, and possibilities I have not yet considered.</p>
+        <p><strong>Sometimes I want contextual convenience.</strong> The biggest gain comes from having AI integrated directly into the tools where the work already happens.</p>
+      </div>
+
+      <p>The most powerful workflow may not come from choosing one ecosystem at all: it may come from <strong>learning how to combine them according to their strengths and according to our own knowledge, preferences, and working style.</strong></p>
+
+      <p>What approach have you found works best for you? If you regularly use ChatGPT and Codex, Claude and Claude Code, Gemini, or a combination of them, have you also noticed differences in how they <em>work with you</em>, beyond simply comparing the quality of their outputs?<sup class="footnote-ref"><a href="#editorial-note" aria-label="See editorial note">1</a></sup></p>
+
+      <aside class="editorial-note" id="editorial-note" aria-label="Editorial note">
+        <p><sup>1</sup> <strong>Editorial note:</strong> The ideas, experiences, comparisons, and conclusions in this article are my own. I used ChatGPT to help refine the wording and structure of the final draft.</p>
+      </aside>
+
+      <footer class="article-footer">
+        <p>Filed under <a href="../blog.html">Artificial Intelligence</a>, <a href="../blog.html">Productivity</a>, and <a href="../blog.html">Personal</a></p>
+        <div class="share-row">
+          <span class="label">Share</span>
+          <button class="share-btn" id="shareCopy" aria-label="Copy link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+          </button>
+        </div>
+      </footer>
+    </div>
+  </div>
+</article>
+
+<section class="article-contact">
+  <div class="article-wrap">
+    <h2>Continue the conversation</h2>
+    <p>Have you developed your own way of combining these tools, or do you approach them differently? I would be interested to hear your perspective.</p>
+    <a href="mailto:aaarias@andrew.cmu.edu" class="email-cta">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+      aaarias@andrew.cmu.edu
+    </a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">© <span id="footer-year"></span> Arturo Arias · <a href="../index.html" style="color:inherit;">Back to portfolio</a></div>
+</footer>
+
+<script>
+(function () {
+  const bar = document.getElementById('scrollProgress');
+  function update() {
+    const h = document.documentElement;
+    const total = h.scrollHeight - h.clientHeight;
+    bar.style.width = total > 0 ? (h.scrollTop / total) * 100 + '%' : '0%';
+  }
+  document.addEventListener('scroll', update, { passive: true });
+  update();
+})();
+
+(function () {
+  const hamburger = document.getElementById('navHamburger');
+  if (hamburger) {
+    hamburger.addEventListener('click', () => {
+      const navbar = hamburger.closest('.navbar');
+      const isOpen = navbar.classList.toggle('nav-open');
+      hamburger.setAttribute('aria-expanded', String(isOpen));
+    });
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      a.addEventListener('click', () => {
+        hamburger.closest('.navbar').classList.remove('nav-open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+
+  const btn = document.getElementById('themeToggle');
+  const html = document.documentElement;
+  function applyTheme(dark) {
+    if (dark) html.setAttribute('data-theme', 'dark');
+    else html.removeAttribute('data-theme');
+  }
+  const saved = localStorage.getItem('theme');
+  applyTheme(saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches);
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+    if (!localStorage.getItem('theme')) applyTheme(e.matches);
+  });
+  btn.addEventListener('click', () => {
+    const isDark = html.getAttribute('data-theme') === 'dark';
+    applyTheme(!isDark);
+    localStorage.setItem('theme', isDark ? 'light' : 'dark');
+  });
+})();
+
+(function () {
+  const copy = document.getElementById('shareCopy');
+  if (!copy) return;
+  copy.addEventListener('click', async () => {
+    try { await navigator.clipboard.writeText(window.location.href); } catch (_) {}
+    const original = copy.innerHTML;
+    copy.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>';
+    setTimeout(() => { copy.innerHTML = original; }, 1400);
+  });
+})();
+
+document.getElementById('footer-year').textContent = new Date().getFullYear();
+</script>
+<script src="../nav-footer.js"></script>
+</body>
+</html>

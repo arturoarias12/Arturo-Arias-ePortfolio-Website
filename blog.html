@@ -177,6 +177,10 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
     repeating-linear-gradient(45deg, rgba(255,255,255,0.06) 0 10px, transparent 10px 20px),
     radial-gradient(60% 60% at 30% 30%, rgba(255,255,255,0.18), transparent 60%);
 }
+.featured-thumb.has-image::after { display: none; }
+.featured-thumb img {
+  display: block; width: 100%; height: 100%; object-fit: cover;
+}
 .featured-tag {
   display: inline-block; font-size: 11px; font-weight: 600;
   letter-spacing: 0.08em; text-transform: uppercase;
@@ -518,13 +522,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 /* ---------- Posts data ---------- */
 const POSTS = [
   {
+    title: "Perspectives on Three AI Ecosystems: From \"Best Model\" to \"Best Match\"",
+    date: "2026-08-21",
+    excerpt: "Four months using ChatGPT, Claude, and Gemini side by side changed the question from which model is best to which working style fits the task.",
+    tags: ["Artificial Intelligence", "LLM", "Agentic AI", "Productivity", "Personal"],
+    minutes: 5,
+    url: "blog/ai-ecosystems.html",
+    image: "assets/img/blog/ai-ecosystems.png",
+    featured: true
+  },
+  {
     title: "Hello, world: this site is live",
     date: "2026-05-21",
     excerpt: "A first entry on why I built this place, what it's for, and what I hope to do with it.",
     tags: ["Personal", "Web Development"],
     minutes: 3,
     url: "blog/welcome.html",
-    featured: true
+    featured: false
   }
 ];
 
@@ -582,8 +596,11 @@ function renderFeatured() {
   const titleHTML = isLink
     ? `<a href="${escapeHTML(post.url)}">${escapeHTML(post.title)}</a>`
     : escapeHTML(post.title);
+  const thumbHTML = post.image
+    ? `<div class="featured-thumb has-image"><img src="${escapeHTML(post.image)}" alt="" width="1672" height="941"></div>`
+    : `<div class="featured-thumb" aria-hidden="true"></div>`;
   el.innerHTML = `
-    <div class="featured-thumb" aria-hidden="true"></div>
+    ${thumbHTML}
     <div>
       <span class="featured-tag">Featured</span>
       <h2>${titleHTML}</h2>
