@@ -1,64 +1,143 @@
-# AI crawlers
+# ============================================================
+# OpenAI / ChatGPT
+# ============================================================
+
+# ChatGPT search / discovery
+User-agent: OAI-SearchBot
+Allow: /
+
+# User-requested page retrieval in ChatGPT
+User-agent: ChatGPT-User
+Allow: /
+
+# OpenAI model-training crawler
 User-agent: GPTBot
 Disallow: /
 
-User-agent: ChatGPT-User
-Disallow: /
 
-User-agent: OAI-SearchBot
-Disallow: /
+# ============================================================
+# Anthropic / Claude
+# ============================================================
 
-User-agent: Google-Extended
-Disallow: /
+# Claude search / discovery
+User-agent: Claude-SearchBot
+Allow: /
 
-User-agent: CCBot
-Disallow: /
+# User-requested page retrieval in Claude
+User-agent: Claude-User
+Allow: /
 
-User-agent: anthropic-ai
-Disallow: /
-
-User-agent: Claude-Web
-Disallow: /
-
+# Anthropic model-training crawler
 User-agent: ClaudeBot
 Disallow: /
 
+
+# ============================================================
+# Perplexity
+# ============================================================
+
+# Perplexity search / discovery
+User-agent: PerplexityBot
+Allow: /
+
+# User-requested retrieval
+User-agent: Perplexity-User
+Allow: /
+
+
+# ============================================================
+# Google / Gemini
+# ============================================================
+
+# Block use covered by Google-Extended, including training of
+# future Gemini models.
+#
+# Note: Google-Extended also controls some Gemini grounding.
+# Normal Google Search remains allowed through User-agent: *
+User-agent: Google-Extended
+Disallow: /
+
+
+# ============================================================
+# Apple
+# ============================================================
+
+# Allow Apple's normal crawler for Spotlight, Siri, Safari,
+# search results, and current-information grounding.
+User-agent: Applebot
+Allow: /
+
+# Opt out of Apple foundation-model training.
+User-agent: Applebot-Extended
+Disallow: /
+
+
+# ============================================================
+# Meta / Social sharing
+# ============================================================
+
+# Allow Meta to retrieve pages for sharing/distribution features.
+User-agent: FacebookBot
+Allow: /
+
+
+# ============================================================
+# Other AI search / discovery
+# ============================================================
+
+# You.com search crawler
+User-agent: YouBot
+Allow: /
+
+
+# ============================================================
+# Training / bulk dataset / data extraction crawlers
+# ============================================================
+
+# Common Crawl
+User-agent: CCBot
+Disallow: /
+
+# Cohere
 User-agent: cohere-ai
 Disallow: /
 
-User-agent: PerplexityBot
-Disallow: /
-
-User-agent: YouBot
-Disallow: /
-
-User-agent: Diffbot
-Disallow: /
-
+# ByteDance
 User-agent: Bytespider
 Disallow: /
 
+# Diffbot data extraction
+User-agent: Diffbot
+Disallow: /
+
+# Image/data collection
 User-agent: ImagesiftBot
 Disallow: /
 
+# Web/forum dataset collection
 User-agent: omgili
 Disallow: /
 
 User-agent: omgilibot
 Disallow: /
 
-User-agent: FacebookBot
-Disallow: /
-
-User-agent: Applebot-Extended
-Disallow: /
-
+# SEO / commercial data collection
 User-agent: DataForSeoBot
 Disallow: /
 
-# Search engines
+
+# ============================================================
+# Normal search engines and web crawlers
+# ============================================================
+
 User-agent: *
 Allow: /
 
+
+# ============================================================
+# Discovery
+# ============================================================
+
 Sitemap: https://arturoarias.me/sitemap.xml
+
 AI-txt: https://arturoarias.me/ai.txt
