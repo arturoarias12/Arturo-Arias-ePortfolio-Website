@@ -1,0 +1,2715 @@
+# Arturo Arias — Full Portfolio Content
+
+> Markdown representation of the public portfolio at https://arturoarias.me/. Arturo uses data and AI systems to automate work and drive impact.
+
+Source pages are linked in each section. Wording, dates, metrics, and proficiency levels reflect the portfolio as written; relative dates and availability statements belong to their source pages. Project catalog metadata and detail pages can differ and are labeled separately. Linked PDFs, repositories, and external resources are references, not reproduced documents. Navigation, decorative images, and interface controls are omitted.
+
+[Index](https://arturoarias.me/llms.txt)
+
+---
+
+## Arturo Arias
+
+Source: [Arturo Arias](https://arturoarias.me/)
+
+Open to new opportunities
+
+Using Data and AI Systems to automate work and drive impact.
+
+[View My Work](https://arturoarias.me/#projects)
+
+Tailored for the role
+
+[General / Main](https://arturoarias.me/assets/docs/resume-main.pdf) [Business Intelligence and Data Analytics](https://arturoarias.me/assets/docs/resume-bida.pdf) [Data Science](https://arturoarias.me/assets/docs/resume-data-science.pdf) [Artificial Intelligence / Machine Learning](https://arturoarias.me/assets/docs/resume-ai-ml.pdf) [Data Engineering](https://arturoarias.me/assets/docs/resume-data-engineering.pdf) [LLM Engineering / RAG](https://arturoarias.me/assets/docs/resume-llm-rag.pdf) [ML Engineering / MLOps](https://arturoarias.me/assets/docs/resume-ai-ml-fooai.pdf) [ML, Forecasting & Optimization](https://arturoarias.me/assets/docs/resume-ai-ml-mlps.pdf) [Financial / Quantitative Analytics](https://arturoarias.me/assets/docs/resume-financial.pdf) [Software Engineering](https://arturoarias.me/assets/docs/resume-software.pdf)
+
+[LinkedIn](https://www.linkedin.com/in/arturoarias1/) [GitHub](https://github.com/arturoarias12) [Kaggle](https://www.kaggle.com/arturoarias12)
+
+### About me
+
+I am Arturo, a Data and AI professional currently completing a Master of Information Systems Management - Business Intelligence and Data Analytics at Carnegie Mellon University. My work focuses on transforming complex data into practical systems, from BI dashboards and analytics pipelines to automation tools and trained AI models, that reduce friction, improve decisions, and give people back time.
+
+My path began in chemical engineering, where I learned to approach problems with structure, curiosity, and systems thinking. Today, I apply that foundation across data analytics, business intelligence, machine learning, and AI-powered automation. Certified in Python programming and AI product design, I also mentor early-career data professionals and work to open pathways for others pursuing growth through technology.
+
+Core skills
+
+Python  SQL  Machine Learning  Power BI  Large Language Models  Deep Learning  NLP  ETL & ELT  Pandas  Microsoft Fabric  DAX  Data Visualization  Scikit-learn  PyTorch  TensorFlow  Prompt Engineering  BigQuery  Statistical Modeling  Time Series  A/B Testing  Azure  Google Cloud  AWS  PySpark  Java  Django
+
+[Full skills breakdown ↓](https://arturoarias.me/#stack)
+
+[Beyond the résumé: volunteering, student chapters, interests and more →](https://arturoarias.me/about.html)
+
+### Professional experience
+
+Three industries, one thread: making data work for people.
+
+May 2025 - Aug 2025
+
+#### Business Intelligence Specialist
+
+Independent / Incarail · Lima, Peru 🇵🇪
+
+Modernized analytics dashboards for Incarail, Peru's luxury rail and tourism sector, redesigning BI systems that made commercial reporting faster, lighter, and more reliable for performance decisions.
+
+[View details](https://arturoarias.me/experience/independent1.html)
+
+Nov 2024 - May 2025
+
+#### Data Analyst
+
+[Auna](https://www.aunainvestors.com/) / [Oncosalud](https://oncosalud.pe/) · Lima, Peru 🇵🇪
+
+Supported analytics for a large healthcare provider by automating reporting workflows and centralizing digital performance data, helping teams monitor growth, leads, and affiliations more efficiently.
+
+[View details](https://arturoarias.me/experience/auna.html)
+
+May 2021 - Mar 2024
+
+#### Researcher
+
+[Alicorp](https://www.alicorp.com.pe/pe/en) · Lima, Peru 🇵🇪
+
+Led research projects at one of Peru's leading food companies, modernizing nutritional data analysis with Python-powered benchmarks, reports, and decision-support tools.
+
+[View details](https://arturoarias.me/experience/alicorp.html)
+
+### Projects
+
+Real-world builds across healthcare, consumer goods, transportation, and open source -each one shipped and measurable.
+
+[View all projects](https://arturoarias.me/projects.html)
+
+### Education and Training
+
+Academic degrees
+
+2026 · In Progress
+
+#### [Master of Information Systems Management - Business Intelligence and Data Analytics](https://www.heinz.cmu.edu/programs/information-systems-management-master/bida)
+
+Carnegie Mellon University · Pittsburgh, PA, United States 🇺🇸
+
+Current GPA: 3.91
+
+2019
+
+#### [B.S. Chemical Engineering](https://utec.edu.pe/carreras/ingenieria-quimica)
+
+Universidad de Ingeniería y Tecnología (UTEC) · Lima, Peru 🇵🇪
+
+Professional training
+
+- 2025   [Data Science Specialization](https://arturoarias.me/assets/docs/cert-data-science-specialization.pdf)   Data Science Research Peru · Online
+
+- 2024   [Designing and Building AI Products and Services](https://arturoarias.me/assets/docs/cert-mit-xpro-ai.pdf)   MIT xPRO · Online
+
+- 2024   [Data Analytics Specialization](https://arturoarias.me/assets/docs/cert-data-analytics-specialization.pdf)   Data Science Research Peru · Online
+
+- 2023   [Google Cloud Big Data & Machine Learning Fundamentals](https://arturoarias.me/assets/docs/cert-google-cloud-bigdata-ml.pdf)   Google · edX · Online
+
+- 2023   [Communication in Science, Technology and Innovation](https://arturoarias.me/assets/docs/cert-communication-science-tech.pdf)   Posgrado UTEC · Lima, Peru
+
+### Achievements and Awards
+
+Team
+
+Individual
+
+2026
+
+#### [1st Place - WiCyS Capture The Flag (CTF) Cybersecurity Competition](https://www.linkedin.com/posts/arturoarias1_cybersecurity-ctf-capturetheflag-share-7447924243788472320-SKPL)
+
+WiCyS at Carnegie Mellon University
+
+2023
+
+#### [Poddar Award for Rising Chemical Engineers](https://www.linkedin.com/pulse/poddar-award-2023-la-historia-detr%25C3%25A1s-del-arturo-arias-m7xje/?trackingId=L%2FHknq4eSweCNAlk6agcDA%3D%3D)
+
+AIChE - American Institute of Chemical Engineers
+
+2019
+
+#### [1st Place - AIChE ChemE Jeopardy Competition](https://www.aiche.org/community/awards/cheme-jeopardy-competition)
+
+AIChE - American Institute of Chemical Engineers
+
+2018–2019
+
+#### [AIChE Outstanding Student Chapter Award](https://www.aiche.org/community/awards/outstanding-student-chapter-award)
+
+AIChE - American Institute of Chemical Engineers
+
+### Certifications
+
+Verified credentials and professional competencies.
+
+[PCAP™ - Certified Associate Python Programmer](https://verify.openedg.org/)
+
+OpenEDG Python Institute
+
+2024
+
+ID: 1p4J.YB2m.xMRV
+
+[Designing and Building AI Products and Services](https://arturoarias.me/assets/docs/cert-mit-xpro-ai.pdf)
+
+MIT xPRO
+
+2024
+
+ID: 111068014
+
+Certified Data Scientist - Certificate of Excellence
+
+Data Science Research Peru
+
+2024
+
+Python Data Analysis Bootcamp - Certificate of Excellence
+
+Data Science Research Peru
+
+2024
+
+Introduction to Prompt Engineering for Generative AI
+
+LinkedIn Learning
+
+2024
+
+Finance Foundations: Business Valuation
+
+LinkedIn Learning · NASBA · PMI
+
+2024
+
+edX Verified Certificate for Google Cloud Big Data and Machine Learning Fundamentals
+
+edX
+
+2023
+
+ID: a8fb2aef73ee4d69af59044c84f0e864
+
+AIChE Annual Meeting - Full Attendance
+
+AIChE
+
+2023
+
+TOEFL iBT
+
+ETS
+
+2023
+
+Data Analysis and Visualization
+
+Crehana
+
+2023
+
+Product Management: Digital Product Innovation
+
+Crehana
+
+2023
+
+Customer Experience Design
+
+Crehana
+
+2023
+
+Investment and Entrepreneurship - ABC del BCP
+
+2022
+
+BCP · IISE · UTEC
+
+Career Mentor - UTEC Career Program
+
+UTEC
+
+2021-2025
+
+German Language - Einstieg (Beginner)
+
+Euroidiomas
+
+2021
+
+Market Intelligence
+
+BioActiva
+
+2021
+
+Duolingo English Test
+
+Duolingo
+
+2020
+
+Innovation in the Food Industry
+
+AIChE · UTEC
+
+2019
+
+Microsoft Project
+
+COLAEIQ
+
+2019
+
+PROCESA - Industrial Processes Congress
+
+PROCESA
+
+2019
+
+1st Place - Elevator Pitch Competition
+
+UTEC
+
+2018
+
+Adobe Photoshop CS5 Proficient
+
+CIBERTEC
+
+2015
+
+Adobe Dreamweaver CS5
+
+CIBERTEC
+
+2014
+
+Adobe Flash CS5 Proficient
+
+CIBERTEC
+
+2014
+
+First Certificate in English
+
+University of Cambridge
+
+2013
+
+Corel Draw + Corel Photopaint X5 Proficient
+
+CIBERTEC
+
+2013
+
+Excel 2007 Expert Specialist
+
+CIBERTEC
+
+2012
+
+Office 2010 Expert Specialist
+
+CIBERTEC
+
+2012
+
+Excel 2007 Proficient
+
+CIBERTEC
+
+2011
+
+Word 2007 Expert Specialist
+
+CIBERTEC
+
+2011
+
+Internet Explorer 8
+
+CIBERTEC
+
+2010
+
+Power Point 2007
+
+CIBERTEC
+
+2010
+
+Windows XP
+
+CIBERTEC
+
+2009
+
+Word 2003 Proficient
+
+CIBERTEC
+
+2009
+
+### Blog and Insights
+
+Personal writing covering data, AI, research interests, and reflections on technical work.
+
+August 2026
+
+#### Perspectives on Three AI Ecosystems: From "Best Model" to "Best Match"
+
+Why the right AI tool depends not only on output quality, but on the kind of collaboration a task needs.
+
+[Read more](https://arturoarias.me/blog/ai-ecosystems.html)
+
+May 2026
+
+#### Hello, world: this site is live
+
+A first entry on why I built this place, what it is for, and what I hope to do with it.
+
+[Read more](https://arturoarias.me/blog/welcome.html)
+
+[See all posts →](https://arturoarias.me/blog.html)
+
+### Skills, Tools and Tech Stack
+
+[View all skills](https://arturoarias.me/skills.html)
+
+Programming
+
+Python Expert
+
+SQL Expert
+
+Java Advanced
+
+C++ Intermediate
+
+Swift Intermediate
+
+BI & Visualization
+
+Power BI Expert
+
+Looker Studio Advanced
+
+Tableau Advanced
+
+Matplotlib & Seaborn Expert
+
+Microsoft Excel Expert
+
+Cloud Platforms
+
+Microsoft Fabric Advanced
+
+BigQuery Advanced
+
+Google Cloud Advanced
+
+Microsoft Azure Intermediate
+
+AWS Advanced
+
+Data & ML Libraries
+
+Pandas Expert
+
+NumPy Advanced
+
+Scikit-learn Advanced
+
+PyTorch Advanced
+
+TensorFlow Advanced
+
+AI & Machine Learning
+
+Machine Learning Advanced
+
+Deep Learning Advanced
+
+NLP Advanced
+
+Large Language Models Expert
+
+OpenAI API Advanced
+
+Web & Analytics
+
+Google Analytics 4 Expert
+
+Google Tag Manager Advanced
+
+Amazon Athena Advanced
+
+Microsoft Clarity Advanced
+
+A/B Testing Advanced
+
+Statistical Methods
+
+Time Series Advanced
+
+Regression Advanced
+
+Hypothesis Testing Expert
+
+Causal Inference Advanced
+
+Bayesian Statistics Advanced
+
+[+ More skills Full breakdown across all domains](https://arturoarias.me/skills.html)
+
+### Languages
+
+🇪🇸
+
+Spanish
+
+Native
+
+🇺🇸
+
+English
+
+Bilingual
+
+🇮🇹
+
+Italian
+
+Intermediate
+
+🇩🇪
+
+German
+
+Basic
+
+### Contact
+
+Seeking full-time opportunities starting in late December 2026 or January 2027.
+
+The fastest way to reach me is email, but I also check LinkedIn regularly.
+
+**Based in:** Pittsburgh, PA, United States
+
+**Working:** Remote or willing to relocate
+
+[aaarias@andrew.cmu.edu](mailto:aaarias@andrew.cmu.edu)
+
+Opens your email client directly.
+
+[LinkedIn](https://www.linkedin.com/in/arturoarias1/) [GitHub](https://github.com/arturoarias12) [Kaggle](https://www.kaggle.com/arturoarias12) [Email](mailto:aaarias@andrew.cmu.edu)
+
+### Professional focus areas
+
+Artificial Intelligence, Machine Learning, Data Science, Data Engineering, Business Intelligence, Data Analytics, Financial Analytics, Quantitative Analysis, Software Development.
+
+Featured project content is included in the project catalog and case studies below.
+
+---
+
+## A broader perspective
+
+Source: [A broader perspective](https://arturoarias.me/about.html)
+
+The volunteer roles I have taken on, the communities I have been part of, the things I build and study outside of work, and what I am up to right now.
+
+### Currently
+
+A short snapshot of where things stand. Updated periodically.
+
+Right now
+
+Successfully completed the first year of the Master of Information Systems Management - Business Intelligence and Data Analytics (MISM-BIDA) program at Carnegie Mellon University's Heinz College. Recently became Vice President of Latinburgh, the Latin American student organization at Heinz, and continuing to serve as an Admissions Ambassador for the MISM-BIDA program.
+
+Outside of class, I am building this portfolio, developing personal projects at the intersection of AI, data engineering, and analytics, and running small independent research experiments on topics I find genuinely interesting.
+
+I am actively seeking **full-time opportunities** in Data Science, Data Analytics, AI/ML, Business Intelligence, Software, or related fields, with availability starting in late December 2026 or January 2027. I am open to remote and in-person roles and willing to relocate for the right opportunity. Eligible to work in the United States under F-1 OPT.
+
+Last updated · August 2026
+
+### Service, leadership and mentorship
+
+From founding a student chapter at 19 to mentoring peers, leading volunteer teams, and staying involved in the communities that shaped me. The common thread has always been community building and helping people earlier on the path by opening doors to new opportunities.
+
+8+
+
+Years of continuous community involvement
+
+1
+
+Student chapter founded and led as first president
+
+40+
+
+Volunteers coordinated at Ponle Corazón 2021
+
+5+
+
+Years as career and academic mentor at UTEC
+
+#### Vice President Current
+
+**Latinburgh** · Carnegie Mellon University, Heinz College of Information Systems and Public Policy
+
+May 2026 — Present
+
+Latinburgh is a student organization at Heinz College dedicated to fostering a strong and inclusive Latin American community at Carnegie Mellon. As Vice President, supporting initiatives to celebrate Latin American cultures, languages, and traditions; helping newly admitted students transition to CMU; and collaborating with student organizations across campus to promote cultural engagement and community building.
+
+Student leadership  Community building  Latin American community  CMU Heinz
+
+#### Admissions Ambassador Current
+
+**Carnegie Mellon University** · Heinz College of Information Systems and Public Policy, MISM-BIDA Program
+
+Nov 2025 — Present
+
+Representing the MISM-BIDA program as a volunteer ambassador for the Heinz College Admissions Ambassador group. Supporting prospective and admitted students through the graduate school process via virtual and in-person interactions, sharing firsthand experience of the program and life at CMU.
+
+Admissions  Student outreach  CMU MISM-BIDA
+
+#### Career Mentor Current
+
+**UTEC** · Universidad de Ingeniería y Tecnología, Career Mentoring Program
+
+Apr 2021 — Present
+
+Over five years of active participation in UTEC's Career Mentoring Program, whose goal is to accelerate the personal and professional development of mentees by sharing practical knowledge from real experience. Providing guidance to help students establish realistic goals, make better academic and career decisions, and navigate the early stages of professional life with more clarity and confidence.
+
+Career mentoring  Education  UTEC
+
+#### Communications and Marketing Coordinator
+
+**AIChE Sección Perú** · American Institute of Chemical Engineers, Peru Local Section
+
+Aug 2022 — Aug 2024
+
+A two-year progression through the communications leadership of AIChE Peru: Deputy Communications and Marketing Coordinator from August 2022 to December 2023, then promoted to Coordinator from January 2024 to August 2024. AIChE is the world's leading professional organization for chemical engineers, connecting more than 60,000 members across 110+ countries through technical resources, industry networking, research collaboration, and professional development opportunities. Led the digital communications strategy, managed content production, and expanded the section's visibility across Peru's professional engineering community.
+
+- Managed social media presence and coordinated communications for the Peru Local Section across a two-year tenure spanning both the deputy and coordinator roles.
+
+- Promoted technical resources and professional development content to the chemical engineering community in Peru.
+
+AIChE  Communications  Marketing  Chemical Engineering
+
+#### Founder and First President Founder
+
+**AIChE UTEC Student Chapter** · American Institute of Chemical Engineers, UTEC
+
+2017 — 2019
+
+Founded and served as the first president of the AIChE student chapter at UTEC during undergraduate studies. Built the chapter from the ground up: drafting its founding structure, recruiting the initial membership, organizing technical and professional development events, and establishing the connection between UTEC's Chemical Engineering students and the broader AIChE professional community in Peru and internationally. The chapter continued operating under subsequent student boards after the founding term concluded.
+
+- Established UTEC's first AIChE-affiliated student chapter, creating a formal link between students and a global professional network of 60,000+ chemical engineers.
+
+- Organized technical workshops and networking events bridging the university's Chemical Engineering program with industry.
+
+- Built governance and handoff processes that allowed the chapter to continue independently after the founding board graduated.
+
+Founder  AIChE  UTEC  Student chapter  Chemical Engineering
+
+#### Volunteer Co-Captain
+
+**Fundación Peruana de Cáncer** · Ponle Corazón 2021
+
+Aug 2021
+
+Served as Team Co-Captain for Ponle Corazón 2021, a fundraising campaign by the Fundación Peruana de Cáncer focused on supporting cancer patients from regions outside Lima who required financial assistance to continue their treatment. Coordinated and led a group of 40 volunteers, supporting the organization and guidance of the team throughout the campaign.
+
+Volunteer leadership  Fundraising  Health
+
+#### Peer Mentor — Lead First-Year Student Mentor
+
+**UTEC** · Universidad de Ingeniería y Tecnología
+
+Mar 2019 — Nov 2019
+
+Participated in UTEC's first-year mentoring program, which aims to help incoming students adapt more effectively to university life through the guidance of high-performing upperclassmen. Designated as Lead Mentor within the Chemical Engineering mentoring group, with responsibility for coordinating the broader mentoring effort for that program cohort in addition to individual mentoring sessions.
+
+Peer mentoring  Education  UTEC
+
+#### Enrollment Advisor and University Week Team Leader
+
+**UTEC** · Universidad de Ingeniería y Tecnología
+
+2017 — 2019
+
+Two concurrent long-running volunteer roles at UTEC during undergraduate studies. As Enrollment Advisor (2017-2019), guided fellow students in selecting course schedules that optimized time management throughout the semester, with particular focus on students at academic risk who needed help building balanced and manageable plans. As University Week Team Leader (2017-2019), supported the organization and coordination of student participation in UTEC's University Week, a campus-wide social event designed to help students decompress after midterm examinations through competitions in sports, virtual games, arts, and other disciplines.
+
+Academic advising  Event coordination  UTEC
+
+### Communities and affiliations
+
+The organizations and networks I have been part of, from founding a student chapter at UTEC to joining the CMU Heinz community as a graduate student.
+
+AI
+ChE
+
+AIChE — American Institute of Chemical Engineers
+
+Founder of UTEC Student Chapter; Comms Coordinator, Sección Perú
+
+Member since **2017**
+
+LB
+
+Latinburgh
+
+Vice President
+
+Member since **2025** · Carnegie Mellon University
+
+CMU
+
+CMU Heinz College
+
+MISM-BIDA student; Admissions Ambassador
+
+Member since **2025**
+
+UTEC
+
+UTEC Alumni Network
+
+Chemical Engineering, Class of 2019
+
+Active in mentoring and OpenDay since **2017**
+
+"Academic achievements are important and valuable, and I have earned my share of them. But extracurricular activities, volunteering, and similar pursuits have allowed me to build strong connections with more people, and to plant trees whose fruits are still growing today, opening doors to new opportunities for others. I value that deeply. Continuous learning and new projects also grow from hobbies, from the things one pursues with genuine passion in their free time, which have often grown into meaningful, consequential work."
+
+— A personal reflection
+
+### Personal interests
+
+The things I pursue out of curiosity, not obligation. Some of them overlap with the work; most of them do not, and that is the point.
+
+📈
+
+##### Financial investing
+
+Actively investing in public equities with both short-term and long-term strategies, alongside analyzing financial statements, studying market dynamics, and building a disciplined approach to portfolio management and capital allocation.
+
+📚
+
+##### Lifelong learning
+
+Driven by genuine curiosity across disciplines and a commitment to lifelong learning. Learning happens through books, research papers, courses, documentaries, videos, conversations, and increasingly through using AI as a copilot for deeper understanding.
+
+⚙️
+
+##### Personal projects
+
+Building tools, automations, and small applications that solve real problems, for myself or for people I know. The best ones start as a personal solution and end as something someone else finds useful.
+
+🔬
+
+##### Independent research
+
+Exploring topics at the intersection of AI, data systems and other fields, outside of formal academic settings. Reading papers, running small experiments, and writing up findings for my own understanding before anything else.
+
+🎓
+
+##### Teaching
+
+Finding genuine satisfaction in making complex ideas accessible. Whether in a classroom, a workshop, or a one-on-one conversation, the process of breaking something difficult down into clear explanations is one of the most rewarding things I do.
+
+🤝
+
+##### Mentoring and coaching
+
+Helping students and early professionals navigate academic growth, career decisions, technical development, and the transition into industry. Passionate about supporting people in achieving their academic, professional, and personal goals.
+
+♟
+
+##### Chess
+
+Active on Lichess, mostly Blitz. Studying tactics daily and tracking rating patterns over time. It also became a time series forecasting project.
+
+🎨
+
+##### Graphic design
+
+Working with CorelDRAW, Canva, and occasionally Blender for personal and professional creative work. Designing visual assets, layouts, and compositions. Creative design is also one of the main ways I express creativity and translate ideas into visual form.
+
+### Causes
+
+Efforts that can compound across communities and generations.
+
+##### Education
+
+Knowledge is one of the few things that multiplies when shared. Teaching, mentoring, student chapters, and open knowledge initiatives create opportunities that extend far beyond a single person, strengthening communities through learning and collaboration.
+
+##### Financial literacy
+
+Understanding money, markets, and long-term financial planning is a skill most people are never formally taught. Closing that gap matters, especially for first-generation professionals navigating these decisions without a roadmap.
+
+##### AI for everyone
+
+AI has the potential to amplify human capability across education, science, business, and everyday life. Inclusive tools, accessible learning resources, and clear conversations about the strengths and limits of these systems can help broaden participation and create more meaningful impact across communities.
+
+##### Cancer support
+
+Healthcare can have a profound impact on people and families during vulnerable moments. Supporting access to care, treatment, and community resources is one way to help reduce uncertainty and improve quality of life for those who need it most.
+
+---
+
+## All projects
+
+Source: [All projects](https://arturoarias.me/projects.html)
+
+Project catalog (from the data used by the projects page):
+
+### This website
+
+[Case study](https://arturoarias.me/projects/this-portfolio.html)
+
+Catalog year: 2026 | Category: Website
+
+Personal ePortfolio built as a static site for GitHub Pages, featuring dark mode, responsive design, a contact form backend via Google Apps Script, and sections covering experience, skills, projects, and writing.
+
+Tools and topics: HTML, CSS, JavaScript, Google Apps Script, GitHub Pages, Responsive Design, Dark Mode.
+
+- [GitHub](https://github.com/arturoarias12)
+
+### Real-Time Crypto Volatility Detection
+
+The catalog lists 2026; the case-study page lists 2025.
+
+[Case study](https://arturoarias.me/projects/crypto-volatility.html)
+
+Catalog year: 2026 | Category: Data Science
+
+End-to-end ML pipeline ingesting live Coinbase market data through Kafka, engineering 60-second volatility features, training XGBoost classifiers tracked with MLflow, and serving predictions via FastAPI with Prometheus and Grafana observability.
+
+Tools and topics: Python, Kafka, XGBoost, FastAPI, MLflow, Docker, Prometheus, Grafana, Evidently, Scikit-learn, Machine Learning, MLOps, Data Engineering, Streaming.
+
+- [GitHub](https://github.com/arturoarias12/Detecting-Crypto-Volatility-in-Real-time-FoOAI-)
+
+### Auna / Oncosalud Web Analytics
+
+[Case study](https://arturoarias.me/projects/auna-web-analytics.html)
+
+Catalog year: 2025 | Category: BI Dashboard
+
+Automated reporting pipeline for a large healthcare provider's e-commerce and digital channels. Replaced manual workflows with Python-driven data flows connected to AWS Athena and GA4, surfaced through Power BI dashboards.
+
+Tools and topics: Python, Power BI, Amazon Athena, Google Analytics, ETL and ELT, Data Visualization, Hotjar, Microsoft Clarity, AB Tasty, Data Engineering, Healthcare.
+
+
+
+### Power Substation Segmentation and New Substation Build Recommendations
+
+[Case study](https://arturoarias.me/projects/substation-segmentation.html)
+
+Catalog year: 2026 | Category: Data Science
+
+Two-phase AI pipeline for US power grid planning: a U-Net segmentation model trained on 0.6m NAIP aerial imagery to detect existing substations, followed by a MILP optimizer producing 50 academic site recommendations for Maricopa County (proof-of-concept only, not real infrastructure decisions), reducing mean service distance by 80% in the Central Phoenix pilot.
+
+Tools and topics: Python, PyTorch, U-Net, CNN, Computer Vision, MILP, Optimization, Geospatial, OpenStreetMap, NAIP, GeoPandas, PuLP, Machine Learning, Infrastructure.
+
+
+
+### Power Outage Forecasting and Emergency Generator Allocation
+
+[Case study](https://arturoarias.me/projects/power-outage-forecasting.html)
+
+Catalog year: 2026 | Category: Data Science
+
+Machine learning framework for forecasting county-level Michigan power outages over 24- and 48-hour horizons, comparing SARIMA/SARIMAX, LSTM, and zero-inflated models, then allocating five emergency generators using cumulative outage burden.
+
+Tools and topics: Python, Machine Learning, Time Series, ARIMA Models (AR, MA, ARIMA), LSTM, Recurrent Neural Networks, Model Evaluation, Pandas, NumPy, scikit-learn.
+
+
+
+### Chess Rating Time Series Forecasting
+
+[Case study](https://arturoarias.me/projects/chess-rating-forecasting.html)
+
+Catalog year: 2024 | Category: Data Science
+
+Statistical analysis and ARIMA forecasting of personal chess rating history. Applies decomposition, stationarity testing, and automated model selection to identify trend and noise components in competitive performance data.
+
+Tools and topics: Python, ARIMA Models (AR, MA, ARIMA), Statsmodels, pmdarima, Time Series, Pandas, NumPy, Matplotlib, Forecasting.
+
+- [GitHub](https://github.com/arturoarias12/time-series-analysis-lichess-blitz)
+
+### Digital Nomad City Recommender
+
+[Case study](https://arturoarias.me/projects/digital-nomad-recommender.html)
+
+Catalog year: 2025 | Category: Python App
+
+Desktop application that scrapes visa, cost-of-living, and internet speed data across cities, then ranks destinations for digital nomads using a configurable composite score with interactive maps and comparison dashboards.
+
+Tools and topics: Python, Pandas, Tkinter, BeautifulSoup, Web Scraping, NumPy, Matplotlib, Data Processing, Data Visualization.
+
+- [GitHub](https://github.com/arturoarias12/Digital-Nomad-Recommendation-System)
+
+### Student Attendance Management System
+
+[Case study](https://arturoarias.me/projects/student-attendance-sql.html)
+
+Catalog year: 2024 | Category: Analytics Eng.
+
+Relational database system for educational institutions covering student attendance, teacher assignments, and class scheduling. Includes conceptual, logical, and physical design documentation alongside full T-SQL scripts.
+
+Tools and topics: SQL, SQL*Plus, Relational Databases, Entity-Relationship Modeling (ER), Data Modeling, Normalization, Jupyter Notebook, T-SQL.
+
+- [GitHub](https://github.com/arturoarias12/StudentAttendanceManagement_SQL)
+
+### Peru National Football Dataset
+
+[Case study](https://arturoarias.me/projects/peru-football-dataset.html)
+
+Catalog year: 2024 | Category: Research
+
+Curated dataset of Peru's national football team results from 1927 to 2024, covering match details, venues, tournaments, elevation data, and coaching records, structured for statistical analysis and historical research.
+
+Tools and topics: Python, Pandas, Jupyter Notebook, Data Processing, Data Curation, Descriptive Statistics, Sports Analytics.
+
+- [GitHub](https://github.com/arturoarias12/PeruFootballResults)
+- [Kaggle](https://www.kaggle.com/datasets/arturoarias12/peruvian-national-football-team-results)
+
+### ChemE Jeopardy Platform
+
+[Case study](https://arturoarias.me/projects/cheme-jeopardy.html)
+
+Catalog year: 2026 | Category: Web App
+
+Networked Jeopardy platform for chemical engineering classrooms. Separate interfaces for moderator, players, and display screens, with real-time buzzer arbitration, JSON-defined question packs, and Docker deployment support.
+
+Tools and topics: Java, JavaScript, HTML, CSS, Docker, Object-Oriented Programming, API Development, Multithreading, Chemical Engineering, Real-time.
+
+- [GitHub](https://github.com/arturoarias12/ChemE-Jeopardy)
+
+### EDA of International Football Results (1872–2024)
+
+[Case study](https://arturoarias.me/projects/football-results-eda.html)
+
+Catalog year: 2024 | Category: Research
+
+Solo exploratory data analysis of 47,399 international football match records spanning 152 years, answering 10 analytical questions on team performance, hosting advantages, goal-scoring patterns, and regional rivalries using Pandas and Seaborn, published as a Kaggle notebook.
+
+Tools and topics: Python, Pandas, NumPy, Matplotlib, Seaborn, EDA, Data Analysis, Sports Analytics, Football, Kaggle, Jupyter Notebook.
+
+- [Kaggle](https://www.kaggle.com/code/arturoarias12/eda-of-intl-football-results-from-1872-to-2024)
+
+### Huambra Café Analytics Dashboard
+
+[Case study](https://arturoarias.me/projects/huambra-cafe.html)
+
+Catalog year: 2026 | Category: BI Dashboard
+
+End-to-end BI solution for a coffee shop startup in Pucallpa, Peru (Amazon region), migrating their operational database to Google BigQuery via Cloud Run, then delivering a fully custom Power BI dashboard published to Microsoft Fabric for live, auto-updating strategic insight.
+
+Tools and topics: Power BI, DAX, BigQuery, Google Cloud, Cloud Run, Python, Microsoft Fabric, Data Modeling, Data Visualization, Business Analytics.
+
+
+
+---
+
+## All skills
+
+Source: [All skills](https://arturoarias.me/skills.html)
+
+Proficiency levels are self-reported on the skills page.
+
+### Business Intelligence
+
+- **Power BI** — Expert; topics: dashboard, microsoft, bi, dax, pbix, reports.
+- **Microsoft Fabric** — Advanced; topics: microsoft, lakehouse, semantic-model, bi, onelake.
+- **Tableau** — Advanced; topics: dashboard, bi, salesforce, visualization.
+- **Looker Studio** — Advanced; topics: dashboard, bi, google, reports.
+- **Microsoft Excel** — Expert; topics: spreadsheet, pivot, charts, formulas.
+- **DAX** — Expert; topics: powerbi, measures, calculated-columns, kpi.
+- **Power Query (M)** — Advanced; topics: etl, powerbi, data-transformation.
+- **Data Visualization** — Expert; topics: charts, dashboards, storytelling, design.
+
+### Data Analytics
+
+- **SQL** — Expert; topics: queries, joins, aggregations, database.
+- **Pandas** — Expert; topics: dataframe, python, wrangling, cleaning.
+- **Google Analytics** — Expert; topics: ga4, web, tracking, sessions, events.
+- **A/B Testing** — Advanced; topics: experiments, conversion, statistics, significance.
+- **Time Series** — Advanced; topics: arima, forecasting, seasonality, trends.
+- **NumPy** — Advanced; topics: array, numerical, python, math.
+- **Matplotlib** — Expert; topics: python, charts, visualization, plots.
+- **Seaborn** — Expert; topics: python, statistical-plots, visualization.
+- **Causal Inference** — Advanced; topics: did, propensity, counterfactual, policy.
+- **Web Scraping** — Advanced; topics: scrapy, selenium, data-collection, python.
+- **Geopandas** — Basic; topics: geospatial, maps, spatial, python.
+
+### Data Science
+
+- **Python** — Expert; topics: scripting, analysis, automation, programming.
+- **Machine Learning** — Advanced; topics: supervised, unsupervised, models, prediction.
+- **Scikit-learn** — Advanced; topics: python, ml, algorithms, pipelines.
+- **CRISP-DM** — Advanced; topics: methodology, process, data-science, framework.
+- **SciPy** — Advanced; topics: python, scientific, optimization, stats.
+- **Data Modeling** — Expert; topics: schema, normalization, architecture, design.
+- **Feature Engineering** — Advanced; topics: preprocessing, features, transformation, selection.
+- **Model Evaluation** — Advanced; topics: metrics, crossval, roc, precision, recall.
+
+### Artificial Intelligence
+
+- **Large Language Models** — Expert; topics: llm, gpt, claude, foundation-models.
+- **OpenAI API** — Advanced; topics: gpt, api, generative, completions.
+- **Prompt Engineering** — Expert; topics: llm, few-shot, chain-of-thought, instructions.
+- **RAG** — Advanced; topics: retrieval, embeddings, llm, vector-search.
+- **AI Automation** — Advanced; topics: agents, workflows, automation, llm.
+- **Natural Language Processing** — Advanced; topics: nlp, text, language, tokenization.
+- **Sentiment Analysis** — Advanced; topics: nlp, opinion, text-classification, social.
+- **Computer Vision** — Advanced; topics: images, cnns, recognition, ocr.
+- **Transformers** — Advanced; topics: attention, bert, gpt, architecture, llm.
+- **Fine-tuning** — Advanced; topics: llm, pre-trained, adaptation, lora, peft.
+- **Small Language Models** — Advanced; topics: slm, edge, efficient, phi, gemma.
+
+### Machine Learning
+
+- **Gradient Boosting** — Advanced; topics: xgboost, lightgbm, boosting, trees.
+- **Random Forest** — Advanced; topics: trees, ensemble, bagging, feature-importance.
+- **Classification** — Advanced; topics: supervised, binary, multiclass, labels.
+- **Regression** — Advanced; topics: linear, logistic, prediction, continuous.
+- **Clustering** — Advanced; topics: kmeans, segmentation, unsupervised, groups.
+- **Dimensionality Reduction** — Advanced; topics: pca, tsne, features, compression.
+- **Deep Learning** — Advanced; topics: neural-networks, layers, backpropagation.
+- **Convolutional Neural Networks** — Advanced; topics: cnn, image-recognition, computer-vision, filters.
+- **Recurrent Neural Networks** — Advanced; topics: rnn, sequences, time-series, text.
+- **LSTM** — Advanced; topics: long-short-term-memory, time-series, sequences, rnn.
+- **Reinforcement Learning** — Advanced; topics: rl, agents, rewards, policy, q-learning.
+- **Transfer Learning** — Advanced; topics: pre-trained, fine-tuning, feature-extraction, domain.
+- **Autoencoders** — Advanced; topics: unsupervised, latent-space, reconstruction, generative.
+- **PyTorch** — Advanced; topics: python, deep-learning, tensors, autograd.
+- **TensorFlow** — Advanced; topics: python, deep-learning, keras, graphs.
+- **Anomaly Detection** — Advanced; topics: outliers, fraud, pyod, isolation-forest.
+- **Survival Models** — Advanced; topics: churn, time-to-event, cox, kaplan-meier.
+
+### Cloud Platforms
+
+- **Google Cloud** — Advanced; topics: gcp, cloud, google, bigquery, vertex.
+- **BigQuery** — Advanced; topics: gcp, warehouse, sql, analytics.
+- **Amazon Athena** — Advanced; topics: aws, serverless, sql, s3, query.
+- **Microsoft Azure** — Intermediate; topics: microsoft, cloud, app-service, storage.
+- **AWS** — Advanced; topics: amazon, cloud, s3, ec2, lambda.
+- **Google Colab** — Expert; topics: notebooks, python, cloud, gpu, collaboration.
+- **GitHub** — Expert; topics: git, scm, collaboration, actions, hosting.
+
+### Programming
+
+- **Object-Oriented Programming** — Expert; topics: oop, classes, design-patterns, abstraction.
+- **API Development** — Expert; topics: rest, requests, flask, fastapi, integration.
+- **Java** — Advanced; topics: jvm, backend, oop, spring, enterprise.
+- **Django** — Advanced; topics: python, web-framework, backend, azure.
+- **JavaScript** — Intermediate; topics: web, frontend, scripting, es6.
+- **Swift** — Intermediate; topics: ios, apple, mobile, xcode.
+- **HTML** — Intermediate; topics: markup, web, frontend, semantics.
+- **CSS** — Advanced; topics: styling, web, design, responsive.
+- **Regular Expressions** — Advanced; topics: regex, pattern-matching, text-processing.
+- **C++** — Intermediate; topics: systems, compiled, performance.
+- **Jupyter Notebook** — Expert; topics: notebook, python, data-science, interactive, ipynb.
+
+### Database
+
+- **Relational Databases** — Expert; topics: sql, tables, joins, normalization, acid.
+- **NoSQL Databases** — Advanced; topics: mongodb, document, schema-less, key-value.
+- **Entity-Relationship Modeling** — Advanced; topics: er-diagram, schema, design, cardinality.
+- **SQL*Plus / SQL Server** — Advanced; topics: oracle, tsql, stored-procedures, dba.
+
+### Statistics
+
+- **Hypothesis Testing** — Expert; topics: t-test, p-values, significance, chi-square.
+- **Descriptive Statistics** — Expert; topics: mean, median, distribution, variance.
+- **Inferential Statistics** — Expert; topics: confidence-intervals, inference, sampling.
+- **Probability** — Expert; topics: distributions, random-variables, bayes.
+- **Monte Carlo Simulations** — Expert; topics: simulation, risk, sampling, stochastic, quantitative.
+- **Linear Regression** — Advanced; topics: ols, prediction, coefficients, r-squared.
+- **Bayesian Statistics** — Advanced; topics: bayes, prior, posterior, mcmc.
+
+### Data Engineering
+
+- **ETL and ELT** — Expert; topics: pipelines, extract, transform, load, integration.
+- **Data Processing** — Expert; topics: cleaning, wrangling, transformation, quality.
+- **Data Engineering** — Expert; topics: pipelines, orchestration, infrastructure, lakehouse.
+- **CI/CD Pipelines** — Advanced; topics: automation, deployment, github-actions, devops.
+- **MLOps** — Advanced; topics: ml-pipelines, model-serving, monitoring, mlflow.
+
+### Chemical Engineering
+
+- **Chemical Engineering** — Expert; topics: process, reactions, unit-ops, degree.
+- **Thermodynamics** — Expert; topics: energy, heat, equilibrium, entropy.
+- **Mass & Heat Transfer** — Advanced; topics: diffusion, convection, separation, columns.
+- **Chemical Process Simulation** — Advanced; topics: hysys, aspen, promax, simulation.
+- **Chemical Process Design** — Advanced; topics: flowsheets, equipment, pfd, pid.
+- **Process Control** — Advanced; topics: pid, control-loops, instruments, feedback.
+- **Modeling and Simulation** — Advanced; topics: mathematical-models, numerical, ansys, cfd.
+
+### Core Skills
+
+- **Cross-functional Collaboration** — Expert; topics: teamwork, communication, stakeholders, alignment.
+- **Analytical Problem-Solving** — Expert; topics: structured-thinking, root-cause, frameworks, logic.
+- **Stakeholder Management** — Advanced; topics: communication, presentations, alignment, exec.
+- **Data Storytelling** — Advanced; topics: narrative, insights, presentations, business.
+- **Technical Writing** — Advanced; topics: documentation, reports, specs, clarity.
+- **Design Thinking** — Advanced; topics: user-centered, ideation, prototype, empathy.
+- **Adaptability** — Expert; topics: change, flexibility, learning, growth.
+
+### Web Analytics
+
+- **Google Tag Manager** — Advanced; topics: gtm, tracking, tags, events, triggers.
+- **Microsoft Clarity** — Advanced; topics: heatmaps, session-recordings, ux, behavior.
+- **Hotjar** — Advanced; topics: heatmaps, user-behavior, feedback, funnels.
+
+### Spoken Languages
+
+- **Spanish** — Expert; topics: native, latin-america, peru, fluent.
+- **English** — Expert; topics: bilingual, c1, business, fluent.
+- **Italian** — Intermediate; topics: european, conversational, b1.
+- **German** — Basic; topics: european, learning, a2.
+
+---
+
+## All posts
+
+Source: [All posts](https://arturoarias.me/blog.html)
+
+### Perspectives on Three AI Ecosystems: From "Best Model" to "Best Match"
+
+[Read post](https://arturoarias.me/blog/ai-ecosystems.html) | 2026-08-21 | 5 min read
+
+Four months using ChatGPT, Claude, and Gemini side by side changed the question from which model is best to which working style fits the task.
+
+Tags: Artificial Intelligence, LLM, Agentic AI, Productivity, Personal.
+
+### Hello, world: this site is live
+
+[Read post](https://arturoarias.me/blog/welcome.html) | 2026-05-21 | 3 min read
+
+A first entry on why I built this place, what it's for, and what I hope to do with it.
+
+Tags: Personal, Web Development.
+
+---
+
+## Business Intelligence Specialist
+
+Source: [Business Intelligence Specialist](https://arturoarias.me/experience/independent1.html)
+
+Professional Experience
+
+Independent / Incarail
+
+May 2025 – August 2025 · Lima, Peru (Remote)
+
+92%
+
+Dashboard file size reduction
+
+90%
+
+Faster refresh times
+
+80%+
+
+BigQuery query time reduction
+
+Overview
+
+Incarail is Peru's premier luxury passenger rail company, operating iconic routes through the Andes, including the journey to Machu Picchu.
+
+As a Business Intelligence Specialist Consultant engaged to support Incarail's strategic digital initiatives, I was responsible for designing, developing, and maintaining BI dashboards, generating key performance indicators, and automating executive reports; providing technical advisory and training to internal teams, proposing data-driven solutions to enhance decision-making within a Scrum-based environment.
+
+Key contributions
+
+- Data visualization | Business intelligence:  Engineered Power BI dashboards on Microsoft Fabric, delivering **e-commerce sales and web performance** insights, applying industry best practices to ensure performance, usability, and stakeholder value.
+
+- Performance optimization:  Streamlined Microsoft Fabric dashboards, reducing file size by **92%** and refresh processing time by **90%**, improving user experience and lowering Microsoft Fabric capacity costs.
+
+- ETL/ELT | Data pipelines:  Devised and refined Fabric data pipelines that centralized sources, streamlined transformations, and ensured **reliable data availability** for reporting and monitoring.
+
+- Python | PySpark | Data processing:  Automated **OCR workflows** for PDFs in Fabric using PySpark, **eliminating manual effort** and accelerating reporting cycles.
+
+- SQL | Query optimization:  Optimized BigQuery queries and partitions on Google Cloud Platform, reducing execution time by **80%+** and lowering compute spend.
+
+- Technical advisory:  Provided BI support to the e-commerce, revenue, and UX teams at Incarail, delivering **high-quality dashboards** aligned with ongoing digital and commercial strategies within a Scrum-based team.
+
+Skills
+
+Power BI  Microsoft Fabric  DAX  Data Modeling  Data Architecture  Python  PySpark  SQL  BigQuery  Google Cloud  ETL/ELT  OCR  Web Analytics  E-commerce Analytics  Revenue Analytics  KPI Development  Executive Reporting  Scrum  Consulting  Tourism Industry
+
+Some professional details have been summarized to respect confidentiality and avoid disclosing proprietary information.
+
+---
+
+## Data Analyst
+
+Source: [Data Analyst](https://arturoarias.me/experience/auna.html)
+
+Professional Experience
+
+[Auna](https://www.aunainvestors.com/) / [Oncosalud](https://oncosalud.pe/)
+
+November 2024 – May 2025 · Lima, Peru
+
+95%
+
+Reduction in data processing time
+
+Web Analytics
+
+E-commerce funnel: sessions to leads to affiliations
+
+GA4 + AWS
+
+Data sources unified
+
+Overview
+
+Auna is a leading integrated healthcare provider operating in Peru, Colombia, and Mexico, with 31 healthcare facilities and over 1.3 million plan members.
+
+As a Data Analyst within the Growth Team (Digital Sales Area), I focused on web analytics and data-driven strategies to enhance e-commerce conversion rates, from sessions to leads and leads to affiliations, across the Oncosalud and Auna Salud platforms.
+
+Reporting to the Growth Leader, I collaborated with UX/UI designers, front-end and back-end development teams, and data engineers to support strategic initiatives. The team operated using Scrum.
+
+Key contributions
+
+- Python | SQL | Data architecture:  Centralized and integrated Google Analytics (GA4), leads, and affiliation data in AWS, enabling **scalable and reliable analytics**; automated **multi-source reporting**, reducing data processing time by **95%**.
+
+- Data visualization | Business intelligence:  Developed and deployed AWS Athena-connected Power BI dashboards delivering **unified daily, weekly, and monthly performance views** for e-commerce and healthcare services.
+
+- Analytics instrumentation:  Administered Google Analytics 4 and Google Tag Manager (GTM) accounts and properties, including creation and maintenance of tags and triggers; documented **technical requirements (dataLayers)** for developers and QA testing in staging environments prior to production.
+
+- User behavior analysis:  Analyzed funnel performance with Microsoft Clarity, Hotjar, and AB Tasty, offering **actionable feedback** to enhance UX/UI design and quantifying impact on **leads and affiliations**.
+
+- Reporting:  Summarized daily, weekly, and monthly performance metrics for e-commerce platforms (Oncosalud and Auna Salud) and healthcare services, supporting the Growth Leader and digital product teams.
+
+- Cross-functional collaboration:  Worked with Design, Web Development, Data, and Marketing teams, collaborating with UX/UI designers and data engineers to align on **strategic initiatives** and metric definitions.
+
+Skills
+
+Python  SQL  Power BI  Pandas  AWS Athena  Google Cloud  Google Analytics 4  Google Tag Manager  Scrum  Web Analytics  E-commerce Analytics  Conversion Rate Optimization  Microsoft Clarity  Hotjar  AB Tasty  Healthcare Analytics
+
+Some professional details have been summarized to respect confidentiality and avoid disclosing proprietary information.
+
+---
+
+## Researcher
+
+Source: [Researcher](https://arturoarias.me/experience/alicorp.html)
+
+Professional Experience
+
+[Alicorp](https://www.alicorp.com.pe/pe/en)
+
+May 2021 – March 2024 · Lima, Peru
+
+$133K
+
+Projected annual savings identified
+
+3 years
+
+Driving data automation at scale
+
+3 articles
+
+Published in peer-reviewed and industry journals
+
+Overview
+
+Alicorp is an industry leader in the food sector in Peru, with presence across multiple countries in the Americas, sales of $1.79 billion, and more than 4,000 employees, a member of Grupo Romero.
+
+I led research projects to completion across processes, products, health, and nutrition, providing support for Technological Development and Regulatory Affairs and reporting to the Research and Regulatory Affairs Manager.
+
+Over three years, I introduced data automation and software development into a research function traditionally driven by experimental lab work, building Python desktop and Django web applications that transformed how the team worked with nutritional data and identified cost reduction opportunities with projected annual savings of ~$133K.
+
+Key contributions
+
+- Python | Statistical analysis:  Spearheaded nutritional analytics workflows in Python, introducing **comparative graphical indices** (SAIN-LIM) to assess and benchmark performance, using Pandas, Tkinter, Matplotlib, NumPy, and PyInstaller for a **standalone desktop application** with projected potential savings of up to **$50K** over two years.
+
+- Django web application:  Built and deployed a Django-based web application on Microsoft Azure, enabling distributed team members to access **centralized nutritional databases** and generate **standardized reports**.
+
+- Data visualization | Data storytelling:  Produced executive-level visualizations using Matplotlib and Seaborn that translated analytical findings into **actionable business and regulatory recommendations**.
+
+- AI tools and innovation:  Provided AI tools training to the Technological Development team; led an initiative to **streamline sensory team workflows** by automating test data analysis and implementing AI tools to expedite profile evaluations.
+
+- Research publications:  Published one article in the **World Journal of Food Science and Technology (WJFST)** and two articles in Industria Alimentaria; received **award recognition** from Pontificia Universidad Católica del Perú for two collaborative research projects.
+
+- Regulatory expertise:  Applied working knowledge of Peruvian food labeling regulations (LAS-1, LAS-2), FDA, and EFSA frameworks to support compliance review across Alicorp's product categories in multiple markets.
+
+- Project leadership | Cross-functional collaboration:  Led the full research portfolio during manager absences and resolved **critical cross-functional issues**, including international vendor escalations; worked across Innovation, Product Development, Quality, Process Engineering, Marketing, and Data Analysis, bridging **chemical engineering domain knowledge** with computational methods.
+
+Skills
+
+Python  SQL  Excel  Pandas  NumPy  Statistical Analysis  Matplotlib  Seaborn  Django  Azure  Git  Tkinter  Project Management  Research & Development  Scientific Writing  Life Cycle Assessment  Chemical Engineering  Food Industry  Nutritional Analysis  Food Regulations (LAS / FDA / EFSA)  Trans Fats Analysis  Palm Oil  Shelf Life Analysis  Sensory Analysis  GMO
+
+Some professional details have been summarized to respect confidentiality and avoid disclosing proprietary information.
+
+---
+
+## Real-Time Crypto Volatility Detection
+
+Source: [Real-Time Crypto Volatility Detection](https://arturoarias.me/projects/crypto-volatility.html)
+
+Data Science  Python  Kafka  XGBoost  FastAPI  MLflow  Docker  MLOps
+
+An end-to-end MLOps pipeline that ingests live Coinbase market data through Kafka, engineers 60-second volatility features, trains XGBoost classifiers tracked with MLflow, and serves predictions via FastAPI with full Prometheus and Grafana observability.
+
+Year
+
+2025
+
+Context/Client
+
+Carnegie Mellon University
+
+Topic/Field/Industry
+
+Operationalizing AI · Trading · Cryptocurrencies
+
+[View on GitHub](https://github.com/arturoarias12/Detecting-Crypto-Volatility-in-Real-time-FoOAI-)
+
+AI-generated concept image of a real-time MLOps pipeline for detecting cryptocurrency volatility from live market streams.
+
+60s
+
+Feature window: volatility computed over rolling 60-second bars
+
+5
+
+Services orchestrated via **Docker Compose**: Kafka, MLflow, FastAPI, Prometheus, Grafana
+
+2
+
+Deployable model variants: rule-based baseline and XGBoost ML model
+
+### Overview
+
+Cryptocurrency markets are characterized by high-frequency price fluctuations, fragmented liquidity, and rapid regime shifts, making real-time volatility detection a relevant problem for both market monitoring and risk-aware decision support. This project addresses that challenge by developing a **production-oriented MLOps pipeline** that continuously ingests live Coinbase market data, transforms raw tick-level events into short-window statistical features, and serves a binary volatility signal through a deployable machine learning API.
+
+The system integrates the full operational machine learning lifecycle, including streaming data ingestion with Kafka, feature engineering over rolling 60-second windows, model training and experiment tracking with XGBoost and MLflow, REST-based inference through FastAPI, and observability through Prometheus, Grafana, and drift monitoring. By combining real-time data processing, reproducible model management, and deployment-level monitoring, the project demonstrates how financial machine learning models can be operationalized beyond offline experimentation.
+
+### Architecture
+
+#### Ingest layer: Kafka
+
+A Python producer connects to the Coinbase Advanced Trade WebSocket API and streams raw ticker events into a Kafka topic (`ticks.raw`). Raw records are persisted as **NDJSON** for reproducibility and replay. A downstream consumer processes those events and writes labeled feature sets to **Parquet** files, cleanly separating ingest from feature computation.
+
+#### Feature engineering
+
+Features are derived exclusively from current and historical data, with no lookahead. They are organized into three groups:
+
+- **Price-derived:** midprice returns, rolling return averages across four window sizes (5, 20, 60, 100 observations), realized volatility, volatility-of-volatility, and return z-scores normalized by recent volatility
+
+- **Liquidity:** bid-ask spread in basis points, spread changes, spread-normalized pressure, rolling spread statistics, and trade intensity across three time windows (60s, 300s, 900s)
+
+- **Regime/state:** cyclical encodings for time-of-day and day-of-week, capturing intraday and weekly market behavior patterns
+
+The binary label is a volatility spike indicator: `1` if future realized volatility over the next 60 seconds exceeds the 90th-percentile threshold for that product, `0` otherwise.
+
+#### Model training: XGBoost + MLflow
+
+Two model variants are supported and swappable via the `MODEL_VARIANT` environment variable:
+
+- **Baseline:** a conservative rule-based classifier, recommended for production stability
+
+- **ML:** an XGBoost binary classifier with stronger precision-recall trade-offs
+
+All training runs, hyperparameter sweeps, and evaluation metrics (AUC-ROC, F1, precision/recall) are tracked in MLflow, with model artifacts registered in the MLflow Model Registry for version-controlled serving.
+
+#### Serving: FastAPI
+
+A FastAPI application loads the registered model at startup and exposes four endpoints: `/predict` (accepts a feature row and returns a volatility score and binary label), `/health`, `/version`, and `/metrics` for Prometheus scraping.
+
+### Observability
+
+Prometheus scrapes the `/metrics` endpoint and Grafana dashboards surface prediction latency, request throughput, and rolling accuracy. Evidently runs a separate drift detector that compares the live feature distribution against the training reference, raising alerts when distribution shift is detected.
+
+One-command deployment
+
+All five services (Zookeeper, Kafka, FastAPI, Prometheus, and Grafana) are declared in a single `docker-compose.yml`. The entire pipeline stands up on any machine with: `docker compose up --build`.
+
+### How it was built
+
+- Phase 1 Kafka (KRaft) and MLflow launched via Docker Compose. WebSocket producer ingesting live Coinbase ticker data into `ticks.raw`, with reconnect and heartbeat logic. Scoping brief written defining the 60-second prediction goal.
+
+- Phase 2 Featurizer built as a Kafka consumer: computed windowed features and wrote output to Parquet. EDA conducted in a notebook; spike threshold set using percentile plots. First Evidently report generated comparing early and late data windows.
+
+- Phase 3 Baseline (z-score rule) and XGBoost models trained on time-based splits. All runs logged to MLflow with PR-AUC as the primary metric. Model card and GenAI appendix written.
+
+- Phase 4 FastAPI serving layer built with `/predict`, `/health`, `/version`, and `/metrics` endpoints. Full Docker Compose stack assembled and tested in replay mode.
+
+- Phase 5 CI pipeline set up with GitHub Actions (lint + integration test). Reconnect, retry, and graceful shutdown added to Kafka services. Load test run at 100 burst requests.
+
+- Phase 6 Prometheus metrics instrumented (latency, request count, errors, consumer lag). Grafana dashboards built. SLOs defined, Evidently drift summary scheduled, and `MODEL_VARIANT` rollback toggle added.
+
+- Phase 7 Demo recorded showing startup, live prediction, failure recovery, and model rollback. Runbook and final documentation finalized. Repository tagged for release.
+
+### Tools & tech
+
+Data pipeline
+
+Apache Kafka Confluent Python Coinbase API
+
+ML
+
+XGBoost scikit-learn MLflow Pandas NumPy
+
+Serving
+
+FastAPI Uvicorn Pydantic
+
+Observability
+
+Prometheus Grafana Evidently
+
+Infrastructure
+
+Docker Docker Compose
+
+---
+
+## Auna / Oncosalud Web Analytics
+
+Source: [Auna / Oncosalud Web Analytics](https://arturoarias.me/projects/auna-web-analytics.html)
+
+BI Dashboard  Python  Power BI  AWS  Amazon Athena  Google Analytics 4  ETL  Data Modeling  Healthcare  Web Analytics
+
+Two Power BI dashboards covering the full conversion funnel (sessions to leads to affiliations) across five healthcare websites for Auna and Oncosalud, powered by an automated three-source AWS pipeline that replaced a cumbersome daily manual process and **reduced data processing time by 95%**.
+
+[See associated experience](https://arturoarias.me/experience/auna.html)
+
+Year
+
+2025
+
+Context/Client
+
+Auna / Oncosalud
+
+Topic/Field/Industry
+
+Healthcare · Health Insurance · E-commerce
+
+Digital analytics dashboard covering sessions, leads, and conversion funnels across Oncosalud and Auna Salud platforms. Image recreated with AI from an actual dashboard screenshot; all metrics have been modified for confidentiality.
+
+95%
+
+Reduction in data processing time and manual effort per reporting cycle
+
+5+
+
+Healthcare insurance websites tracked
+
+3
+
+Data sources consolidated in AWS and reconciled into a unified Power BI semantic layer
+
+### Context
+
+Auna is a leading integrated healthcare provider operating in Peru, Colombia, and Mexico, with 31 healthcare facilities and over 1.3 million plan members. Its digital presence spans two distinct types of websites: **e-commerce platforms** where users purchase insurance plans, and **healthcare service delivery websites** for specialized medical programs.
+
+Within the Growth Team (Digital Sales Area), the team monitored the e-commerce funnel across all these platforms: **sessions** (users visiting the site), **leads** (users leaving their contact information), and **affiliations** (users completing a purchase of an insurance plan or service). Leads are a required step before any affiliation, so the funnel is strictly sequential, and conversion rates at each stage are the key levers the team works to improve. Before this project, tracking those metrics required a daily manual routine: data was pulled from multiple separate sources, combined in a heavy Excel workbook, and uploaded to Google Sheets for stakeholder access. The process consumed significant analyst time every day and left little room for actual interpretation.
+
+As a Data Analyst on the Growth Team, reporting to the Growth Leader, I was responsible for designing and delivering an automated solution: a unified data pipeline feeding two Power BI dashboards, giving the team always-current visibility into the full funnel without the manual overhead.
+
+### Scope
+
+The initial deployment covered **five websites** across two categories:
+
+- **E-commerce (insurance selling):** Oncosalud (cancer insurance) and Auna Salud (health insurance)
+
+- **Healthcare service delivery:** Auna Maternidad (maternity care), Auna UMR (reproductive medicine), and Auna Segunda Opinión (second opinion consultations)
+
+Following the initial launch, coverage expanded incrementally as additional websites in the portfolio were added.
+
+### What was built
+
+#### Data pipeline
+
+Three separate data sources had to be consolidated into one place: **web session data** (from Google Analytics 4), **lead records**, and **affiliation data**. Each lived in a different system with a different schema.
+
+I built an initial pipeline using a Python notebook to extract, standardize, and load data from all three sources into AWS. I then co-worked with the data engineering team to productionize that pipeline into a robust end-to-end flow, ensuring reliable and scheduled data availability in AWS. Once all sources were centralized, I used **Amazon Athena** to query the data directly into Power BI, eliminating the need for any local exports or manual file handling in between.
+
+This replaced the previous daily manual process entirely and **reduced data processing time by 95%**.
+
+#### Data model and dashboards
+
+I designed the full data model from scratch, using the existing Excel workbook as a functional reference for the metrics and breakdowns stakeholders were already accustomed to. Two Power BI dashboards were delivered, providing a structured view of the conversion funnel (sessions, leads, affiliations) segmented by platform, channel, and time period.
+
+Two fellow Growth Data Analysts contributed domain expertise throughout the process, helping define what was most valuable to surface for analysis.
+
+Note on data sensitivity
+
+The data behind this project belongs to the organization it was built for. Dashboard screenshots and specific business metrics are not shared here out of respect for that. The content on this page describes the scope and approach at a high level.
+
+### Tools & tech
+
+Pipeline & ETL
+
+Python AWS Amazon Athena Google Analytics 4 API
+
+Dashboards
+
+Power BI DAX Data Modeling
+
+Data sources
+
+GA4 (web sessions) Lead records Affiliation data
+
+---
+
+## Power Substation Segmentation and New Substation Build Recommendations
+
+Source: [Power Substation Segmentation and New Substation Build Recommendations](https://arturoarias.me/projects/substation-segmentation.html)
+
+Data Science  Python  PyTorch  U-Net  Computer Vision  MILP  Optimization  Geospatial  OpenStreetMap  NAIP
+
+A two-phase AI pipeline, developed by a team of four members for CMU's Introduction to Artificial Intelligence course, to identify underserved areas of the US power grid: a U-Net segmentation model trained on 0.6 m-resolution aerial imagery to locate existing substations, then a Mixed-Integer Linear Programming optimizer to recommend 50 new build sites where coverage gaps or demand density justify new infrastructure.
+
+Year
+
+2026
+
+Context
+
+Carnegie Mellon University
+
+Topic/Field/Industry
+
+Computer Vision · Geospatial Analysis · Infrastructure Planning
+
+Example U-Net segmentation result on a held-out test patch: RGB aerial image, ground-truth OSM-derived mask overlay, predicted mask overlay, and error map highlighting discrepancies between prediction and label.
+
+0.945
+
+ROC-AUC on the held-out test set, confirming reliable substation detection ranking on unseen geography
+
+4,000
+
+NAIP aerial image patches across 10 US counties used to train the segmentation model
+
+80%
+
+Reduction in mean service distance in the Central Phoenix pilot (1,306 m to 266 m)
+
+### Problem and context
+
+The US power grid is aging, and underserved areas face higher outage risk and longer restoration times. Identifying where new substations would provide the greatest coverage benefit requires two things: an accurate inventory of where substations currently exist, and a principled method for evaluating where new ones would have the most impact. Manual inventory from satellite imagery is time-consuming and inconsistent at scale.
+
+This project automated both steps. Phase 1 applied computer vision to detect existing substations from aerial imagery. Phase 2 used those detections as the baseline for an optimization model that recommended 50 new build sites across Maricopa County, Arizona, ranked by coverage gap and demand density. The result is a replicable, data-driven framework for infrastructure planning that generalizes beyond the pilot geography.
+
+### Phase 1: Substation detection
+
+The detection model uses a **U-Net architecture with a ResNet-34 encoder**, applied to four-band NAIP (National Agriculture Imagery Program) aerial imagery at 0.6 m/pixel resolution in 512×512-pixel patches. Ground-truth substation locations were sourced from OpenStreetMap and rasterized into binary segmentation masks used as training labels.
+
+The dataset covers 10 US counties, yielding approximately 4,000 labeled patches. Training used **5-fold cross-validation** to reduce variance across geographically heterogeneous patches; the five fold-specific checkpoints were ensembled at inference time by averaging their predicted probability maps. A custom scoring function ranked candidate locations using the top 1% of pixel probability mass per patch, filtering low-confidence detections and surfacing only high-confidence substation candidates.
+
+Data augmentation (random flips, rotations, color jitter on the RGB channels) addressed overfitting on the geographically limited training set and improved generalization to the held-out test counties.
+
+Each patch score is compared against an operating threshold to decide whether the patch contains a substation. Threshold selection was treated as a calibrated operating-point decision rather than a fixed architectural property: the automatically selected validation threshold proved too conservative on the held-out geography, so a manual sensitivity sweep identified **0.03** as the operating point that best balanced recall and precision. This threshold is not a universal constant; in a real planning workflow, the right value depends on the relative cost of false negatives (missed substations) versus false positives (spurious detections).
+
+Why U-Net for substation detection?
+
+Substations are small, irregular objects that occupy only a fraction of a typical aerial patch. U-Net's encoder-decoder structure with skip connections preserves fine spatial detail at multiple scales, making it well suited for segmenting compact infrastructure features that would be lost in a classification-only approach. The ResNet-34 encoder provides a strong, pretrained feature backbone without the memory cost of deeper architectures on 512-pixel patches.
+
+### Phase 2: Site recommendations
+
+As an academic proof of concept, Phase 2 took the ensemble's predicted substation map as the supply baseline and framed new-site selection as a **p-median facility location problem**, solved with a Mixed-Integer Linear Programming model using the PuLP library and the HiGHS solver. The outputs are intended as a planning support tool to illustrate the approach, not as real infrastructure decisions.
+
+Demand was estimated by overlaying US Census TIGER block-group data with **Microsoft Building Footprints** to produce a fine-grained residential demand grid across Maricopa County. Candidate sites were filtered for suitability using OpenStreetMap land-use tags (excluding protected areas, water bodies, and dense urban cores) and validated against existing OSM transmission line proximity. Reverse geocoding via Nominatim and spatial queries via the Overpass API enriched each candidate with address and zoning context.
+
+The optimizer solved for 50 new sites subject to a constraint that no recommended site overlaps an existing substation within a 500 m exclusion radius. Two objective modes were implemented: minimize total weighted distance from demand cells to their nearest substation, and maximize coverage for demand cells currently more than 10 km from any substation. The final set of 50 sites blends both objectives, with 19 sites selected primarily for distance reduction and 31 for servicing high-demand cells with inadequate nearby coverage.
+
+### Results
+
+At operating threshold 0.03, the 5-fold ensemble achieved a **precision of 0.975 and ROC-AUC of 0.945** on the held-out test set. The high precision confirms that positive detections are reliable; the ROC-AUC confirms strong ranking ability on unseen geography, validating that the model generalizes beyond its training counties. Detection recall was the primary gap, driven by small or partially occluded substations in dense patches.
+
+In the Central Phoenix optimization pilot, incorporating the 50 recommended sites reduced **mean service distance from 1,306 m to 266 m**, an 80% reduction, and cut the share of demand cells more than 10 km from any substation from 11.6% to 4.1%. These figures demonstrate that even a relatively small number of well-placed new substations can substantially improve coverage at a regional scale.
+
+### Future work
+
+Improving detection recall on small and partially occluded substations is the most direct extension, and could be addressed through multi-scale feature aggregation or targeted augmentation for low-visibility patches. Replacing building-count density with actual energy consumption records would produce a more accurate demand grid, particularly in industrial and commercial areas where residential proxies underestimate load. Adding transmission line capacity constraints and construction cost modeling to the MILP formulation would bring the optimization step meaningfully closer to real planning practice. Finally, developing a more generalizable labeling workflow (for instance, through semi-supervised or weakly supervised approaches) would reduce the cost of extending the framework to new geographies without requiring full OSM re-annotation.
+
+### Tools & tech
+
+Computer vision
+
+PyTorch U-Net ResNet-34 segmentation-models-pytorch
+
+Geospatial
+
+GeoPandas Rasterio Shapely OpenStreetMap Overpass API Nominatim NAIP
+
+Optimization
+
+PuLP HiGHS MILP
+
+Data & analysis
+
+Python Pandas NumPy US Census TIGER Microsoft Building Footprints
+
+Tooling
+
+Jupyter Notebook Git Matplotlib
+
+---
+
+## Power Outage Forecasting and Emergency Generator Allocation
+
+Source: [Power Outage Forecasting and Emergency Generator Allocation](https://arturoarias.me/projects/power-outage-forecasting.html)
+
+Data Science  Python  PyTorch  LSTM  SARIMA  XGBoost  Scikit-learn  Time Series  Machine Learning  Energy and Infrastructure
+
+An end-to-end ML pipeline, developed by a four-person team, for predicting county-level power outages across Michigan's 83 counties at 24h and 48h horizons, comparing SARIMA, LSTM, and two-stage hurdle models on highly zero-inflated data, then using the best model's predictions to pre-position five emergency generators across the state.
+
+Year
+
+2025
+
+Context
+
+Carnegie Mellon University
+
+Topic/Field/Industry
+
+Machine Learning · Energy and Infrastructure · Emergency Management
+
+Michigan power grid forecasting: county-level data flows through a multi-step pipeline to generate 24h and 48h outage predictions.
+
+83
+
+Michigan counties analyzed at hourly resolution across 2,161 timestamps
+
+4
+
+Model families benchmarked: SARIMA, SARIMAX, LSTM, and Two-Stage Hurdle
+
+5
+
+Emergency generators pre-positioned using cumulative 48h predicted outage demand
+
+### Problem and context
+
+Extreme weather events (thunderstorms, high winds, heat waves) are primary drivers of large-scale power outages across the United States. These disruptions impose substantial social and economic costs, especially on vulnerable populations who depend on medical equipment or cannot afford extended disruptions. Emergency managers need to pre-position generators before a storm arrives, which requires reliable short-horizon forecasts at a granular geographic level.
+
+This project addressed two linked tasks: (1) predict hourly outage counts for each of Michigan's 83 counties over 24h and 48h horizons, using only past observations and weather data available at forecast time; and (2) use those predictions to decide how to allocate five backup generators, each capable of supporting up to 1,000 households, which cannot be relocated once deployed.
+
+### Data
+
+The dataset is in **NetCDF format** and contains county-level hourly observations for Michigan from April 1 to June 30, 2023, covering 83 counties across 2,161 hourly timestamps. Each record includes an outage count (`out`), 109 weather and environmental variables, and a `tracked` variable serving as a proxy for the number of households affected per county.
+
+The outage variable is **highly zero-inflated and right-skewed**: roughly 70% of observations are zero and the median is 0, yet individual counties can reach thousands of affected customers during a storm event. This distribution makes modeling difficult: a model can achieve reasonable RMSE by predicting near-zero on most observations, yet still fail badly on the rare storm-event spikes that matter most for emergency response.
+
+Weather features show high pairwise correlations, with several all-zero variables providing no signal. The highest single-feature correlation with outage is around 0.12, confirming that outage prediction requires combinations of variables rather than any single predictor.
+
+### Modeling approach
+
+Four model families were implemented and compared against an all-zero baseline (reasonable given the zero inflation):
+
+#### SARIMA and SARIMAX
+
+**SARIMA** captures seasonal and autoregressive temporal structure in outage counts. Models were fit county-by-county with hyperparameter search over order parameters, with tuned configurations applied to the 20 counties with the highest validation error. **SARIMAX** extends SARIMA with exogenous weather features, tested in two variants: all weather reduced via PCA to 10 components, and the top-10 most correlated weather features. SARIMAX performed worse than baseline, suggesting the high-dimensional and noisy weather features hurt rather than helped in this linear framework.
+
+#### LSTM
+
+Three LSTM variants were built with a shared three-layer architecture (hidden dimension 128, dropout 0.3), trained on sliding windows of length 24 across all 83 counties using the Adam optimizer over 20 epochs:
+
+- **LSTM-Base:** outage count only (dim = 1)
+
+- **LSTM-Simple:** top-10 weather features by Pearson correlation, plus cyclic time encodings for hour-of-day and day-of-week (dim = 17)
+
+- **LSTM-Full:** all 77 statistically valid weather features (dim = 84)
+
+All variants include lagged autoregressive inputs and use z-score normalization on the training split. The MLP head generates multi-step forecasts directly for the full H-step horizon (H = 24 or 48).
+
+#### Two-stage hurdle model
+
+Because outage counts are highly zero-inflated, a hurdle-style two-stage approach separates the problem into classification (will an outage occur?) and regression (how large will it be?). Stage 1 uses **Elastic Net Logistic Regression** and **XGBoost Classifier**; Stage 2 uses **Elastic Net Regression** and **XGBoost Regressor** trained only on non-zero observations, with log(1 + outage) as the target. The final prediction multiplies the estimated occurrence probability by the conditional magnitude estimate.
+
+### Results
+
+Performance was evaluated using average RMSE across all 83 counties. Multiple model variants were tested across both horizons; the best results were **RMSE 80.5 at 24h** (SARIMA, tuned with seasonal structure) and **RMSE 64.4 at 48h** (LSTM-Simple, combining outage history, top-10 weather features, and cyclic time encodings). Both improved meaningfully on the all-zero baseline, which scored 100.3 at 24h and 75.4 at 48h. Full results across all model variants and configurations are reported in the project paper.
+
+SARIMA's strength at the 24h horizon confirms that recent temporal patterns are the dominant signal for short-range forecasting. LSTM-Simple's advantage at 48h reflects the value of incorporating weather context as the forecast window extends. SARIMAX degraded below baseline, as high-dimensional weather features introduced noise rather than signal in a linear framework. The two-stage hurdle approach also improved on the baseline, demonstrating its ability to address the zero-inflated structure of the data.
+
+Key modeling challenge
+
+The outage distribution has a heavy right tail: most observations are zero or near-zero, but storm events push county-level counts into the thousands. An RMSE objective penalizes these extremes heavily, yet all LSTM variants underestimate sharp peaks exceeding 2,000 in the highest-risk counties, which is expected behavior for conditional-mean estimators. This is an inherent limitation of MSE-trained models on heavy-tailed data.
+
+### Generator allocation
+
+As an academic decision-support exercise, the team designed a greedy allocation framework to illustrate how forecast outputs could inform pre-storm resource deployment. Given five backup generators (each supporting up to 1,000 households), the framework iteratively assigns each generator to the county with the highest marginal predicted demand. Two demand definitions were explored:
+
+- **Peak demand:** maximum predicted hourly outage over the forecast window, prioritizing the single worst hour.
+
+- **Cumulative demand:** sum of predicted outages over 48 hours, prioritizing sustained exposure over time.
+
+Both strategies agreed on four of the five generator placements, indicating that the highest-risk counties are robust targets regardless of how demand is defined. The cumulative approach was identified as the more appropriate framing for emergency generator deployment, where sustained coverage matters more than responding to a single peak hour.
+
+### Tools & tech
+
+Deep learning
+
+PyTorch LSTM
+
+Time series
+
+Statsmodels SARIMA SARIMAX
+
+ML / two-stage
+
+Scikit-learn XGBoost Elastic Net
+
+Data & visualization
+
+Python Pandas NumPy NetCDF4 Matplotlib Seaborn GeoPandas
+
+---
+
+## Chess Rating Time Series Forecasting
+
+Source: [Chess Rating Time Series Forecasting](https://arturoarias.me/projects/chess-rating-forecasting.html)
+
+Data Science  Python  ARIMA  Statsmodels  pmdarima  Time Series  Sports Analytics  Lichess API
+
+A complete time series analysis of a personal blitz chess rating history collected from the Lichess API, applying decomposition, stationarity testing, ACF/PACF diagnostics, and auto-ARIMA model selection to characterize performance patterns and produce a short-horizon rating forecast.
+
+Year
+
+2024
+
+Context
+
+Personal project
+
+Topic/Field/Industry
+
+Time Series Analysis · Sports Analytics
+
+[View on GitHub](https://github.com/arturoarias12/time-series-analysis-lichess-blitz)
+
+STL decomposition of blitz rating history showing trend, seasonal, and residual components, alongside the ARIMA forecast with confidence intervals.
+
+177
+
+Daily rating observations collected from Lichess API, spanning January to July 2024
+
+~1,788
+
+Mean blitz rating over the study period, ranging from 1,710 to 1,885
+
+ARIMA
+
+Final model selected via AIC minimization across all candidate (p,d,q) orders
+
+### Motivation
+
+This is an academic project developed as part of a time series analysis course. The dataset was self-selected: chess ratings are an unusually clean personal performance metric, they update after every game, reflect relative skill against a stable population, and accumulate over time into a structured time series. My blitz rating history on Lichess was a natural choice for applying course methods hands-on, using data I had direct control over and a strong contextual understanding of.
+
+A secondary goal was to work with a self-collected dataset from scratch, using the Lichess public API rather than a pre-packaged dataset.
+
+### Data
+
+Game history was retrieved from the **Lichess API**, which exposes rated game records for any registered user. Each record includes the post-game rating, date, and result. After filtering for blitz games and resampling to a daily frequency, the resulting series covers **177 observations** from January 1 to July 5, 2024, with a mean rating of approximately **1,788** (standard deviation of about 39 points) and a total range of roughly 175 points between the lowest and highest ratings in the window.
+
+The series shows controlled volatility consistent with active competitive play: ratings shift within a band rather than trending sharply in either direction, reflecting a player at a stable skill level with session-to-session fluctuation.
+
+### Analysis pipeline
+
+#### Decomposition
+
+Classical additive decomposition separated the series into trend, seasonal, and residual components. The trend confirmed a broadly stable performance level with minor undulations across the observation window. No strong weekly or monthly seasonal pattern emerged, which is consistent with irregular play frequency rather than a fixed schedule.
+
+#### Stationarity testing
+
+The **Augmented Dickey-Fuller (ADF)** test was applied to the raw series and to first-differenced values. The raw series did not reject the unit root hypothesis, while the first-differenced series was stationary, establishing d = 1 as the required differencing order for the ARIMA model.
+
+#### ACF and PACF diagnostics
+
+Autocorrelation (ACF) and partial autocorrelation (PACF) plots of the differenced series informed the candidate ranges for the autoregressive (p) and moving average (q) orders. These plots showed that the series carried limited autocorrelation at short lags, consistent with a rating process driven largely by near-term results.
+
+#### Model selection and forecasting
+
+**pmdarima's auto_arima** performed an automated grid search over (p, d, q) combinations, selecting the specification with the lowest AIC. The residuals of the selected model were validated against ACF/PACF diagnostics to confirm no remaining autocorrelation structure. The final model was used to generate a short-horizon forecast with confidence intervals.
+
+On the nature of chess ratings as a time series
+
+Rating changes are not purely a function of time: they depend on who you play, game results, and how often you play. Beyond that, ratings ultimately reflect performance, which is itself shaped by many factors outside the model: physical state, emotional state, psychological factors, and circumstances on a given day. The time series formulation treats ratings as a temporal signal, which is a simplification that ignores all of this. The forecasts produced are better interpreted as a characterization of recent performance momentum than as a predictive claim about future ratings.
+
+### Tools & tech
+
+Time series
+
+Statsmodels pmdarima ARIMA
+
+Data
+
+Python Pandas NumPy Lichess API
+
+Visualization
+
+Matplotlib Jupyter Notebook
+
+---
+
+## Digital Nomad City Recommender
+
+Source: [Digital Nomad City Recommender](https://arturoarias.me/projects/digital-nomad-recommender.html)
+
+Web App  Python  Tkinter  BeautifulSoup  Web Scraping  Pandas
+
+A desktop application that scrapes visa requirements, cost-of-living data, and internet speed benchmarks across cities worldwide, then ranks destinations for digital nomads using a configurable composite score, displayed through interactive comparison views. Built as a team project with five members for a Carnegie Mellon University course.
+
+Year
+
+2025
+
+Context/Client
+
+Carnegie Mellon University
+
+Topic/Field/Industry
+
+Python · Web Scraping · API · Travel and lifestyle
+
+[View on GitHub](https://github.com/arturoarias12/Digital-Nomad-Recommendation-System)
+
+The tool ranks global cities for remote workers based on visa access, cost of living, and internet connectivity.
+
+3
+
+Data sources integrated: Numbeo (cost of living), Ookla Speedtest (internet), and VisaIndex (visa access)
+
+5
+
+Team members who collaborated on this academic project
+
+6
+
+Application views: Home, Plan Trip, Data Explorer, Saved, Compare, and Settings
+
+### Overview
+
+Remote professionals evaluating potential work destinations must often compare fragmented criteria such as coworking access, visa duration, client time-zone overlap, safety, and internet reliability. This project developed a multi-source recommendation system that aggregates destination data and ranks locations according to each user’s stated priorities.
+
+The application was built in Python as a desktop app using Tkinter, requiring no installation of a web server or external runtime beyond a standard Python environment.
+
+### Data collection
+
+Three primary data dimensions were collected:
+
+- **Visa requirements** — scraped from **VisaIndex**, categorized by passport nationality and destination country to identify visa-free or e-visa eligible destinations
+
+- **Cost of living** — extracted from **Numbeo**, covering rent, food, coworking, and utilities across cities
+
+- **Internet speed** — pulled from the **Ookla Speedtest Global Index**, providing real-world connectivity benchmarks by city
+
+The application follows a cache-first strategy: on first launch, users choose between downloading fresh data or using locally cached files for offline use. BeautifulSoup handled HTML parsing; Pandas managed data cleaning, normalization, and the join logic across sources.
+
+### Composite scoring
+
+Each city receives a normalized score (0 to 1) on each dimension. A user-configured weight vector is applied to produce the final composite score. The default weights balance cost, connectivity, and visa accessibility equally, but users can shift emphasis toward any dimension via sliders in the GUI.
+
+The Plan Trip view: users set budget, trip duration, region, and minimum internet speed, then visualize ranked destinations on a tablem an interactive map colored by composite score, or a dashboard.
+
+### Tools & tech
+
+Scraping
+
+BeautifulSoup requests
+
+Data
+
+Python Pandas NumPy
+
+GUI
+
+Tkinter Matplotlib
+
+---
+
+## Student Attendance Management System
+
+Source: [Student Attendance Management System](https://arturoarias.me/projects/student-attendance-sql.html)
+
+Analytics Eng.  SQL  SQL*Plus  Relational Databases  Entity-Relationship Modeling  Data Modeling  Normalization  T-SQL
+
+A relational database system for educational institutions covering student attendance tracking, teacher assignments, and class scheduling. Built as a team project with five members, designed through three formal phases (conceptual ER modeling, logical normalization to 3NF, and physical SQL implementation), with example queries covering attendance reporting, absence tracking, and per-student and per-grade attendance percentage calculations. Modeled after the Peruvian educational system.
+
+Year
+
+2024
+
+Context/Client
+
+Data Science Research Peru
+
+Topic/Field/Industry
+
+SQL · Education
+
+[View on GitHub](https://github.com/arturoarias12/StudentAttendanceManagement_SQL)
+
+Conceptual ER diagram: Students, Teachers, Courses, Classrooms, Records, and Attendance with cardinalities mapped before physical implementation.
+
+3NF
+
+Schema normalized through third normal form to eliminate transitive dependencies
+
+6
+
+Entities in the schema: Students, Teachers, Courses, Classrooms, Records, and Attendance
+
+3
+
+Design phases formally documented: conceptual ER modeling, logical normalization, and physical SQL implementation
+
+### Context
+
+Managing student attendance across multiple classes, teachers, and scheduling periods is a classic structured data problem. Spreadsheet-based tracking breaks down quickly when a school needs to answer questions like: which students have missed more than three sessions of a given class, or which teacher is assigned to the most sections this term.
+
+This project built a relational database system to answer those questions reliably, following the full design lifecycle from entity identification through to executable DDL scripts.
+
+### Design process
+
+#### Phase 1: Conceptual entity-relationship modeling
+
+The first phase identified the core entities and their relationships without committing to any particular database engine or implementation detail. The schema is modeled after the Peruvian educational system, where students are organized into specific grades and sections (for example, 1st "B" of secondary school). The six entities are:
+
+- **Students:** enrolled individuals identified by a unique ID, linked to a classroom and storing personal data including DNI and date of birth
+
+- **Teachers:** instructors who create daily attendance records across one or more courses and classrooms
+
+- **Courses:** subjects defined by name and weekly hours
+
+- **Classrooms:** organized by grade, section, education level (primary or secondary), and room number
+
+- **Records:** daily entries that tie a teacher, a course, and a classroom to a specific date, serving as the anchor for each attendance session
+
+- **Attendance:** the junction entity linking a student to a Record, capturing whether the student was present that day
+
+Key cardinality rules: a teacher may create many Records; each Record belongs to exactly one teacher, one course, and one classroom; a student appears in many Attendance entries; each Attendance entry points to exactly one Record. The Attendance entity resolves the many-to-many relationship between Students and Records.
+
+#### Phase 2: Logical design and normalization to 3NF
+
+The conceptual model was translated into a relational schema and evaluated against normalization rules. The process eliminated partial dependencies (2NF) and transitive dependencies (3NF), producing tables where every non-key attribute depends on the whole key and nothing but the key.
+
+Key normalization decisions included keeping Classrooms as a separate table rather than embedding grade and section data in the Students table, and separating Records from Attendance so that a single daily session entry (teacher, course, classroom, date) is not repeated for every student in the class.
+
+#### Phase 3: Physical implementation
+
+The normalized schema was implemented with full DDL scripts covering table creation, primary and foreign key constraints, and domain-level checks. A unique constraint on the combination of student, record, and date prevents duplicate attendance entries for the same student in the same session. All referential integrity rules are enforced at the database level rather than delegated to application logic.
+
+### Example queries
+
+Nine analytical queries were written to demonstrate the system's reporting capability; they are available in full on the [GitHub repository](https://github.com/arturoarias12/StudentAttendanceManagement_SQL). They cover the most common attendance management questions an educational institution would need to answer:
+
+- Retrieve the full attendance history of a specific student on a given date, showing course and attendance status
+
+- List all students in a course on a specific day with their attendance status
+
+- Count total absences grouped by grade and section, ordered by frequency
+
+- Calculate the attendance percentage of a specific student in a specific course, rounded to two decimal places
+
+- Calculate the attendance percentage of a student across all their courses
+
+- Average attendance percentage by grade, section, and education level for a primary school grade
+
+- Average attendance percentage for all secondary school grades and sections, using a common table expression to refine the aggregation
+
+- Retrieve a student's attendance history within a date range, ordered by course
+
+- Grade students based on attendance threshold: above 50% attendance passes, below 50% flags the student for parent contact
+
+### Tools & tech
+
+Database
+
+SQL Server T-SQL SQL*Plus
+
+Design
+
+ER modeling Normalization Relational algebra
+
+Tooling
+
+SSMS DDL scripting
+
+---
+
+## Peru National Football Dataset
+
+Source: [Peru National Football Dataset](https://arturoarias.me/projects/peru-football-dataset.html)
+
+Research  Python  Pandas  Sports Analytics  Data Curation  Open Data  Kaggle
+
+A curated, analysis-ready dataset covering Peru's national football team results from 1927 to 2024, including match details, venues, tournaments, altitude data, and coaching records, structured for statistical analysis and historical research.
+
+Year
+
+2024
+
+Context/Client
+
+Personal project
+
+Topic/Field/Industry
+
+Data Collection · Sports Analytics · Data Processing
+
+[View on GitHub](https://github.com/arturoarias12/PeruFootballResults) [View on Kaggle](https://www.kaggle.com/datasets/arturoarias12/peruvian-national-football-team-results)
+
+97+ years of Peru national team data — matches, venues, altitude, tournaments, and coaching records in a structured dataset.
+
+97+
+
+Years of match history — 1927 to 2024
+
+21
+
+Dataset columns covering match details, venue, elevation, coaching, shootout, and awarded results
+
+Kaggle
+
+Published as an open dataset on Kaggle, freely available for research and analysis
+
+### Why this dataset?
+
+Peru has a rich football history — Copa América campaigns, a World Cup appearance in 1982, and a highly vocal national following. But no single, clean, analysis-ready dataset covered the full sweep of the national team's results. Scattered match records existed across Wikipedia, football reference sites, and fan archives, each with different formats and coverage gaps.
+
+The goal was to produce a structured CSV that any analyst could load and immediately begin exploring without data cleaning. Coverage starts from Peru's very first international match, played on November 1, 1927, against Uruguay.
+
+### Dataset structure
+
+The main file is `peru_match_results.csv`. Each row represents one match and includes 21 columns across four thematic groups:
+
+| Field | Description |
+| --- | --- |
+| **Match result** | |
+| match_id | Chronological match identifier (M001, M002, …) |
+| date | Match date |
+| peru_score / rival_score | Goals scored by each side |
+| peru_awarded_score / rival_awarded_score | Score after any post-match reviews or sanctions |
+| result | W / D / L |
+| shootout_result | Penalty shootout outcome, if applicable |
+| awarded_result | Result after reviews or sanctions, if applicable |
+| **Opponent & competition** | |
+| rival | Opposing national team |
+| rival_confederation | Confederation the rival belongs to (CONMEBOL, UEFA, etc.) |
+| tournament_name | Specific tournament name (e.g., FIFA World Cup 2018) |
+| tournament_type | Tournament category (e.g., FIFA World Cup, Copa América, Friendly) |
+| official | Boolean — whether the match was an official FIFA fixture |
+| **Venue** | |
+| stadium | Name of the stadium |
+| city | Host city |
+| country | Host country |
+| elevation | City elevation in meters above sea level |
+| peru_condition | Home / Away / Neutral |
+| **Coaching** | |
+| coach | Peru head coach at time of match |
+| coach_nationality | Coach's nationality |
+
+Three matches are intentionally excluded from the dataset: a 1988 fixture where Peru fielded a U-19 squad, a 2011 match where Senegal sent an alternative team, and a 2013 friendly against Basque Country, which is not recognized by FIFA.
+
+### Research use cases
+
+- Home advantage analysis controlling for altitude of venue
+
+- Win rate by coach era and tournament type
+
+- Performance trends over decades (qualification campaigns, Copa América record)
+
+- Opponent-specific historical head-to-head records
+
+### Tools & tech
+
+Data collection
+
+Python Pandas Manual curation
+
+Sources
+
+Sofascore FIFA Wikipedia Transfermarkt
+
+Analysis & examples
+
+Jupyter Notebook Matplotlib
+
+---
+
+## ChemE Jeopardy Platform
+
+Source: [ChemE Jeopardy Platform](https://arturoarias.me/projects/cheme-jeopardy.html)
+
+Web App  Java  JavaScript  Docker  Multithreading  Real-time
+
+A browser-based Jeopardy platform for chemical engineering classrooms and competitions. A Java HTTP server hosts separate moderator, player, and display interfaces with real-time game state pushed via Server-Sent Events, question packs defined in JSON or CSV with optional image support, and Docker deployment targeting Azure, Google Cloud, Railway, and similar platforms. Based on the AIChE ChemE Jeopardy competition format.
+
+Year
+
+2026
+
+Context/Client
+
+Personal project
+
+Topic/Field/Industry
+
+Chemical Engineering · Education · Web App
+
+[View on GitHub](https://github.com/arturoarias12/ChemE-Jeopardy)
+
+Six chemical engineering categories, 100–500 point tiers, and four team scoreboards, live on the classroom display.
+
+3
+
+Separate interfaces: moderator console, player buzzer, and projected display screen, each with its own password and access controls
+
+SSE
+
+Server-Sent Events push real-time game state to all connected clients, with client clock calibration for fair buzzer arbitration
+
+Docker
+
+Containerized and deployable to Azure, Google Cloud Run, Railway, Fly.io, and similar platforms
+
+### Context
+
+Jeopardy-style review games are effective classroom tools, but running them manually (tracking scores, reading questions, managing buzzers) takes significant instructor overhead. This project built a software platform that handles all of that automatically, letting the instructor focus on the content and discussion rather than the mechanics.
+
+The domain was chemical engineering: question packs were written around thermodynamics, reaction kinetics, mass balances, and process safety.
+
+### Architecture
+
+#### Three-interface design
+
+The system runs three distinct views over a single game session:
+
+- **Moderator console:** controls question flow, confirms answers, adjusts scores, and can override buzzer decisions
+
+- **Player interfaces:** one per team or player, with buzzing, wagers, and Final Jeopardy responses
+
+- **Display screen:** the full game board projected at the front of the room, updated in real time via SSE
+
+All three interfaces connect to a central embedded Java HTTP server. The server maintains the canonical game state and broadcasts updates to all connected clients using **Server-Sent Events (SSE)**, keeping every view in sync without polling. Multiple parallel game rooms are supported, each with its own URL slug, moderator password, and player password.
+
+#### Buzzer arbitration
+
+The buzzer is the technically interesting piece. Each player client calibrates its clock against the server on join, so that when a buzz arrives, its timestamp reflects actual press time rather than network latency. The first valid buzz wins the lock; all subsequent attempts for that question are rejected until the moderator resets. Server-side synchronization ensures concurrent buzz events are serialized correctly without race conditions.
+
+#### JSON question packs
+
+Questions are defined in a JSON schema that any instructor can author without touching the code:
+
+```
+{"category":"Thermodynamics","value":200,"question":"What law states that energy cannot be created or destroyed?","answer":"First Law of Thermodynamics"}
+```
+
+JSON files can also be authored via CSV using the included Java authoring tool, which supports manual editing, CSV-to-JSON conversion, and image package creation for clues that include diagrams or figures. Image packages bundle `game.json` and image assets into a single `.chemej` file that can be uploaded at game creation time. Instructors can also replace the question set mid-session from the moderator console without restarting the server.
+
+### Tools & tech
+
+Server
+
+Java HTTP (embedded) SSE Multithreading
+
+Client
+
+JavaScript HTML CSS
+
+Tooling
+
+Java authoring tool (JAR) JSON CSV
+
+Infrastructure
+
+Docker Azure Google Cloud Run Railway
+
+---
+
+## EDA of International Football Results (1872–2024)
+
+Source: [EDA of International Football Results (1872–2024)](https://arturoarias.me/projects/football-results-eda.html)
+
+Research  Python  Pandas  Seaborn  Matplotlib  EDA  Sports Analytics  Football  Kaggle
+
+A solo exploratory data analysis of 47,399 international football match records spanning 152 years, examining team performance trends, home advantage effects, goal-scoring patterns, and classic regional rivalries through custom Pandas aggregations and Seaborn visualizations, published as a Kaggle notebook.
+
+Year
+
+2024
+
+Context
+
+Personal project
+
+Topic/Field/Industry
+
+Sports Analytics · Exploratory Data Analysis · Football
+
+152 years of international football data: match counts per year reveal the sport's global growth, the dip during World War II, and the anomaly of the 2020 pandemic season.
+
+[View on Kaggle](https://www.kaggle.com/code/arturoarias12/eda-of-intl-football-results-from-1872-to-2024)
+
+47,399
+
+Match records spanning 152 years of men's international football
+
+10
+
+Analytical questions answered with custom DataFrames and visualizations
+
+327
+
+Unique national teams covered, including dependencies and historical nations
+
+### Dataset overview
+
+The analysis is built on a public dataset by Mart Jürisoo covering men's full international matches from November 30, 1872 through UEFA Euro 2024 and Copa América 2024. It contains nine fields: date, home team, away team, home and away scores (including extra time, excluding penalty shootouts), tournament name, host city, host country, and a neutral venue flag. The dataset has no missing values and requires only whitespace trimming and a datetime conversion before analysis.
+
+The 47,399 records span 327 unique home-side names across 2,064 host cities and 270 countries. Friendly matches account for roughly 38% of all records; the remainder covers FIFA World Cup qualifiers, regional championships (UEFA Euro, Copa América, African Cup of Nations, AFC Asian Cup, CONCACAF Gold Cup), and other official competitions. The dataset strictly excludes Olympic Games, B-team matches, U-23 fixtures, and league select games.
+
+As part of a prior project, I contributed verified historical results for Peru to this dataset, which is now reflected in the Kaggle discussion thread.
+
+### Analysis
+
+Following a standard EDA structure (description, cleaning, statistical summary, exploratory visualizations, and insights), the notebook addresses ten questions through custom Pandas aggregations, filtered DataFrames, and Seaborn bar plots and histograms:
+
+- Which teams have the best historical performance overall?
+
+- Which team has conceded the highest number of goals?
+
+- Among Brazil, Argentina, and Uruguay, who performs best head-to-head?
+
+- Which cities have hosted the most matches in history?
+
+- Which team has had the best performance since 2003?
+
+- Does hosting a major tournament improve a country's results in that tournament?
+
+- Are there teams that perform better away than at home?
+
+- Among Chile, Colombia, Ecuador, Paraguay, and Peru, who is the "fourth big" of South America?
+
+- What are the five most historically repeated international matches?
+
+- Which teams average the most goals scored per match?
+
+Performance comparisons filter for teams with at least 100 matches played and at least one fixture since 2007, avoiding distortion from nations that no longer exist or from teams with very few matches.
+
+### Key findings
+
+#### Scoring patterns and home advantage
+
+Across all 47,399 matches, home teams average significantly more goals than visiting sides. The 0.58-goal gap is a consistent, data-backed measure of home advantage across 152 years of international competition.
+
+1.76
+
+Avg goals per home team
+
+1.18
+
+Avg goals per away team
+
+2.94
+
+Avg total goals per match
+
+#### Top performers since 2003
+
+Among teams with at least 100 competitive matches since 2003, Spain leads all qualifying nations, with Brazil and Argentina close behind. Performance is measured as points earned divided by the theoretical maximum (3 per match).
+
+Performance rate since 2003 (qualifying teams, min. 100 matches)
+
+Spain
+
+76.5%
+
+Brazil
+
+72.3%
+
+Argentina
+
+69.4%
+
+Looking at all-time records, **Brazil holds the best historical performance** among active nations: the only team exceeding 70.4% and averaging more than 2 points per match across its full history.
+
+#### The Big Three of South America: head-to-head
+
+Filtering to matches exclusively among Brazil, Argentina, and Uruguay, Brazil holds a narrow lead over Argentina. The gap between the two is just 0.4 percentage points across hundreds of fixtures, confirming one of football's most fiercely contested rivalries. Uruguay trails by a wider margin at 37.1%.
+
+H2H performance rate (matches among the three teams only)
+
+Brazil
+
+51.0%
+
+Argentina
+
+50.6%
+
+Uruguay
+
+37.1%
+
+#### Away excellence
+
+No team in the dataset performs better away from home than at home. England and Germany, however, stand out as the strongest traveling sides globally, each sustaining over 60% performance in non-neutral, non-home fixtures.
+
+Away performance rate (non-neutral, non-home fixtures)
+
+England
+
+61.9%
+
+Germany
+
+61.1%
+
+#### Most repeated international fixtures
+
+**El Clásico del Río de la Plata** (Argentina vs. Uruguay) is the most repeated international fixture in recorded history at 182 matches. The table also includes a surprising entry: Guernsey vs. Jersey, a rivalry between two British Crown dependencies, ranks fourth, ahead of the historic England vs. Scotland fixture.
+
+| # | Fixture | Times played |
+| --- | --- | --- |
+| 1 | Argentina vs Uruguay | 182 |
+| 2 | Austria vs Hungary | 137 |
+| 3 | Belgium vs Netherlands | 128 |
+| 4 | Guernsey vs Jersey | 119 |
+| 5 | England vs Scotland | 118 |
+
+#### Other notable findings
+
+Host countries win significantly more matches than non-hosts in the same major competitions, providing data-backed confirmation of home-tournament advantage. In the "fourth big of South America" debate among Chile, Colombia, Ecuador, Paraguay, and Peru, the result depends on the measure applied: **Colombia leads in overall performance** at 49.5% across all their matches, while **Chile leads in direct head-to-head results** against the other four, making the debate most compelling between those two nations. A geographic surprise: **Kuala Lumpur, Malaysia** is the city with the most international matches hosted in history, a result that holds even after filtering out friendlies.
+
+On the performance metric
+
+Performance is calculated as points earned divided by the maximum possible points (3 per match), expressed as a percentage. This accounts for both wins and draws across varying match counts, making it a more consistent basis for comparison than raw wins or total points.
+
+### Tools & tech
+
+Analysis
+
+Python Pandas NumPy
+
+Visualization
+
+Matplotlib Seaborn
+
+Platform
+
+Kaggle Notebooks Jupyter Notebook
+
+---
+
+## Huambra Café Analytics Dashboard
+
+Source: [Huambra Café Analytics Dashboard](https://arturoarias.me/projects/huambra-cafe.html)
+
+BI Dashboard  Power BI  DAX  BigQuery  Google Cloud  Cloud Run  Python  Microsoft Fabric  Data Modeling  Business Analytics
+
+An end-to-end BI solution for a coffee shop startup in Pucallpa, Peru, migrating their operational database to Google BigQuery via Cloud Run, then delivering a fully custom Power BI dashboard published to Microsoft Fabric for live, auto-updating strategic insight.
+
+Year
+
+2026
+
+Context/Client
+
+Huambra Café
+
+Topic/Field/Industry
+
+Business Intelligence · Cloud Data Engineering · Food and Beverage
+
+Power BI sales dashboard showing daily revenue, product-level breakdown, and category performance for Huambra Café.
+
+0 → 1
+
+First structured BI and cloud data infrastructure for the business, built entirely from scratch
+
+BigQuery
+
+Cloud data warehouse on Google Cloud, kept current by an automated Cloud Run Python job
+
+Fabric
+
+Dashboard published to Microsoft Fabric, live and auto-refreshing in production
+
+### Context
+
+Huambra Café is a coffee shop startup based in Pucallpa, Peru, a city in the heart of the Amazon jungle. As part of a broader modernization effort, the business wanted structured visibility across all key operational dimensions: revenue, expenses, customer traffic, and inventory and supply stock. All records were maintained in a native local database, with no analytics layer and no systematic way to monitor performance over time.
+
+The goal was to migrate that data to the cloud, build a reliable automated update pipeline, and deliver a self-service dashboard the owner could use independently for daily monitoring and strategic decisions.
+
+### What was built
+
+The project covered the full data stack, from cloud migration to a live, auto-updating BI product in production:
+
+- **Database migration**: the native operational database was migrated to Google Cloud, with BigQuery established as the central analytics data warehouse
+
+- **Automated data pipeline**: a Python job deployed on Cloud Run handles incremental data updates, managing the complete processing and transformation pipeline to keep the warehouse current
+
+- **Power BI dashboard**: built entirely from scratch, including the star schema data model, all DAX measures, and the report views, covering revenue, expenses, customer traffic, and product and supply inventory
+
+- **Production deployment**: the finished dashboard was published to Microsoft Fabric with auto-refresh configured, handed off to the owner ready for day-to-day strategic decision making
+
+Note
+
+The dashboard screenshot shown has been AI-modified to avoid exposing the client’s real business data.
+
+### Tools & tech
+
+Cloud
+
+Google Cloud BigQuery Cloud Run
+
+Processing
+
+Python
+
+BI
+
+Power BI DAX Microsoft Fabric
+
+Modeling
+
+Star schema Date table
+
+---
+
+## This portfolio website and AI chatbot
+
+Source: [This portfolio website and AI chatbot](https://arturoarias.me/projects/this-portfolio.html)
+
+Website  AI / LLM  HTML  CSS  JavaScript  Cloudflare Workers  Cloudflare Workers AI  LLM  RAG  REST API  Cloudflare KV  Google Apps Script  GitHub Pages
+
+A static ePortfolio built from scratch with vanilla HTML, CSS, and JavaScript, paired with an AI chat assistant powered by a Cloudflare Workers API, a RAG pipeline over Cloudflare KV, and Llama 3.1 8B running on Cloudflare Workers AI.
+
+Year
+
+2026
+
+Context/Client
+
+Personal project
+
+Topic/Field/Industry
+
+Web development
+
+[GitHub](https://github.com/arturoarias12)
+
+The portfolio you are reading right now.
+
+0
+
+External framework dependencies — pure HTML, CSS, JS
+
+12
+
+Project case studies documented
+
+20
+
+RAG documents in Cloudflare KV powering the AI assistant
+
+2
+
+Themes — light and dark, persisted via localStorage
+
+### Why build it from scratch?
+
+Most portfolio templates come with a framework you did not choose, opinions you did not form, and constraints you have to fight. Building from scratch meant every layout decision, every color token, and every interaction was deliberate.
+
+The goal was not to demonstrate that I can use a site builder. The goal was to produce a site that reflects how I actually think about design and engineering — precise, readable, fast, and maintainable by one person.
+
+### Design decisions
+
+#### CSS custom properties as the design system
+
+All colors, radii, spacing units, and transition timings live in `:root` as CSS variables. Dark mode is implemented by swapping the values at the `[data-theme="dark"]` selector level — no JavaScript class toggling, no duplicated style blocks.
+
+css
+
+```
+:root {
+--primary: rgb(0, 0, 190);
+--bg: #ffffff;
+--text: #0a0a3a;
+--text-muted: #5f5e5a;
+}
+[data-theme="dark"] {
+--primary: rgb(41, 98, 255);
+--bg: #050510;
+--text: #e8e8f5;
+--text-muted: #b0bcdd;
+}
+```
+
+#### Sticky avatar navbar
+
+The navbar is sticky with a frosted-glass background (`backdrop-filter: blur`), collapses to a hamburger at 820px, and uses a circular avatar image as the brand mark. All scroll-linked behaviors use a single `scroll` event listener with `passive: true`.
+
+#### Projects system
+
+Projects are defined in a single `projects-data.js` file as a plain JavaScript array. The listing page (`projects.html`) reads this array and renders cards dynamically, with client-side search, category filters, tag filters, sort, and grid/list view toggle — no server, no build step, no framework.
+
+### Google Apps Script contact form
+
+The contact form posts to a Google Apps Script endpoint using `fetch` with `Content-Type: text/plain` (required to avoid a preflight CORS request). The script reads the JSON payload, validates it, and emails the submission to my inbox. A honeypot field is included to block naive bots.
+
+javascript
+
+```
+fetch(SCRIPT_URL, {
+method: 'POST',
+headers: { 'Content-Type': 'text/plain' },
+body: JSON.stringify({ name, email, message })
+})
+.then(r => r.json())
+.then(data => {
+if (data.result === 'success') showSuccess();
+else showError();
+});
+```
+
+### AI chat assistant
+
+Every page on the site includes a floating AI chat assistant that answers questions about Arturo's background, projects, experience, and skills. The widget is a self-contained vanilla JavaScript IIFE injected via a shared script. The intelligence lives entirely server-side in a Cloudflare Worker.
+
+#### Architecture
+
+The frontend sends a single `{ message }` field to the Worker API. The Worker performs RAG retrieval, builds the prompt, calls the LLM, and returns `{ answer }`. No API keys or system prompts are exposed to the browser.
+
+architecture
+
+```
+Browser widget
+POST { message }
+↓
+Cloudflare Worker  ←  WAF rate limiting
+1. Input validation
+2. Load index.json from KV → score docs → fetch top matches
+3. Build system prompt + RAG context (encrypted env variable)
+↓
+Cloudflare Workers AI — Llama 3.1 8B Instruct (fp8-fast)
+↓
+{ answer }
+↓
+Browser widget renders markdown response
+```
+
+#### RAG pipeline (Cloudflare KV)
+
+The knowledge base is 20 Markdown files covering every section of the site: about, experience, education, skills, certifications, all 12 projects, blog, and contact. Each file is stored as an individual entry in a Cloudflare KV namespace. An `index.json` maps filenames to titles and keyword arrays.
+
+For each request the Worker loads the index, scores each document against the query using title and keyword overlap, fetches the top matching documents from KV, and injects their content into the system prompt. This keeps the LLM grounded in site-specific facts without fine-tuning the model.
+
+#### LLM inference via Cloudflare Workers AI
+
+The language model runs on Cloudflare's global edge inference infrastructure through the `env.AI` binding. No external API key is required. The system prompt is stored as an encrypted Cloudflare environment variable — it never appears in source code or version control.
+
+javascript
+
+```
+const ai = await env.AI.run('@cf/meta/llama-3.1-8b-instruct-fp8-fast', {
+messages: [
+{ role: 'system', content: systemPrompt + ragContext },
+{ role: 'user',   content: message },
+],
+max_tokens: 512,
+temperature: 0.5,
+});
+return Response.json({ answer: ai.response });
+```
+
+#### Security and rate limiting
+
+Rate limiting is enforced at the Cloudflare WAF level, with a block action applied per IP on excess requests. The Worker additionally validates HTTP method, Content-Type, JSON structure, message length, and message count before any inference call is made. The system prompt includes explicit instructions against prompt injection, jailbreaking, and out-of-scope requests.
+
+Custom domain
+
+The chatbot API is served from a dedicated Cloudflare custom subdomain wired to the Worker. The portfolio itself is hosted on GitHub Pages under `arturoarias.me`, managed through Cloudflare DNS.
+
+### Tools & tech
+
+Frontend
+
+HTML5 CSS3 Vanilla JS
+
+AI / LLM
+
+Cloudflare Workers AI Llama 3.1 8B Instruct RAG Prompt Engineering
+
+Backend / API
+
+Cloudflare Workers REST API Google Apps Script
+
+Storage
+
+Cloudflare KV
+
+Infrastructure
+
+Cloudflare WAF Cloudflare DNS GitHub Pages
+
+Typography
+
+Inter JetBrains Mono
+
+### Reflections
+
+The hardest part was not the code — it was the copy. Every word on this site required deciding what to say and what to leave out. Building the design system took an afternoon; editing the About page took three days.
+
+If I were starting over: I would define the CSS token system before writing a single HTML element. I refactored the color tokens twice after painting myself into a dark-mode corner with hard-coded values.
+
+---
+
+## Perspectives on Three AI Ecosystems: From "Best Model" to "Best Match"
+
+Source: [Perspectives on Three AI Ecosystems: From "Best Model" to "Best Match"](https://arturoarias.me/blog/ai-ecosystems.html)
+
+[Home](https://arturoarias.me/index.html) /  [Insights](https://arturoarias.me/blog.html) /  Perspectives on Three AI Ecosystems
+
+Artificial Intelligence  LLM  Agentic AI  Productivity  Personal
+
+Using three ecosystems (OpenAI, Anthropic, Google) side by side changed the question for me from "Which model is the best?" to "Which kind of collaboration does this task need?"
+
+AA Arturo Arias    August 21, 2026   5 min read
+
+During the past four months, I have been deliberately using ChatGPT and Codex, Claude and Claude Code, and Gemini side by side.
+
+In summary, the main insight is: **the most useful AI is not always the one that gives the "best" answer. Sometimes, it is the one whose behavior best matches how you want to work.**
+
+Before this experiment, I mostly used only ChatGPT for almost everything; but after repeatedly hearing from colleagues and classmates that I was missing out on Claude (and seeing what Google was building around Gemini and its broader ecosystem), I decided to subscribe to all three so I could experience each one firsthand. The decision was also reinforced by my growing recognition that, given the pace at which these models are evolving, maintaining practical familiarity requires continuous hands-on exposure to their capabilities.
+
+I used them across ordinary work (on my own personal projects): drafting and refining emails, summarizing information, generating images, researching, automating repetitive tasks, writing code, and working directly inside larger codebases through coding agents.
+
+What follows in this blog post is purely my experience of how these tools fit into my workflows. It is not a technical benchmark, an academic evaluation, or an attempt to decide which company has the "best" model. These products evolve too quickly for a temporary performance gap to be the most interesting comparison. Their working styles have been much more useful to examine.
+
+### OpenAI: an amplifier of my thinking
+
+In my experience, ChatGPT and Codex feel the closest to an **amplifier of my own thinking**.
+
+When I have a clear idea of what I want, I can give precise instructions and generally expect the result to remain closely aligned with them. That is particularly valuable in areas where I already have expertise.
+
+Python is a good example. If I already understand the architecture, implementation, and trade-offs I want, my main reason for using AI is **efficiency**: execute the plan, reduce repetitive work, generate or modify files, and help me move faster without giving up control of the direction.
+
+Nevertheless, that efficiency comes with a trade-off: if I omit something important in my instructions, that omission can carry into the result. The system can accelerate execution and testing, but the underlying thinking, judgment, and details still need to come from me.
+
+That interaction style works extremely well for me when **precision, alignment, and control are the priority**.
+
+### Anthropic: a more exploratory collaborator
+
+By comparison, my experience with Claude has felt different.
+
+Initially, I hesitated to subscribe because of my uncertainty about whether another subscription would be worthwhile. Nonetheless, I eventually tried it after receiving recommendations that it could often reach strong results with fewer iterations (which meant less back-and-forth and less token usage). My experience ended up being more nuanced than that.
+
+I did not consistently find that Claude required substantially fewer prompts than Codex. What I noticed was more interesting: **the two often approach the same task differently.**
+
+Claude frequently feels more willing to expand beyond the literal request—proposing alternatives, surfacing considerations I did not mention, or introducing ideas that might improve the overall solution.
+
+When I already know exactly what I want, that extra initiative is not always what I need. In contrast, when I am entering a less familiar area, it becomes very valuable.
+
+In those situations, I am not only automating manual work: I am also accelerating part of the learning and information-processing process. Claude can expose me to possibilities I might not have considered, giving me more material to evaluate while I develop my own understanding (without me having to explicitly ask for it).
+
+Through experimentation, I found that a particularly effective workflow is to let the tools **collaborate conceptually**. For instance, Codex can take ownership of an implementation and make changes across a project[1](https://arturoarias.me/blog/ai-ecosystems.html#editorial-note), while Claude serves as a reviewer or QA partner, challenging decisions, identifying potential issues, and suggesting improvements. The results have been consistently strong enough that this has become a workflow I now use quite often.
+
+### Google: the productivity advantage of integration
+
+Gemini has occupied another interesting position in my toolkit.
+
+For some of the more complex tasks in the particular workflows I have attempted, I have tended to reach first for ChatGPT (and Codex) or Claude. Yet, I deliberately routed work to Gemini, specifically the high-frequency tasks already embedded in Google's ecosystem. For example, I used Gemini in Chrome to extract data directly from websites and summarize content without leaving the page, to refactor code quickly inside Google Colab, and to build automations that pull data from Drive and write it into other files without requiring additional integrations or setup[2](https://arturoarias.me/blog/ai-ecosystems.html#editorial-note). Judged on that kind of work, Gemini’s biggest strength is not a capability gap at all. It is **where the model lives**.
+
+The wider set of tools adds another dimension to the experience. Image and video generation, along with models such as Lyria for music generation, expand what can be created within Google's ecosystem.[2](https://arturoarias.me/blog/ai-ecosystems.html#editorial-note)
+
+For many everyday tasks, convenience and integration can matter just as much as maximum capability on a difficult, isolated prompt.
+
+### Assigning roles instead of choosing a winner
+
+After using all three, I have become less interested in asking:
+
+Asking less
+
+Which AI model is the best?
+
+And much more interested in asking:
+
+Asking more
+
+Which AI behavior is best for this particular task?
+
+**Sometimes I want precise execution of what I asked for.** I know the direction and want the system to help me move faster.
+
+**Sometimes I want productive challenge.** I need alternatives, questions, and possibilities I have not yet considered.
+
+**Sometimes I want contextual convenience.** The biggest gain comes from having AI integrated directly into the tools where the work already happens.
+
+The most powerful workflow may not come from choosing one ecosystem at all: it may come from **learning how to combine them according to their strengths and according to our own knowledge, preferences, and working style.**
+
+What approach have you found works best for you? If you regularly use ChatGPT and Codex, Claude and Claude Code, Gemini, or a combination of them, have you also noticed differences in how they work with you, beyond simply comparing the quality of their outputs?[3](https://arturoarias.me/blog/ai-ecosystems.html#editorial-note)
+
+1 [OpenAI, Codex overview](https://developers.openai.com/codex/).
+2 Google, [Gemini in Chrome](https://support.google.com/gemini/answer/16283624); [Gemini in Google Drive](https://workspace.google.com/intl/en/products/drive/ai/); [Google Colab](https://developers.google.com/colab); [Google DeepMind, generative-model cards for image, music, and video generation](https://deepmind.google/models/model-cards/).
+3 **Editorial note:** The ideas, experiences, comparisons, and conclusions in this article are my own. I used ChatGPT to help refine the wording and structure of the final draft.
+
+### Continue the conversation
+
+Have you developed your own way of combining these tools, or do you approach them differently? I would be interested to hear your perspective.
+
+[aaarias@andrew.cmu.edu](mailto:aaarias@andrew.cmu.edu)
+
+---
+
+## Hello, world: this site is live
+
+Source: [Hello, world: this site is live](https://arturoarias.me/blog/welcome.html)
+
+[Home](https://arturoarias.me/index.html) /  [Insights](https://arturoarias.me/blog.html) /  Hello, world
+
+Personal  Web Development
+
+A first entry on why I built this place, what it is for, and what I hope to do with it.
+
+AA  Arturo Arias     May 21, 2026   3 min read
+
+This is my first entry here, and it feels right to use it to explain what this place actually is.
+
+I have wanted a proper personal website for a long time. The first version I built was years ago, using Django and Python. It worked, but it was more complex than it needed to be, and I eventually stopped maintaining it. This version is different: static HTML, CSS, and JavaScript, no framework, no backend. It is purpose-built as an ePortfolio, and it is designed to live on GitHub Pages indefinitely without a running server. I used Claude Design (preview) as an aid throughout the process, which accelerated the work considerably and let me focus on decisions rather than boilerplate.
+
+### Why not just a résumé?
+
+A résumé is, by nature, compressed. It lists outcomes, not process. It names tools, not reasoning. It has to fit on one or two pages, which means almost everything that makes the work interesting gets cut.
+
+There is also a structural problem: résumés submitted online are frequently filtered by applicant tracking systems before a human ever reads them. That process rewards keyword density and formatting compliance, not the quality of the underlying work. This site is built for the reviewer who reaches it directly. The [projects section](https://arturoarias.me/index.html#projects) covers BI and data engineering work, Python automation, machine learning experiments, and database systems, each with enough context to show the thinking behind it. A hiring manager or recruiter who wants to understand how I approach a problem can find the actual reasoning here, not just the outcome.
+
+This site has more room. The projects section can show the actual approach, not just the result. The skills page can reflect real depth instead of a comma-separated list of keywords. And this blog is a place for things that do not belong anywhere else: research interests, observations from real work, reflections on topics like AI, data systems, communication, and the softer dimensions of technical roles.
+
+There is also a practical side. A lot of my best work does not live on GitHub. Dashboards, client-facing reports, private analytics pipelines, case studies built inside company systems. None of that has a public URL. A portfolio like this gives that work a home, even if the full detail has to stay confidential.
+
+### What comes next
+
+Some posts here will be long-form. Some will be brief field notes. Topics will range across data engineering, BI, AI, and the occasional piece on communication or team dynamics. I do not have a strict publishing schedule, but I expect to write regularly now that the infrastructure is in place.
+
+If you are visiting because you found the link on LinkedIn or in a résumé: Welcome! I hope the experience is clean and the content is worth your time.
+
+If something here sparked a thought or question, feel free to [reach out](https://arturoarias.me/index.html#contact).
+
+### Get in touch
+
+Have a question, a project idea, or just want to connect? I would love to hear from you.
+
+[aaarias@andrew.cmu.edu](mailto:aaarias@andrew.cmu.edu)
+
+Opens your email client directly.
+
+or send a message below

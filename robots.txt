@@ -140,4 +140,7 @@ Allow: /
 
 Sitemap: https://arturoarias.me/sitemap.xml
 
+# LLM-friendly portfolio index: https://arturoarias.me/llms.txt
+# Full portfolio Markdown: https://arturoarias.me/llms-full.txt
+
 AI-txt: https://arturoarias.me/ai.txt

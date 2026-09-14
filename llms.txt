@@ -1,0 +1,48 @@
+# Arturo Arias — Data and AI Portfolio
+
+> Professional portfolio of Arturo Arias, a Data and AI professional pursuing the MISM–Business Intelligence and Data Analytics program at Carnegie Mellon University, with a background in chemical engineering. Work spans business intelligence, analytics, data engineering, machine learning, and AI automation.
+
+The links below use the portfolio's canonical domain, https://arturoarias.me/. Dates, availability, and project results reflect the source pages. The full Markdown file includes the public page content and the JavaScript-powered project and skills catalogs; linked documents and external repositories remain separate resources.
+
+## Portfolio overview
+
+- [Full portfolio in Markdown](https://arturoarias.me/llms-full.txt): Comprehensive content, including experience, education, awards, certifications, projects, skills, volunteering, writing, and contact details.
+- [Home](https://arturoarias.me/): Professional profile, education, experience, achievements, certifications, languages, and role-specific resume downloads.
+- [Projects](https://arturoarias.me/projects.html): Catalog of 12 projects, with summaries, technologies, and case studies.
+- [Skills](https://arturoarias.me/skills.html): Complete skills catalog grouped by category, with self-reported proficiency levels.
+- [Beyond the resume](https://arturoarias.me/about.html): Current activities, volunteering, leadership, communities, interests, and causes.
+- [Contact](https://arturoarias.me/#contact): Email, professional profiles, location, relocation preferences, and availability.
+
+## Professional experience
+
+- [Independent / Incarail — Business Intelligence Specialist](https://arturoarias.me/experience/independent1.html): BI dashboard modernization in rail and tourism, May–August 2025.
+- [Auna / Oncosalud — Data Analyst](https://arturoarias.me/experience/auna.html): Healthcare reporting automation and digital analytics, November 2024–May 2025.
+- [Alicorp — Researcher](https://arturoarias.me/experience/alicorp.html): Research and Python-powered nutritional analysis, May 2021–March 2024.
+
+## Project case studies
+
+- [Real-Time Crypto Volatility Detection](https://arturoarias.me/projects/crypto-volatility.html): Coinbase streaming data, Kafka, XGBoost, MLflow, FastAPI, and monitoring.
+- [Auna / Oncosalud Web Analytics](https://arturoarias.me/projects/auna-web-analytics.html): Python reporting pipelines, AWS Athena, GA4, and Power BI.
+- [Power Substation Segmentation and Build Recommendations](https://arturoarias.me/projects/substation-segmentation.html): U-Net aerial-image segmentation and MILP site optimization; academic proof of concept.
+- [Power Outage Forecasting and Emergency Generator Allocation](https://arturoarias.me/projects/power-outage-forecasting.html): Michigan county-level outage forecasts and generator allocation.
+- [Huambra Café Analytics Dashboard](https://arturoarias.me/projects/huambra-cafe.html): BigQuery, Cloud Run, Power BI, and Microsoft Fabric for a café in Pucallpa, Peru.
+- [Chess Rating Time Series Forecasting](https://arturoarias.me/projects/chess-rating-forecasting.html): Statistical analysis and ARIMA forecasting of personal chess ratings.
+- [Digital Nomad City Recommender](https://arturoarias.me/projects/digital-nomad-recommender.html): Python desktop application ranking cities using visa, cost, and internet data.
+- [Student Attendance Management System](https://arturoarias.me/projects/student-attendance-sql.html): Relational database design and SQL for attendance and scheduling.
+- [Peru National Football Dataset](https://arturoarias.me/projects/peru-football-dataset.html): Curated national-team match records from 1927 to 2024.
+- [ChemE Jeopardy Platform](https://arturoarias.me/projects/cheme-jeopardy.html): Networked educational game with moderator, player, and display interfaces.
+- [EDA of International Football Results](https://arturoarias.me/projects/football-results-eda.html): Analysis of 47,399 matches spanning 1872–2024.
+- [This portfolio website](https://arturoarias.me/projects/this-portfolio.html): Static portfolio, responsive design, contact backend, and AI assistant.
+
+## Writing
+
+- [Blog and Insights](https://arturoarias.me/blog.html): Published posts on data, AI, and personal technical work.
+- [Perspectives on Three AI Ecosystems: From “Best Model” to “Best Match”](https://arturoarias.me/blog/ai-ecosystems.html): Personal reflections on working with ChatGPT, Claude, and Gemini; August 21, 2026.
+- [Hello, world: this site is live](https://arturoarias.me/blog/welcome.html): Why the portfolio exists and what it is for; May 21, 2026.
+
+## Optional
+
+- [Main resume](https://arturoarias.me/assets/docs/resume-main.pdf): General resume PDF; additional role-specific versions are linked from the home page.
+- [LinkedIn](https://www.linkedin.com/in/arturoarias1/): Professional profile.
+- [GitHub](https://github.com/arturoarias12): Code repositories.
+- [Kaggle](https://www.kaggle.com/arturoarias12): Datasets and analysis notebooks.
